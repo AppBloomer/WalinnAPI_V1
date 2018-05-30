@@ -24,7 +24,6 @@ import android.provider.ContactsContract;
 import android.provider.Settings;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
-import android.support.annotation.WorkerThread;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.LocalBroadcastManager;

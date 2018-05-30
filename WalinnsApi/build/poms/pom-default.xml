@@ -8,7 +8,7 @@
   <packaging>aar</packaging>
   <name>WalinnsApi</name>
   <description>mobile analytics</description>
-  <url>https://Rejoylin@bitbucket.org/Rejoylin/walinnsapi_android</url>
+  <url>https://github.com/WalinnsMobileAnalytics/WalinnAPI_V1</url>
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
@@ -23,9 +23,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>https://Rejoylin@bitbucket.org/Rejoylin/walinnsapi_android.git</connection>
-    <developerConnection>https://Rejoylin@bitbucket.org/Rejoylin/walinnsapi_android.git</developerConnection>
-    <url>https://Rejoylin@bitbucket.org/Rejoylin/walinnsapi_android</url>
+    <connection>https://github.com/WalinnsMobileAnalytics/WalinnAPI_V1.git</connection>
+    <developerConnection>https://github.com/WalinnsMobileAnalytics/WalinnAPI_V1.git</developerConnection>
+    <url>https://github.com/WalinnsMobileAnalytics/WalinnAPI_V1</url>
   </scm>
   <dependencies>
     <dependency>
