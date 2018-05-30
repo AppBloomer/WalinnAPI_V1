@@ -1,0 +1,115 @@
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-core-9.4.0.aar/5005fe575e285601a4380eb6439de05b/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/342696654dbd4a4ee1c4a9bec345cd62/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/de25cb51f139cd0b4102cd342dcdeaed/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-9.4.0.aar/d58f150e7b6bca37266332fea6d78182/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-9.4.0.aar/0697cc9492c90c6ac8b5809fb4b57eda/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-9.4.0.aar/933ae63dcbb8bae50ccc3a3df59a391e/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/a1f837371ea318f66fc94fcef79348a0/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/a1f837371ea318f66fc94fcef79348a0/jars/libs/internal_impl-23.0.0.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/447dd241615c233c440bd807428203cf/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/8b2d7e0213c516ba9583677b3294bdc4/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-messaging-9.4.0.aar/6a9da6c4d3c06050e7db91b0a84ed898/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-gcm-9.4.0.aar/5fa2466c0f12cedd8c0a577ae628a5f4/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.8.0/9bada650e1afe9c6174ddc0d113c1fce4dc26fe0/glide-3.8.0.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-crash-9.4.0.aar/a2f34f29749f6230d66438c38b4b858a/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-9.4.0.aar/5e1bd9899ee2c405c79ad785aad95ce4/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-9.4.0.aar/549a2e10ce156759e32c496d1c6c7c60/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-9.4.0.aar/68d2a44febb2dc102c9c89772cf6547c/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/c9ed59f7ac8d192c807561895600f3bc/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8c0cf240ab6b1b61d43eea42b215ba1b/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-9.4.0.aar/b617923f8a74dce465cb7fe30f3c4b09/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.4.0.aar/1b3afe0dfff3cbbd1f305a4a686c920a/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-9.4.0.aar/ba7e9cbc44489b4b419b527c2b875a81/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-9.4.0.aar/33eb98952c77fe02319a359e6788fa7b/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-9.4.0.aar/de3077fa67b80b51c52309a524ae6ebd/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.4.0.aar/a59ae2da119e1d801d2fecb0fb6c2d67/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-9.4.0.aar/a06c0deed17dbfcef120abb5a5a14851/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-9.4.0.aar/bca930afd5b797a409fc00fa1667a17f/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-config-9.4.0.aar/d193e3475d3771e2fc248595238becd9/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-contextmanager-9.4.0.aar/32dac459d6d2e45698209b79a3906116/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-games-9.4.0.aar/7547ad307a70e9aa3222d8794b9cc04c/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-drive-9.4.0.aar/b5393d20b4f7a53fb74067310e7abc47/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-auth-9.4.0.aar/6e8e1c092f913345404a0335593e42de/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-auth-common-9.4.0.aar/c56fd1f106bde623521f9c3892237f53/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-auth-module-9.4.0.aar/443c811376601af8569e162eee6f469b/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-database-9.4.0.aar/29ae13cc9ad4e684241f5b3235767e7c/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-9.4.0.aar/b679fcd5a8b96f9c4fdf2940140d3ece/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-storage-9.4.0.aar/d1f1a5ff56e2aef8ad277034a418c1b5/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-9.4.0.aar/6654551b5bc9334fff395e324eb01175/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-fitness-9.4.0.aar/b6ca50fccd14796b5bb2199d595760aa/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-appindexing-9.4.0.aar/fe2812e821c186554a77cef3721d5c7d/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-wallet-9.4.0.aar/b34845d3f3c9812916c6cc16cc19e15b/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-identity-9.4.0.aar/7bdff96787dceec456bc03e3ee0800b6/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-iid-9.4.0.aar/c4bfebe0bad917a523103ce378e55df4/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-location-9.4.0.aar/5e79b88df8b845ff0ab15fe56025f999/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-places-9.4.0.aar/51e86a59ac4b1b1caa032b3a2469b858/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-maps-9.4.0.aar/7fa03e9bb8069f8d4c1c6739725a6547/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-nearby-9.4.0.aar/c8ed92b8ae8d6e298541e4c43c277c7a/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-panorama-9.4.0.aar/bb199a287f1a46188e56e50b7008ed5b/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-plus-9.4.0.aar/949a9c0e25009be42d1e070a9b4b558b/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-9.4.0.aar/f63b933307fb9d381a72518c57659bb3/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-vision-9.4.0.aar/3b5ebde508a138102cd9bbd006216483/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-wearable-9.4.0.aar/f4f459f60e8bffcb6b804aa8d9e0bb70/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-base-9.4.0.aar/7beb46eb9ae328090e02ef29138b59b3/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-9.4.0.aar/eb17e4772ef6b7ec38f88e10fd330db5/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.4.0.aar/b70f19f92749db033384c30db2664ea5/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-common-9.4.0.aar/6ac40576fc9c7e299ef52d9ffc50f8d8/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-gass-9.4.0.aar/2430cb337fe946800eca4afb933cf139/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tasks-9.4.0.aar/ecdcc38cc905967333bb53cae57b7023/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.4.0.aar/43562ff84d81b90a508e7fc6ffaaf755/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/24e5c55348a03bb1ba2786731b898b1b/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/9d22cf14062162c41a91237cceab6987/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/6e658492e3fc7f02f1950c36603fc416/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/d139e108936e5a06f49342e93fb88f4d/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/0e5f314d9d3a7c81da69a5408b301fa3/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/e4284934c9317c1b553447676b81ad56/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/656fa4807dd717a026454ada033604b3/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/25526e56f9c0bf4da61ebc0df41a195c/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar(**.class)
+-injars /Users/walinnsinnovation/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/0871c5c8225e1a907b78972eae157db5/jars/classes.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar(**.class)
+-injars /Users/walinnsinnovation/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar(**.class)
+-injars /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/WalinnsApi/build/intermediates/intermediate-jars/debug/classes.jar(**.class)
+-injars /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/classes/debug(**.class)
+-outjars /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/multi-dex/debug/componentClasses.jar
+
+-libraryjars /Users/walinnsinnovation/Library/Android/sdk/build-tools/26.0.2/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/multi-dex/debug/components.flags
+
+
+# Referenced at /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:35
+-keep class android.support.multidex.MultiDexApplication {
+    <init>(...);
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.ir.** {
+    <fields>;
+    <methods>;
+}
