@@ -23,6 +23,7 @@ import java.util.TimeZone;
 
 public class WAUtils {
     private static WALog logger = WALog.getLogger();
+    static final int INAPP_CLOSE_IV_WIDTH = 40;
 
     public WAUtils() {
     }

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-117:12
-INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-117:12
-INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-117:12
-INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-117:12
+ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-118:12
+INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-118:12
+INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-118:12
+INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-118:12
 MERGED from [:WalinnsApi] /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/WalinnsApi/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.firebase:firebase-core:9.4.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-core-9.4.0.aar/9189085cf9cd92e7a159c60ceb11a379/AndroidManifest.xml:2:1-6:12
 MERGED from [com.android.support:multidex:1.0.2] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/48380c6807fcd9d020abd0ab66b3c1f0/AndroidManifest.xml:17:1-22:12
@@ -71,22 +71,22 @@ MERGED from [com.android.support:support-core-utils:26.1.0] /Users/walinnsinnova
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/d408a13c8c4c8f6c1a8f28785423783c/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-compat:26.1.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/a08515ba5b46c9700c9a5cbb82adec03/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/49338d3725d9ec5a5da38c6ddd90768a/AndroidManifest.xml:17:1-30:12
-INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-117:12
-INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-117:12
-INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-117:12
+INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-118:12
+INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-118:12
+INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-118:12
 	package
 		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:4:5-49
 		INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-117:12
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-118:12
 		INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-117:12
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-118:12
 		INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:11-69
@@ -205,7 +205,7 @@ MERGED from [com.google.firebase:firebase-iid:9.4.0] /Users/walinnsinnovation/.g
 	android:name
 		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:18:22-65
 application
-ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:20:5-115:19
+ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:20:5-116:19
 MERGED from [:WalinnsApi] /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/WalinnsApi/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:5-15:19
 MERGED from [:WalinnsApi] /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/WalinnsApi/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:5-15:19
 MERGED from [com.google.firebase:firebase-core:9.4.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-core-9.4.0.aar/9189085cf9cd92e7a159c60ceb11a379/AndroidManifest.xml:5:5-20
@@ -377,65 +377,67 @@ ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/sr
 	android:name
 		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:49:13-60
 activity#com.walinns.walinnsapi.InAppNotification
-ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:53:9-55:15
+ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:53:9-56:15
+	android:configChanges
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:55:13-63
 	android:name
 		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:54:13-68
 receiver#com.google.android.gms.gcm.GcmReceiver
-ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:59:9-67:20
+ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:60:9-68:20
 	android:exported
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:61:13-36
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:62:13-36
 	android:permission
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:62:13-73
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:63:13-73
 	android:name
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:60:13-66
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:61:13-66
 intent-filter#com.google.android.c2dm.intent.RECEIVE+com.walinns.walinnsmobileanalytics
-ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:63:13-66:29
+ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:64:13-67:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:64:17-81
+ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:65:17-81
 	android:name
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:64:25-78
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:65:25-78
 category#com.walinns.walinnsmobileanalytics
-ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:65:17-79
+ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:66:17-79
 	android:name
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:65:27-76
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:66:27-76
 service#com.walinns.walinnsapi.WAListenerService
-ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:71:9-77:19
+ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:72:9-78:19
 	android:exported
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:73:13-37
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:74:13-37
 	android:name
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:72:13-68
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:73:13-68
 intent-filter#com.google.android.c2dm.intent.RECEIVE
-ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:74:13-76:29
+ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:75:13-77:29
 service#com.walinns.walinnsapi.WAInstanceIDListenerService
-ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:80:9-86:19
+ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:81:9-87:19
 	android:exported
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:82:13-37
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:83:13-37
 	android:name
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:81:13-78
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:82:13-78
 intent-filter#com.google.android.gms.iid.InstanceID
-ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:83:13-85:29
+ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:84:13-86:29
 action#com.google.android.gms.iid.InstanceID
-ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:84:17-79
+ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:85:17-79
 	android:name
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:84:25-77
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:85:25-77
 service#com.walinns.walinnsapi.WAIntentService
-ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:88:9-91:19
+ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:89:9-92:19
 	android:exported
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:90:13-37
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:91:13-37
 	android:name
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:89:13-66
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:90:13-66
 receiver#com.walinns.walinnsapi.WAInstallRefferer
-ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:107:9-113:20
+ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:108:9-114:20
 	android:exported
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:109:13-36
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:110:13-36
 	android:name
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:108:13-68
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:109:13-68
 intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:110:13-112:29
+ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:111:13-113:29
 action#com.android.vending.INSTALL_REFERRER
-ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:111:17-79
+ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:112:17-79
 	android:name
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:111:25-76
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:112:25-76
 uses-sdk
 INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml

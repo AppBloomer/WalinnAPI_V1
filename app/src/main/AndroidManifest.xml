@@ -52,6 +52,7 @@
 
         <activity
             android:name="com.walinns.walinnsapi.InAppNotification"
+            android:configChanges="orientation|keyboardHidden"
             />
 
 

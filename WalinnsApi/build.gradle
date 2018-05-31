@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.jfrog.bintray'
 ext {
-    bintrayRepo = 'WalinnsAnalytics'
+    bintrayRepo = 'WalinnsTracker'
     bintrayName = 'WalinnsApi'
 
     publishedGroupId = 'com.walinns.walinnsapi'
@@ -80,5 +80,5 @@ dependencies {
 
 }
 apply plugin: "com.google.gms.google-services"
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

@@ -65,7 +65,9 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name="com.walinns.walinnsapi.InAppNotification" />
+        <activity
+            android:name="com.walinns.walinnsapi.InAppNotification"
+            android:configChanges="orientation|keyboardHidden" />
 
         <!-- [START gcm_receiver] -->
         <receiver
