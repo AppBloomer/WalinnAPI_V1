@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="red">#000000</color>
     <string name="app_name">WalinnsAPI</string>
     <string name="default_web_client_id" translatable="false">977100535175-98v24kqefrok1u4dk6vrbdo0ftoljq07.apps.googleusercontent.com</string>
     <string name="firebase_database_url" translatable="false">https://moileanalyticssample.firebaseio.com</string>
@@ -22,6 +23,10 @@
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/red</item>
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
 </resources>

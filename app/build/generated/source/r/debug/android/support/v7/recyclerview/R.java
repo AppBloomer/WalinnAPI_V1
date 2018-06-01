@@ -33,8 +33,8 @@ public final class R {
     public static final class color {
         public static final int notification_action_color_filter = 0x7f060065;
         public static final int notification_icon_bg_color = 0x7f060066;
-        public static final int ripple_material_light = 0x7f060077;
-        public static final int secondary_text_default_material_light = 0x7f060079;
+        public static final int ripple_material_light = 0x7f060078;
+        public static final int secondary_text_default_material_light = 0x7f06007a;
     }
     public static final class dimen {
         public static final int compat_button_inset_horizontal_material = 0x7f070061;
@@ -121,13 +121,13 @@ public final class R {
         public static final int status_bar_notification_info_overflow = 0x7f0e007b;
     }
     public static final class style {
-        public static final int TextAppearance_Compat_Notification = 0x7f0f010d;
-        public static final int TextAppearance_Compat_Notification_Info = 0x7f0f010e;
-        public static final int TextAppearance_Compat_Notification_Line2 = 0x7f0f0110;
-        public static final int TextAppearance_Compat_Notification_Time = 0x7f0f0113;
-        public static final int TextAppearance_Compat_Notification_Title = 0x7f0f0115;
-        public static final int Widget_Compat_NotificationActionContainer = 0x7f0f0194;
-        public static final int Widget_Compat_NotificationActionText = 0x7f0f0195;
+        public static final int TextAppearance_Compat_Notification = 0x7f0f010e;
+        public static final int TextAppearance_Compat_Notification_Info = 0x7f0f010f;
+        public static final int TextAppearance_Compat_Notification_Line2 = 0x7f0f0111;
+        public static final int TextAppearance_Compat_Notification_Time = 0x7f0f0114;
+        public static final int TextAppearance_Compat_Notification_Title = 0x7f0f0116;
+        public static final int Widget_Compat_NotificationActionContainer = 0x7f0f0195;
+        public static final int Widget_Compat_NotificationActionText = 0x7f0f0196;
     }
     public static final class styleable {
         public static final int[] FontFamily = { 0x7f0400bc, 0x7f0400bd, 0x7f0400be, 0x7f0400bf, 0x7f0400c0, 0x7f0400c1 };

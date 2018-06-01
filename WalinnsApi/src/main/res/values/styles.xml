@@ -17,5 +17,9 @@
         <!-- Used for the background -->
         <item name="android:background">#4CAF50</item>
     </style>
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/red</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
 
 </resources>
