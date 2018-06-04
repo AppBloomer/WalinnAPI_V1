@@ -112,7 +112,10 @@ public class InAppNotification extends Activity {
 
 
 
-
+        RelativeLayout relativeLayout = new RelativeLayout(this);
+        RelativeLayout.LayoutParams rel_params = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        rel_params.addRule(RelativeLayout.ALIGN_TOP);
         LinearLayout parentLayout = new LinearLayout(this);
         LinearLayout linearLayout1= new LinearLayout(this);
         LinearLayout linearLayout2= new LinearLayout(this);
@@ -123,8 +126,9 @@ public class InAppNotification extends Activity {
         linearLayout1.setOrientation(VERTICAL);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-        params.gravity = Gravity.CENTER_VERTICAL;
+        params.gravity = Gravity.CENTER;
         parentLayout.setOrientation(VERTICAL);
+        parentLayout.setGravity(Gravity.BOTTOM);
         params.setMargins(25,25,25,25);
         parentLayout.setBackgroundColor(Color.parseColor("#FF4081"));
         TextView textView = new TextView(this);
@@ -145,11 +149,11 @@ public class InAppNotification extends Activity {
 
         ImageView mImage = new ImageView(this);
         mImage.setImageBitmap(WAUtils.StringToBitMap(getIntent().getStringExtra("imageUrl")));
-        linearLayout1.addView(mImage,params);
+        //linearLayout1.addView(mImage,params);
 
 
         Button textView1 = new Button(this);
-        textView1.setText("Title");
+        textView1.setText("ok");
         textView1.setId(1);
         textView1.setGravity(Gravity.CENTER);
         textView1.setTextColor(Color.parseColor("#000000"));
@@ -158,8 +162,8 @@ public class InAppNotification extends Activity {
         linearLayout2.addView(textView1,paramstxt);
 
         Button textView_msg1 = new Button(this);
-        textView_msg1.setText("Message");
-         textView_msg1.setId(2);
+        textView_msg1.setText("Cancel");
+        textView_msg1.setId(2);
         textView_msg1.setGravity(Gravity.CENTER);
         textView_msg1.setTextColor(Color.parseColor("#000000"));
         textView_msg1.setBackgroundColor(Color.parseColor("#FFFFFF"));
@@ -167,11 +171,12 @@ public class InAppNotification extends Activity {
         paramstxt1.setMargins(15,0,0,0);
         linearLayout2.addView(textView_msg1,paramstxt1);
 
-        parentLayout.addView(linearLayout1, params);
-        parentLayout.addView(linearLayout2, params);
+         parentLayout.addView(linearLayout1, params);
+         parentLayout.addView(linearLayout2, params);
+        relativeLayout.addView(parentLayout,rel_params);
+        relativeLayout.setGravity(Gravity.BOTTOM);
 
-
-         setContentView(parentLayout);
+         setContentView(relativeLayout);
 
 
 

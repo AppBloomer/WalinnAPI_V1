@@ -545,17 +545,17 @@ public final class R {
         public static final int CastIntroOverlay = 0x7f0f00ae;
         public static final int CastMiniController = 0x7f0f00af;
         public static final int CustomCastTheme = 0x7f0f00b0;
-        public static final int TextAppearance_CastIntroOverlay_Button = 0x7f0f010a;
-        public static final int TextAppearance_CastIntroOverlay_Title = 0x7f0f010b;
-        public static final int TextAppearance_CastMiniController_Subtitle = 0x7f0f010c;
-        public static final int TextAppearance_CastMiniController_Title = 0x7f0f010d;
-        public static final int Theme_AppInvite_Preview = 0x7f0f0137;
-        public static final int Theme_AppInvite_Preview_Base = 0x7f0f0138;
-        public static final int Theme_IAPTheme = 0x7f0f013f;
-        public static final int WalletFragmentDefaultButtonTextAppearance = 0x7f0f0149;
-        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance = 0x7f0f014a;
-        public static final int WalletFragmentDefaultDetailsTextAppearance = 0x7f0f014b;
-        public static final int WalletFragmentDefaultStyle = 0x7f0f014c;
+        public static final int TextAppearance_CastIntroOverlay_Button = 0x7f0f0109;
+        public static final int TextAppearance_CastIntroOverlay_Title = 0x7f0f010a;
+        public static final int TextAppearance_CastMiniController_Subtitle = 0x7f0f010b;
+        public static final int TextAppearance_CastMiniController_Title = 0x7f0f010c;
+        public static final int Theme_AppInvite_Preview = 0x7f0f0136;
+        public static final int Theme_AppInvite_Preview_Base = 0x7f0f0137;
+        public static final int Theme_IAPTheme = 0x7f0f013e;
+        public static final int WalletFragmentDefaultButtonTextAppearance = 0x7f0f0148;
+        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance = 0x7f0f0149;
+        public static final int WalletFragmentDefaultDetailsTextAppearance = 0x7f0f014a;
+        public static final int WalletFragmentDefaultStyle = 0x7f0f014b;
     }
     public static final class styleable {
         public static final int[] AdsAttrs = { 0x7f040022, 0x7f040023, 0x7f040024 };

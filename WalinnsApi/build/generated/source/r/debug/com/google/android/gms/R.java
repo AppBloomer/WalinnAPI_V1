@@ -545,17 +545,17 @@ public final class R {
         public static int CastIntroOverlay = 0x7f1600ab;
         public static int CastMiniController = 0x7f1600ac;
         public static int CustomCastTheme = 0x7f1600ad;
-        public static int TextAppearance_CastIntroOverlay_Button = 0x7f160108;
-        public static int TextAppearance_CastIntroOverlay_Title = 0x7f160109;
-        public static int TextAppearance_CastMiniController_Subtitle = 0x7f16010a;
-        public static int TextAppearance_CastMiniController_Title = 0x7f16010b;
-        public static int Theme_AppInvite_Preview = 0x7f160141;
-        public static int Theme_AppInvite_Preview_Base = 0x7f160142;
-        public static int Theme_IAPTheme = 0x7f160149;
-        public static int WalletFragmentDefaultButtonTextAppearance = 0x7f16014c;
-        public static int WalletFragmentDefaultDetailsHeaderTextAppearance = 0x7f16014d;
-        public static int WalletFragmentDefaultDetailsTextAppearance = 0x7f16014e;
-        public static int WalletFragmentDefaultStyle = 0x7f16014f;
+        public static int TextAppearance_CastIntroOverlay_Button = 0x7f160107;
+        public static int TextAppearance_CastIntroOverlay_Title = 0x7f160108;
+        public static int TextAppearance_CastMiniController_Subtitle = 0x7f160109;
+        public static int TextAppearance_CastMiniController_Title = 0x7f16010a;
+        public static int Theme_AppInvite_Preview = 0x7f160140;
+        public static int Theme_AppInvite_Preview_Base = 0x7f160141;
+        public static int Theme_IAPTheme = 0x7f160148;
+        public static int WalletFragmentDefaultButtonTextAppearance = 0x7f16014b;
+        public static int WalletFragmentDefaultDetailsHeaderTextAppearance = 0x7f16014c;
+        public static int WalletFragmentDefaultDetailsTextAppearance = 0x7f16014d;
+        public static int WalletFragmentDefaultStyle = 0x7f16014e;
     }
     public static final class styleable {
         public static int[] AdsAttrs = { 0x7f040023, 0x7f040024, 0x7f040025 };
