@@ -1438,10 +1438,11 @@ int id url 0x7f09012c
 int id useLogo 0x7f09012d
 int id view_offset_helper 0x7f09012e
 int id visible 0x7f09012f
-int id wide 0x7f090130
-int id withText 0x7f090131
-int id wrap 0x7f090132
-int id wrap_content 0x7f090133
+int id webView 0x7f090130
+int id wide 0x7f090131
+int id withText 0x7f090132
+int id wrap 0x7f090133
+int id wrap_content 0x7f090134
 int integer abc_config_activityDefaultDur 0x7f0a0000
 int integer abc_config_activityShortDur 0x7f0a0001
 int integer app_bar_elevation_anim_duration 0x7f0a0002

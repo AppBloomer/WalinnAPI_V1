@@ -1,6 +1,8 @@
 package com.walinns.walinnsmobileanalytics;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,7 +15,11 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
+import android.view.MotionEvent;
 import android.view.View;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 import com.walinns.walinnsapi.WalinnsAPI;
@@ -26,6 +32,9 @@ import java.util.List;
 
 public class Main2Activity extends AppCompatActivity {
     private static final int READ_CONTACTS_PERMISSIONS_REQUEST = 1;
+    WebView webView;
+    private float m_downX;
+    private String postUrl = "https://jsonformatter.curiousconcept.com/";
 
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -36,7 +45,7 @@ public class Main2Activity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);//b2bac52c84ea0f0a4139fbaecf99936e
         WalinnsAPI.getInstance().initialize(Main2Activity.this,"b9d2e92935000ffd585cc3092f9b03cd");
-
+        webView = (WebView) findViewById(R.id.webView);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,15 +57,30 @@ public class Main2Activity extends AppCompatActivity {
        // getPermissionToReadUserContacts();
 
         System.out.println("MainActivity ip address:" + getMobileIPAddress() );
-        WalinnsAPI.getInstance().track("ScreenName");
+//        WalinnsAPI.getInstance().track("ScreenName");
+//
+//        Intent i = new Intent("com.android.vending.INSTALL_REFERRER");
+//        i.putExtra("referrer","utm_source=linkedin&utm_medium=banner&utm_campaign=newinstall");
+////Set Package name
+//        i.setPackage("com.walinns.walinnsmobileanalytics");
+////referrer is a composition of the parameter of the campaing
+//
+//        sendBroadcast(i);
+       // initWebView();
+       //  renderPost();
 
-        Intent i = new Intent("com.android.vending.INSTALL_REFERRER");
-        i.putExtra("referrer","utm_source=linkedin&utm_medium=banner&utm_campaign=newinstall");
-//Set Package name
-        i.setPackage("com.walinns.walinnsmobileanalytics");
-//referrer is a composition of the parameter of the campaing
+        ActivityInfo activityInfo = null;
+        try {
+            activityInfo = getPackageManager().getActivityInfo(
+                    getComponentName(), PackageManager.GET_META_DATA);
+            String title = activityInfo.loadLabel(getPackageManager())
+                    .toString();
+            System.out.println("Activity name :" + title);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
 
-        sendBroadcast(i);
+
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -113,5 +137,100 @@ public class Main2Activity extends AppCompatActivity {
             }
         } catch (Exception ex) { } // for now eat exceptions
         return "";
+    }
+    private void initWebView() {
+        webView.setWebChromeClient(new MyWebChromeClient(this));
+        webView.setWebViewClient(new WebViewClient() {
+
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                /**
+                 * Check for the url, if the url is from same domain
+                 * open the url in the same activity as new intent
+                 * else pass the url to browser activity
+                 * */
+                if (isSameDomain(postUrl, url)) {
+                    Intent intent = new Intent(Main2Activity.this, Main2Activity.class);
+                    intent.putExtra("postUrl", url);
+                    startActivity(intent);
+                } else {
+                    // launch in-app browser i.e BrowserActivity
+                  //  openInAppBrowser(url);
+                }
+
+                return true;
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+             }
+        });
+        webView.clearCache(true);
+        webView.clearHistory();
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setHorizontalScrollBarEnabled(false);
+        webView.setOnTouchListener(new View.OnTouchListener() {
+            public boolean onTouch(View v, MotionEvent event) {
+
+                if (event.getPointerCount() > 1) {
+                    //Multi touch detected
+                    return true;
+                }
+
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_DOWN: {
+                        // save the x
+                        m_downX = event.getX();
+                    }
+                    break;
+
+                    case MotionEvent.ACTION_MOVE:
+                    case MotionEvent.ACTION_CANCEL:
+                    case MotionEvent.ACTION_UP: {
+                        // set x so that it doesn't move
+                        event.setLocation(m_downX, event.getY());
+                    }
+                    break;
+
+                }
+
+                return false;
+            }
+        });
+    }
+
+    private void renderPost() {
+        webView.loadUrl(postUrl);
+
+        // webView.loadUrl("file:///android_asset/sample.html");
+    }
+    private class MyWebChromeClient extends WebChromeClient {
+        Context context;
+
+        public MyWebChromeClient(Context context) {
+            super();
+            this.context = context;
+        }
+
+
+    }
+    public static boolean isSameDomain(String url, String url1) {
+        return getRootDomainUrl(url.toLowerCase()).equals(getRootDomainUrl(url1.toLowerCase()));
+    }
+
+    private static String getRootDomainUrl(String url) {
+        String[] domainKeys = url.split("/")[2].split("\\.");
+        int length = domainKeys.length;
+        int dummy = domainKeys[0].equals("www") ? 1 : 0;
+        if (length - dummy == 2)
+            return domainKeys[length - 2] + "." + domainKeys[length - 1];
+        else {
+            if (domainKeys[length - 1].length() == 2) {
+                return domainKeys[length - 3] + "." + domainKeys[length - 2] + "." + domainKeys[length - 1];
+            } else {
+                return domainKeys[length - 2] + "." + domainKeys[length - 1];
+            }
+        }
     }
 }

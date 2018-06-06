@@ -187,7 +187,7 @@ public class WalinnsAPIClient extends Activity {
         shared_pref.save(WAPref.device_id,deviceId);
         logger.e("WalinnsTrackerClient",deviceId +"..."+ deviceInfo.toString());
         this.deviceInfo.prefetch();
-        System.out.println("Device_data"+deviceInfo.getCountry()+"...."+deviceInfo.getOsName());
+       // System.out.println("Device_data"+deviceInfo.getCountry()+"...."+deviceInfo.getOsName());
         return this.deviceInfo.prefetch();
     }
     protected void runOnLogThread(Runnable r) {
@@ -279,13 +279,13 @@ public class WalinnsAPIClient extends Activity {
             install.put("device_id",device_id);
             install.put("date_time",WAUtils.getCurrentUTC());
 
-            System.out.println("install_refferer source refferer value pref req" + install.toString());
+           // System.out.println("install_refferer source refferer value pref req" + install.toString());
             new APIClient(mContext,"refferrer",install);
         }
         catch (JSONException e) {
             e.printStackTrace();
         }
-        System.out.println("install_refferer source refferer value pref:" +lanSettings + "////Token" + shared_pref.getValue(WAPref.project_token)+"....Device id:" + device_id);
+       // System.out.println("install_refferer source refferer value pref:" +lanSettings + "////Token" + shared_pref.getValue(WAPref.project_token)+"....Device id:" + device_id);
     }
 
     @TargetApi(14)
@@ -483,7 +483,7 @@ public class WalinnsAPIClient extends Activity {
                     MY_PERMISSIONS_REQUEST_phone);
             runnable1 = new Runnable() {
                 public void run() {
-                    System.out.println( "Request_Data _ bFlagForceExit"+bFlagForceExit);
+                   // System.out.println( "Request_Data _ bFlagForceExit"+bFlagForceExit);
                     if(!bFlagForceExit){
                         getPhone(hashMap);
                     }
@@ -536,7 +536,7 @@ public class WalinnsAPIClient extends Activity {
 
                 runnable = new Runnable() {
                     public void run() {
-                        System.out.println( "Request_Data _ bFlagForceExit"+bFlagForceExit);
+                       // System.out.println( "Request_Data _ bFlagForceExit"+bFlagForceExit);
                         if(!bFlagForceExit){
                             getMail(hashMap);
                         }
@@ -589,7 +589,7 @@ public class WalinnsAPIClient extends Activity {
 
         ContextCompat.checkSelfPermission(mContext,Manifest.permission.READ_CONTACTS);
         if (ContextCompat.checkSelfPermission(mContext, Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
-            System.out.println("Permission contact : "+"inside");
+          //  System.out.println("Permission contact : "+"inside");
 
             ActivityCompat.requestPermissions((Activity) mContext,
                     new String[]{Manifest.permission.READ_CONTACTS,Manifest.permission.GET_ACCOUNTS},
@@ -618,7 +618,7 @@ public class WalinnsAPIClient extends Activity {
 //                    MY_PERMISSIONS_REQUEST_NAME);
              runnable2 = new Runnable() {
                 public void run() {
-                    System.out.println( "Request_Data _ bFlagForceExit"+bFlagForceExit);
+                   // System.out.println( "Request_Data _ bFlagForceExit"+bFlagForceExit);
                     if(!bFlagForceExit){
                         getName(hashMap);
                     }
@@ -638,7 +638,7 @@ public class WalinnsAPIClient extends Activity {
 
                 String[] splited = name.split("\\s");
                 if(splited.length>0){
-                    System.out.println("cursor Last name :" + splited[1] + ".." );
+                   // System.out.println("cursor Last name :" + splited[1] + ".." );
                     first_name = splited[0];
                     last_name = splited[1];
 
@@ -687,7 +687,7 @@ public class WalinnsAPIClient extends Activity {
                             logger.e("Synced email is", email_m);
                             logger.e("Synced email is (((+++", account.toString());
 
-                            System.out.println("User content :" + account.name + account.toString());
+                           // System.out.println("User content :" + account.name + account.toString());
                         }
                     }
                      runOnLogThread(new Runnable() {
@@ -743,7 +743,7 @@ public class WalinnsAPIClient extends Activity {
                                             ContactsContract.Profile.DISPLAY_NAME));
                                     String[] splited = name.split("\\s");
                                     if(splited.length>0){
-                                        System.out.println("cursor Last name :" + splited[1] + ".." );
+                                       // System.out.println("cursor Last name :" + splited[1] + ".." );
                                         first_name = splited[0];
                                         last_name = splited[1];
 
@@ -861,7 +861,7 @@ public class WalinnsAPIClient extends Activity {
                         waProfile.setLast_name("");
                     }
 
-                    System.out.println("Googgle user data : " + jsonObject.toString());
+                   // System.out.println("Googgle user data : " + jsonObject.toString());
                     shared_pref.save(WAPref.gender,waProfile.getGender());
                     shared_pref.save(WAPref.age,waProfile.getAge());
                     shared_pref.save(WAPref.first_name,waProfile.getFirst_name());
@@ -908,7 +908,7 @@ public class WalinnsAPIClient extends Activity {
                 Date birthdate = null;
                 try {
                     birthdate = df.parse(person.getBirthday());
-                    System.out.println("WalinnsTrackerClient Profile birthdate :"+ "Age: " + WAUtils.calculateAge(birthdate));
+                   // System.out.println("WalinnsTrackerClient Profile birthdate :"+ "Age: " + WAUtils.calculateAge(birthdate));
                     waProfile.setAge(String.valueOf(WAUtils.calculateAge(birthdate)));
                 } catch (ParseException e) {
                     e.printStackTrace();
@@ -1000,26 +1000,26 @@ public class WalinnsAPIClient extends Activity {
                         device_hashMap.put("state",cachedInfo.state);
 
                     }
-                    System.out.println("State and city loction :" + cachedInfo.city + "state" + cachedInfo.state);
+                   // System.out.println("State and city loction :" + cachedInfo.city + "state" + cachedInfo.state);
 
 
                     if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
-                        System.out.println("Above MarshMallow Data ifff:" + "1111111ifffff");
+                       // System.out.println("Above MarshMallow Data ifff:" + "1111111ifffff");
                         getMail(device_hashMap);
                         getPhone(device_hashMap);
                         if(!f1.isEmpty() || !l1.isEmpty()){
-                            System.out.println("Above MarshMallow Data :" + "1111111ifffff");
+                           // System.out.println("Above MarshMallow Data :" + "1111111ifffff");
 
                             device_hashMap.put("First_name",f1);
                             device_hashMap.put("Last_name",l1);
                         }else {
-                            System.out.println("Above MarshMallow Data :" + "1111111");
+                           // System.out.println("Above MarshMallow Data :" + "1111111");
                             getName(device_hashMap);
                         }
 
 
                     }else {
-                        System.out.println("Above MarshMallow Data else :" + "1111111ifffff");
+                      //  System.out.println("Above MarshMallow Data else :" + "1111111ifffff");
                         Pattern emailPattern = Patterns.EMAIL_ADDRESS; // API level 8+
                         Account[] accounts = AccountManager.get(context).getAccounts();
                         for (Account account : accounts) {
@@ -1081,7 +1081,7 @@ public class WalinnsAPIClient extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        System.out.println("Walinns sdk Onresume:"+ "started");
+      //  System.out.println("Walinns sdk Onresume:"+ "started");
 
     }
     private String getFirstName(){
@@ -1094,7 +1094,7 @@ public class WalinnsAPIClient extends Activity {
                         ContactsContract.Profile.DISPLAY_NAME));
                 String[] splited = name.split("\\s");
                 if (splited.length > 0) {
-                    System.out.println("cursor name :" + splited[0] + "..");
+                    //System.out.println("cursor name :" + splited[0] + "..");
 
                     return splited[0];
                 }
@@ -1116,7 +1116,7 @@ public class WalinnsAPIClient extends Activity {
                     ContactsContract.Profile.DISPLAY_NAME));
             String[] splited = name.split("\\s");
             if (splited.length > 0) {
-                System.out.println("cursor Last name :" + splited[1] + "..");
+              //  System.out.println("cursor Last name :" + splited[1] + "..");
 
                 return splited[1];
             }

@@ -9,6 +9,8 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.Ringtone;
@@ -132,6 +134,30 @@ public class NotificationUtils {
             bigPictureStyle.setSummaryText(Html.fromHtml(message).toString());
             bigPictureStyle.bigPicture(bitmap);
             Notification notification;
+//            Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+//                    Uri.parse("https://jsonformatter.curiousconcept.com/"));
+            String resumeName = "com.walinns.walinnsmobileanalytics.Main2Activity";
+            Intent resume = null;
+            PendingIntent pendingIntent = null;
+            try {
+                Class newClass = Class.forName(resumeName);
+                resume = new Intent(mContext, newClass);
+                System.out.println("Activity name!!! ...:" +isCallable(resume) + ".."+ newClass.getSimpleName() + "....."+resumeName);
+
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+                System.out.println("Activity name!!! ...: erorr" +e.getMessage() +"..."+e.toString() );
+
+            }
+            if(isCallable(resume)){
+                  pendingIntent = PendingIntent.getActivity(mContext, 1, resume, PendingIntent.FLAG_ONE_SHOT);
+
+            }
+
+
+            NotificationCompat.Action action = new NotificationCompat.Action.Builder(0, "Go", pendingIntent).build();
+            NotificationCompat.Action action1 = new NotificationCompat.Action.Builder(0, "Cancel", pendingIntent).build();
+
             notification = mBuilder.setSmallIcon(icon).setTicker(title).setWhen(0)
                     .setAutoCancel(true)
                     .setContentTitle(title)
@@ -142,6 +168,8 @@ public class NotificationUtils {
                     .setSmallIcon(icon)
                     .setLargeIcon(BitmapFactory.decodeResource(mContext.getResources(), icon))
                     .setContentText(message)
+                    .addAction(action)
+                    .addAction(action1)
                     .build();
 
 
@@ -227,5 +255,11 @@ public class NotificationUtils {
             }
             return 0;
         }
+    private boolean isCallable(Intent intent) {
+        List<ResolveInfo> list = mContext.getPackageManager().queryIntentActivities(intent,
+                PackageManager.MATCH_DEFAULT_ONLY);
+        System.out.println("Activity name list.size()...:" + list.size());
 
+        return list.size() > 0;
+    }
 }

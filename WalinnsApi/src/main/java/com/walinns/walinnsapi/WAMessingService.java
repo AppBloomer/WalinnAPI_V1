@@ -131,26 +131,28 @@ public class WAMessingService extends FirebaseMessagingService {
     private void handleDataMessage(Map<String, String> data) {
         Log.e(TAG, "push json: " + data.toString());
 
-        try {
-           // JSONObject data = json.getJSONObject("data");
 
-//            String title = data.getString("title");
-//            String message = data.getString("message");
-//            boolean isBackground = data.getBoolean("is_background");
-//            String imageUrl = data.getString("image");
-//             String timestamp = data.getString("timestamp");
-           // JSONObject payload = data.getJSONObject("payload");
+
+        try {
+
             String title = data.get("title");
             String message = data.get("message");
             String imageUrl = data.get("image");
-            boolean isBackground = false;
             String timestamp = data.get ("timestamp");
+            String ui_type = data.get("ui_type");
+            String btn_1_name = data.get("btn_1_name");
+            String deep_link = data.get("deep_link");
+            String btn_2_name = data.get("btn_2_name");
+            String bg_color = data.get("bg_color");
+            String btn_1_color = data.get("btn_1_color");
+            String btn_2_color = data.get("btn_2_color");
+            String external_link = data.get("external_link");
+
             Log.e(TAG, "title: " + title);
             Log.e(TAG, "message: " + message);
-            Log.e(TAG, "isBackground: " + isBackground);
-           // Log.e(TAG, "payload: " + payload.toString());
             Log.e(TAG, "imageUrl: " + imageUrl);
-           Log.e(TAG, "timestamp: " + timestamp);
+            Log.e(TAG, "timestamp: " + timestamp);
+            Log.e(TAG, "ui_type: " + ui_type);
 
 
             if (!NotificationUtils.isAppIsInBackground(getApplicationContext())) {
@@ -161,6 +163,14 @@ public class WAMessingService extends FirebaseMessagingService {
                 intent.putExtra("title",title);
                 intent.putExtra("message",message);
                 intent.putExtra("imageUrl",imageUrl);
+                intent.putExtra("ui_type",ui_type);
+                intent.putExtra("btn_1_name",btn_1_name);
+                intent.putExtra("deep_link",deep_link);
+                intent.putExtra("btn_2_name",btn_2_name);
+                intent.putExtra("bg_color",bg_color);
+                intent.putExtra( "btn_1_color",btn_1_color);
+                intent.putExtra("btn_2_color",btn_2_color);
+                intent.putExtra("external_link",external_link);
                 getApplicationContext().startActivity(intent);
 
 

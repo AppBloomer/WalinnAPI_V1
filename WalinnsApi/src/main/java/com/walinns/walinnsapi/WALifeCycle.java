@@ -60,7 +60,7 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
 
             logger.e("WAClient", "app_launch" + waPref.getValue(WAPref.app_launch_count));
             WALifeCycle.this.mInstance.track("default_event","App Launch");
-
+            WALifeCycle.this.mInstance.track("default_event","App Screen Viewed");
             if(waPref.getValue(WAPref.app_install)!=null && !waPref.getValue(WAPref.app_install).isEmpty()){
                 logger.e("WAClient", "app_install " + waPref.getValue(WAPref.app_install));
 
@@ -116,7 +116,7 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
 
 
         WALifeCycle.this.mInstance.track("default_event","App Launch");
-
+        WALifeCycle.this.mInstance.track("default_event","App Screen Viewed");
     }
 
     @Override
@@ -150,7 +150,7 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
                             sessionProperties.put("$ae_session_length", sessionLengthString);
                             sessionProperties.put("$start_time", WALifeCycle.starttime);
                             sessionProperties.put("$end_time", WAUtils.getCurrentUTC());
-                             WALifeCycle.this.mInstance.track_("$ae_session", sessionProperties, true);
+                            WALifeCycle.this.mInstance.track_("$ae_session", sessionProperties, true);
                             WALifeCycle.this.mInstance.track_(WAUtils.getCurrentUTC(), false);
                             //waClient.disconnect();
 
@@ -189,46 +189,6 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
 
 
     }
-   /* protected void SocketConnection(final String project_token){
 
-        System.out.println("SocketConnection" + "inside method" + project_token);
-
-
-        waClient.setClientCallback(new WAClient.ClientCallback() {
-            @Override
-            public void onMessage(String message) {
-                System.out.println("Socket_connection_msg" + message);
-            }
-
-            @Override
-            public void onConnect(Socket sockett) {
-                try {
-                    JSONObject jsonObject=new JSONObject();
-                    jsonObject.put("project_token" ,project_token);
-
-                    waClient.send(project_token);
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-                System.out.println("Socket_connection" + sockett.isConnected());
-                //socket.disconnect();
-
-
-            }
-
-            @Override
-            public void onDisconnect(Socket socket, String message) {
-                System.out.println("Socket_connection_disconnect" + socket.isConnected()+ message);
-            }
-
-            @Override
-            public void onConnectError(Socket socket, String message) {
-                System.out.println("Socket_connection_error" + message);
-            }
-        });
-        waClient.connect();
-    }*/
 
 }

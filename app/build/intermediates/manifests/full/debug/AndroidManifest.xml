@@ -39,6 +39,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.walinns.walinnsmobileanalytics.Main2Activity"
@@ -68,44 +69,45 @@
         <activity
             android:name="com.walinns.walinnsapi.InAppNotification"
             android:configChanges="orientation|keyboardHidden"
-            android:theme="@style/inAppStyle" />
+            android:theme="@style/inAppStyle" >
+        </activity>
 
-        <!-- [START gcm_receiver] -->
-        <receiver
-            android:name="com.google.android.gms.gcm.GcmReceiver"
-            android:exported="true"
-            android:permission="com.google.android.c2dm.permission.SEND" >
-            <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+        <!-- &lt;!&ndash; [START gcm_receiver] &ndash;&gt; -->
+        <!-- <receiver -->
+        <!-- android:name="com.google.android.gms.gcm.GcmReceiver" -->
+        <!-- android:exported="true" -->
+        <!-- android:permission="com.google.android.c2dm.permission.SEND" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.android.c2dm.intent.RECEIVE" /> -->
+        <!-- <category android:name="com.walinns.walinnsmobileanalytics" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- &lt;!&ndash; [END gcm_receiver] &ndash;&gt; -->
 
-                <category android:name="com.walinns.walinnsmobileanalytics" />
-            </intent-filter>
-        </receiver>
-        <!-- [END gcm_receiver] -->
 
+        <!-- &lt;!&ndash; [START gcm_listener] &ndash;&gt; -->
+        <!-- <service -->
+        <!-- android:name="com.walinns.walinnsapi.WAListenerService" -->
+        <!-- android:exported="false" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.android.c2dm.intent.RECEIVE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <!-- &lt;!&ndash; [END gcm_listener] &ndash;&gt; -->
+        <!-- &lt;!&ndash; [START instanceId_listener] &ndash;&gt; -->
+        <!-- <service -->
+        <!-- android:name="com.walinns.walinnsapi.WAInstanceIDListenerService" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.android.gms.iid.InstanceID"/> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <!-- &lt;!&ndash; [END instanceId_listener] &ndash;&gt; -->
+        <!-- <service -->
+        <!-- android:name="com.walinns.walinnsapi.WAIntentService" -->
+        <!-- android:exported="false"> -->
+        <!-- </service> -->
 
-        <!-- [START gcm_listener] -->
-        <service
-            android:name="com.walinns.walinnsapi.WAListenerService"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-            </intent-filter>
-        </service>
-        <!-- [END gcm_listener] -->
-        <!-- [START instanceId_listener] -->
-        <service
-            android:name="com.walinns.walinnsapi.WAInstanceIDListenerService"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="com.google.android.gms.iid.InstanceID" />
-            </intent-filter>
-        </service>
-        <!-- [END instanceId_listener] -->
-        <service
-            android:name="com.walinns.walinnsapi.WAIntentService"
-            android:exported="false" >
-        </service>
 
         <!-- <service -->
         <!-- android:name="com.clevertap.android.sdk.FcmTokenListenerService"> -->

@@ -26,7 +26,10 @@ public class WAConfig {
     private final int mMinSessionDuration;
     private final int mSessionTimeoutDuration;
     public static final String TOPIC_GLOBAL = "global";
-
+    public static final String INAPP_X_PERCENT = "xp";
+    public static final String INAPP_Y_PERCENT = "yp";
+    public static final String INAPP_X_DP = "xdp";
+    public static final String INAPP_Y_DP = "ydp";
     // broadcast receiver intent filters
     public static final String REGISTRATION_COMPLETE = "registrationComplete";
     public static final String PUSH_NOTIFICATION = "pushNotification";

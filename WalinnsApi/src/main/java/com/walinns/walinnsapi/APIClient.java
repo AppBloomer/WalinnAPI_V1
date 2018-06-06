@@ -26,8 +26,7 @@ public class APIClient {
     public Context mContext;
     public String mUrl;
     public JSONObject mjsonObject;
-    static String URL="http://ec2-18-218-30-6.us-east-2.compute.amazonaws.com:8888/";
-   // static String URL = "http://192.168.0.3:8080/";
+    static String URL="https://wa.track.app.walinns.com/";
     protected WALifeCycle mWalinnsactivitylifecycle;
 
     public APIClient(Context context){
@@ -64,7 +63,7 @@ public class APIClient {
             writer.close();
             os.close();
 
-            logger.e("Http_connection_request_data",flag_once+"..."+conn.toString()+"..."+sharedPref.getValue(WAPref.project_token));
+            logger.e("Http_connection_request_data",sharedPref.getValue(WAPref.project_token));
 
             int responseCode=conn.getResponseCode();
 
@@ -76,7 +75,7 @@ public class APIClient {
                     WalinnsAPIClient walinnsTrackerClient=new WalinnsAPIClient(mContext);
                     walinnsTrackerClient.lifeCycle(sharedPref.getValue(WAPref.project_token));
                 }
-                logger.e("WalinnsTrackerHttpConnection","Sucess" + mUrl + conn.getResponseMessage());
+                logger.e("WalinnsTrackerHttpConnection", conn.getResponseMessage());
 
             }else {
                 logger.e("WalinnsTrackerHttpConnection","Fail");
