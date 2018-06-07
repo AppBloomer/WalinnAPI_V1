@@ -53,7 +53,7 @@
         <activity
             android:name="com.walinns.walinnsapi.InAppNotification"
             android:configChanges="orientation|keyboardHidden"
-            android:theme="@style/inAppStyle">
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
 
         </activity>
 

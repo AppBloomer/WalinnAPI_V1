@@ -14,6 +14,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Point;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.LayerDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
@@ -30,6 +33,7 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.webkit.CookieManager;
 import android.webkit.DownloadListener;
@@ -42,6 +46,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RatingBar;
 import android.widget.RelativeLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -63,8 +68,6 @@ public class InAppNotification extends Activity implements View.OnClickListener 
     String image_url,btn_name,btn_name_sec,title,message;
     String bg_clr,btn1_color,btn_2_color;
 
-
-
     // private final GestureDetector gd = new GestureDetector(new GestureListener());
 
     Bitmap bitmap;
@@ -77,9 +80,6 @@ public class InAppNotification extends Activity implements View.OnClickListener 
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
-
-
-
 
 
         if(getIntent().getStringExtra("imageUrl")!=null && !getIntent().getStringExtra("imageUrl").isEmpty()){
@@ -135,55 +135,38 @@ public class InAppNotification extends Activity implements View.OnClickListener 
     private void inAppData(String ui_type) {
         switch (ui_type){
             case "footer":
-                setView(RelativeLayout.ALIGN_PARENT_BOTTOM);
+                setView(RelativeLayout.ALIGN_PARENT_BOTTOM,RelativeLayout.LayoutParams.WRAP_CONTENT,"footer");
                 break;
             case "full":
-                //setView1(RelativeLayout.CENTER_IN_PARENT);
+                setView(RelativeLayout.CENTER_IN_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT,"full");
                 break;
             case "header":
+                setView(RelativeLayout.ALIGN_PARENT_TOP,RelativeLayout.LayoutParams.WRAP_CONTENT,"header");
                 break;
         }
     }
-    private void setView1(int type){
-//        RelativeLayout relativeLayout = new RelativeLayout(this);
-//        LinearLayout linearLayout = new LinearLayout(this);
-//        RelativeLayout.LayoutParams rel_params = new RelativeLayout
-//                .LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,
-//                RelativeLayout.LayoutParams.WRAP_CONTENT);
-//        LinearLayout.LayoutParams paramstxt = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT, 1f);
-//        linearLayout.setOrientation(LinearLayout.HORIZONTAL);
-//        paramstxt.gravity = RelativeLayout.ALIGN_PARENT_BOTTOM;
-//        relativeLayout.setBackgroundColor(Color.parseColor("#FF4081"));
-//        paramstxt.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-//        Button textView1 = new Button(this);
-//        textView1.setText("ok");
-//        textView1.setId(1);
-//        textView1.setGravity(Gravity.CENTER);
-//        textView1.setTextColor(Color.parseColor("#000000"));
-//        textView1.setBackgroundColor(Color.parseColor("#FFFFFF"));
-//        linearLayout.addView(textView1,paramstxt);
-//
-//        Button textView_msg1 = new Button(this);
-//        textView_msg1.setText("Cancel");
-//        textView_msg1.setId(2);
-//        textView_msg1.setGravity(Gravity.CENTER);
-//        textView_msg1.setTextColor(Color.parseColor("#000000"));
-//        textView_msg1.setBackgroundColor(Color.parseColor("#FFFFFF"));
-//        paramstxt.setMargins(15,0,0,0);
-//        linearLayout.addView(textView_msg1,paramstxt);
-//        relativeLayout.addView(linearLayout,rel_params);
-//
-//        setContentView(relativeLayout);
-    }
+//    private void setView1(int type){
+//        LinearLayout linearLayout_parent = new LinearLayout(this);
+//        LinearLayout.LayoutParams params_parent = new LinearLayout.LayoutParams(
+//                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+//        ImageView imageView = new ImageView(this);
+//        imageView.setImageBitmap(WAUtils.StringToBitMap(getIntent().getStringExtra("imageUrl")));
+//        linearLayout_parent.addView(imageView,params_parent);
+//        setContentView(linearLayout_parent);
+//    }
 
-    private void setView(int type){
+    private void setView(int type,int height,String char_type){
         RelativeLayout relativeLayout = new RelativeLayout(this);
 
         RelativeLayout.LayoutParams rel_params = new RelativeLayout
                 .LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,
-                RelativeLayout.LayoutParams.WRAP_CONTENT);
+                height);
         rel_params.addRule(type);
-        rel_params.setMargins(0, 0, 0, 0);
+        if(char_type.equals("full")){
+            rel_params.setMargins(15, 15, 15, 15);
+        }else {
+            rel_params.setMargins(0, 0, 0, 0);
+        }
 
 
         LinearLayout parentLayout = new LinearLayout(this);
@@ -193,7 +176,7 @@ public class InAppNotification extends Activity implements View.OnClickListener 
         linearLayout2.setWeightSum(2);
         linearLayout2.setBackgroundColor(Color.TRANSPARENT);
         linearLayout2.setGravity(Gravity.BOTTOM);
-         linearLayout1.setBackgroundColor(Color.TRANSPARENT);
+        linearLayout1.setBackgroundColor(Color.TRANSPARENT);
         linearLayout1.setOrientation(VERTICAL);
         linearLayout1.setGravity(Gravity.TOP);
 
@@ -221,9 +204,26 @@ public class InAppNotification extends Activity implements View.OnClickListener 
         textView_msg.setBackgroundColor(Color.TRANSPARENT);
         linearLayout1.addView(textView_msg,params);
 
-        ImageView mImage = new ImageView(this);
-        mImage.setImageBitmap(WAUtils.StringToBitMap(getIntent().getStringExtra("imageUrl")));
-        linearLayout1.addView(mImage,params);
+        if(getIntent().getStringExtra("imageUrl")!=null&&!getIntent().getStringExtra("imageUrl").isEmpty()){
+            ImageView mImage = new ImageView(this);
+            mImage.setImageBitmap(WAUtils.StringToBitMap(getIntent().getStringExtra("imageUrl")));
+            linearLayout1.addView(mImage,params);
+        }
+
+        final RatingBar ratingBar = new RatingBar(this);
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        ratingBar.setLayoutParams(layoutParams);
+        ratingBar.setMax(5);
+        ratingBar.setNumStars(5);
+ //        Drawable drawable = ratingBar.getProgressDrawable();
+//        drawable.setColorFilter(Color.parseColor("#d18811"), PorterDuff.Mode.SRC_ATOP);
+        LayerDrawable stars = (LayerDrawable) ratingBar.getProgressDrawable();
+        stars.getDrawable(0).setColorFilter(Color.LTGRAY, PorterDuff.Mode.SRC_ATOP);
+        stars.getDrawable(1).setColorFilter(Color.YELLOW, PorterDuff.Mode.SRC_ATOP);
+        stars.getDrawable(2).setColorFilter(Color.parseColor("#d18811"), PorterDuff.Mode.SRC_ATOP);
+
+        layoutParams.gravity=Gravity.CENTER;
+        linearLayout1.addView(ratingBar,layoutParams);
 
 
         Button textView1 = new Button(this);
@@ -269,6 +269,7 @@ public class InAppNotification extends Activity implements View.OnClickListener 
 //                finish();
 //            }
 //        });
+      //  linearLayout2.setVisibility(View.GONE);
 
         parentLayout.addView(linearLayout1, params);
         parentLayout.addView(linearLayout2, params);

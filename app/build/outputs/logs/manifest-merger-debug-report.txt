@@ -381,7 +381,7 @@ ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/sr
 	android:configChanges
 		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:55:13-63
 	android:theme
-		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:56:13-46
+		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:56:13-72
 	android:name
 		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:54:13-68
 receiver#com.walinns.walinnsapi.WAInstallRefferer

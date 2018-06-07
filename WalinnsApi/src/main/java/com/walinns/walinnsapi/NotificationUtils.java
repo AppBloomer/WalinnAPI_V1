@@ -152,6 +152,7 @@ public class NotificationUtils {
             if(isCallable(resume)){
                   pendingIntent = PendingIntent.getActivity(mContext, 1, resume, PendingIntent.FLAG_ONE_SHOT);
 
+
             }
 
 
@@ -170,6 +171,7 @@ public class NotificationUtils {
                     .setContentText(message)
                     .addAction(action)
                     .addAction(action1)
+
                     .build();
 
 
