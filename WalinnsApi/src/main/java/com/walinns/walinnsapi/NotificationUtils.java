@@ -47,11 +47,11 @@ public class NotificationUtils {
             this.mContext = mContext;
         }
 
-        public void showNotificationMessage(String title, String message, String timeStamp, Intent intent) {
-            showNotificationMessage(title, message, timeStamp, intent, null);
+        public void showNotificationMessage(String title, String message, String timeStamp, Intent intent,String ui_type,String deep_link,String external_link) {
+             showNotificationMessage(title, message, timeStamp, intent, null,ui_type,deep_link,external_link);
         }
 
-        public void showNotificationMessage(final String title, final String message, final String timeStamp, Intent intent, String imageUrl) {
+        public void showNotificationMessage(final String title, final String message, final String timeStamp, Intent intent, String imageUrl,String ui_type,String deep_link,String external_link) {
             // Check for empty push message
             if (TextUtils.isEmpty(message))
                 return;
@@ -92,50 +92,99 @@ public class NotificationUtils {
                     Bitmap bitmap = getBitmapFromURL(imageUrl);
 
                     if (bitmap != null) {
-                        showBigNotification(bitmap, mBuilder, icon, title, message, timeStamp, resultPendingIntent, alarmSound);
+                        showBigNotification(bitmap, mBuilder, icon, title, message, timeStamp, resultPendingIntent, alarmSound,ui_type,deep_link,external_link);
                     } else {
-                        showSmallNotification(mBuilder, icon, title, message, timeStamp, resultPendingIntent, alarmSound);
+                        showSmallNotification(mBuilder, icon, title, message, timeStamp, resultPendingIntent, alarmSound,ui_type,deep_link,external_link);
                     }
                 }
             } else {
-                showSmallNotification(mBuilder, icon, title, message, timeStamp, resultPendingIntent, alarmSound);
+                showSmallNotification(mBuilder, icon, title, message, timeStamp, resultPendingIntent, alarmSound,ui_type,deep_link,external_link);
                 playNotificationSound();
             }
         }
 
 
-        private void showSmallNotification(NotificationCompat.Builder mBuilder, int icon, String title, String message, String timeStamp, PendingIntent resultPendingIntent, Uri alarmSound) {
+        private void showSmallNotification(NotificationCompat.Builder mBuilder, int icon, String title, String message, String timeStamp, PendingIntent resultPendingIntent, Uri alarmSound,String ui_type,String deep_link,String external_link) {
+            if(ui_type!=null&&!ui_type.isEmpty()&&ui_type.equals("banner")){
+                NotificationCompat.InboxStyle inboxStyle = new NotificationCompat.InboxStyle();
+                inboxStyle.addLine(message);
+                Notification notification;
+                NotificationCompat.Action action = null,action1=null;
+                Intent resume = null;
+                PendingIntent pendingIntent = null;
 
-            NotificationCompat.InboxStyle inboxStyle = new NotificationCompat.InboxStyle();
+                if(deep_link!=null&&!deep_link.isEmpty()){
+                    if(deep_link.startsWith("https://")||deep_link.startsWith("http://"))
+                    {
+                        resume = new Intent(Intent.ACTION_VIEW,
+                                Uri.parse(external_link));
+                        mContext.startActivity(resume);
+                    }else {
+                        String resumeName = mContext.getPackageName()+"."+deep_link;
 
-            inboxStyle.addLine(message);
+                        try {
+                            Class newClass = Class.forName(resumeName);
+                            resume = new Intent(mContext, newClass);
+                            System.out.println("Activity name!!! ...:" +isCallable(resume) + ".."+ newClass.getSimpleName() + "....."+resumeName);
 
-            Notification notification;
-            notification = mBuilder.setSmallIcon(icon).setTicker(title).setWhen(0)
-                    .setAutoCancel(true)
-                    .setContentTitle(title)
-                    .setContentIntent(resultPendingIntent)
-                    .setSound(alarmSound)
-                    .setStyle(inboxStyle)
-                    .setWhen(getTimeMilliSec(timeStamp))
-                    .setSmallIcon(icon)
-                    .setLargeIcon(BitmapFactory.decodeResource(mContext.getResources(), icon))
-                    .setContentText(message)
-                    .build();
+                        } catch (ClassNotFoundException e) {
+                            e.printStackTrace();
+                            System.out.println("Activity name!!! ...: erorr" +e.getMessage() +"..."+e.toString() );
 
-            NotificationManager notificationManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
-            notificationManager.notify(WAConfig.NOTIFICATION_ID, notification);
+                        }
+                    }
+                }
+
+                if(isCallable(resume)){
+                    pendingIntent = PendingIntent.getActivity(mContext, 1, resume, PendingIntent.FLAG_ONE_SHOT);
+                }
+                action = new NotificationCompat.Action.Builder(0, "Go", pendingIntent).build();
+                action1 = new NotificationCompat.Action.Builder(0, "Cancel", pendingIntent).build();
+                notification = mBuilder.setSmallIcon(icon).setTicker(title).setWhen(0)
+                        .setAutoCancel(true)
+                        .setContentTitle(title)
+                        .setContentIntent(resultPendingIntent)
+                        .setSound(alarmSound)
+                        .setStyle(inboxStyle)
+                        .setWhen(getTimeMilliSec(timeStamp))
+                        .setSmallIcon(icon)
+                        .setLargeIcon(BitmapFactory.decodeResource(mContext.getResources(), icon))
+                        .setContentText(message)
+                        .addAction(action)
+                        .addAction(action1)
+                        .build();
+
+                NotificationManager notificationManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
+                notificationManager.notify(WAConfig.NOTIFICATION_ID, notification);
+            }else {
+                NotificationCompat.InboxStyle inboxStyle = new NotificationCompat.InboxStyle();
+                inboxStyle.addLine(message);
+                Notification notification;
+                notification = mBuilder.setSmallIcon(icon).setTicker(title).setWhen(0)
+                        .setAutoCancel(true)
+                        .setContentTitle(title)
+                        .setContentIntent(resultPendingIntent)
+                        .setSound(alarmSound)
+                        .setStyle(inboxStyle)
+                        .setWhen(getTimeMilliSec(timeStamp))
+                        .setSmallIcon(icon)
+                        .setLargeIcon(BitmapFactory.decodeResource(mContext.getResources(), icon))
+                        .setContentText(message)
+                        .build();
+
+                NotificationManager notificationManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
+                notificationManager.notify(WAConfig.NOTIFICATION_ID, notification);
+            }
         }
 
-        private void showBigNotification(final Bitmap bitmap, NotificationCompat.Builder mBuilder, int icon, final String title, final String message, String timeStamp, PendingIntent resultPendingIntent, Uri alarmSound) {
+        private void showBigNotification(final Bitmap bitmap, NotificationCompat.Builder mBuilder, int icon, final String title, final String message, String timeStamp, PendingIntent resultPendingIntent, Uri alarmSound,String ui_type,String deep_link,String external_link) {
 
             bigPictureStyle = new NotificationCompat.BigPictureStyle();
             bigPictureStyle.setBigContentTitle(title);
             bigPictureStyle.setSummaryText(Html.fromHtml(message).toString());
             bigPictureStyle.bigPicture(bitmap);
             Notification notification;
-//            Intent browserIntent = new Intent(Intent.ACTION_VIEW,
-//                    Uri.parse("https://jsonformatter.curiousconcept.com/"));
+            NotificationCompat.Action action = null,action1=null;
             String resumeName = "com.walinns.walinnsmobileanalytics.Main2Activity";
             Intent resume = null;
             PendingIntent pendingIntent = null;
@@ -150,33 +199,47 @@ public class NotificationUtils {
 
             }
             if(isCallable(resume)){
-                  pendingIntent = PendingIntent.getActivity(mContext, 1, resume, PendingIntent.FLAG_ONE_SHOT);
+                pendingIntent = PendingIntent.getActivity(mContext, 1, resume, PendingIntent.FLAG_ONE_SHOT);
+            }
+            if(ui_type!=null&&!ui_type.isEmpty()&&ui_type.equals("banner")){
 
+                    action = new NotificationCompat.Action.Builder(0, "Go", pendingIntent).build();
+                    action1 = new NotificationCompat.Action.Builder(0, "Cancel", pendingIntent).build();
+                    notification = mBuilder.setSmallIcon(icon).setTicker(title).setWhen(0)
+                            .setAutoCancel(true)
+                            .setContentTitle(title)
+                            .setContentIntent(resultPendingIntent)
+                            .setSound(alarmSound)
+                            .setStyle(bigPictureStyle)
+                            .setWhen(getTimeMilliSec(timeStamp))
+                            .setSmallIcon(icon)
+                            .setLargeIcon(BitmapFactory.decodeResource(mContext.getResources(), icon))
+                            .setContentText(message)
+                            .addAction(action)
+                            .addAction(action1)
+                            .build();
+                    NotificationManager notificationManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
+                    notificationManager.notify(WAConfig.NOTIFICATION_ID_BIG_IMAGE, notification);
 
+            }else {
+
+                notification = mBuilder.setSmallIcon(icon).setTicker(title).setWhen(0)
+                        .setAutoCancel(true)
+                        .setContentTitle(title)
+                        .setContentIntent(resultPendingIntent)
+                        .setSound(alarmSound)
+                        .setStyle(bigPictureStyle)
+                        .setWhen(getTimeMilliSec(timeStamp))
+                        .setSmallIcon(icon)
+                        .setLargeIcon(BitmapFactory.decodeResource(mContext.getResources(), icon))
+                        .setContentText(message)
+                        .build();
+                NotificationManager notificationManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
+                notificationManager.notify(WAConfig.NOTIFICATION_ID_BIG_IMAGE, notification);
             }
 
 
-            NotificationCompat.Action action = new NotificationCompat.Action.Builder(0, "Go", pendingIntent).build();
-            NotificationCompat.Action action1 = new NotificationCompat.Action.Builder(0, "Cancel", pendingIntent).build();
 
-            notification = mBuilder.setSmallIcon(icon).setTicker(title).setWhen(0)
-                    .setAutoCancel(true)
-                    .setContentTitle(title)
-                    .setContentIntent(resultPendingIntent)
-                    .setSound(alarmSound)
-                    .setStyle(bigPictureStyle)
-                    .setWhen(getTimeMilliSec(timeStamp))
-                    .setSmallIcon(icon)
-                    .setLargeIcon(BitmapFactory.decodeResource(mContext.getResources(), icon))
-                    .setContentText(message)
-                    .addAction(action)
-                    .addAction(action1)
-
-                    .build();
-
-
-            NotificationManager notificationManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
-            notificationManager.notify(WAConfig.NOTIFICATION_ID_BIG_IMAGE, notification);
         }
 
         /**

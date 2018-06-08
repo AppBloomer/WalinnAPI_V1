@@ -194,10 +194,10 @@ public class WAMessingService extends FirebaseMessagingService {
 
                 // check for image attachment
                 if (TextUtils.isEmpty(imageUrl)) {
-                    showNotificationMessage(getApplicationContext(), title, message, timestamp, resultIntent);
+                    showNotificationMessage(getApplicationContext(), title, message, timestamp, resultIntent,ui_type,deep_link,external_link);
                 } else {
                     // image is present, show notification with image
-                    showNotificationMessageWithBigImage(getApplicationContext(), title, message, timestamp, resultIntent, imageUrl);
+                    showNotificationMessageWithBigImage(getApplicationContext(), title, message, timestamp, resultIntent, imageUrl,ui_type,deep_link,external_link);
                 }
             }
         } catch (Exception e) {
@@ -208,19 +208,19 @@ public class WAMessingService extends FirebaseMessagingService {
     /**
      * Showing notification with text only
      */
-    private void showNotificationMessage(Context context, String title, String message, String timeStamp, Intent intent) {
+    private void showNotificationMessage(Context context, String title, String message, String timeStamp, Intent intent,String ui_type,String deep_link,String external_link) {
         notificationUtils = new NotificationUtils(context);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        notificationUtils.showNotificationMessage(title, message, timeStamp, intent);
+        notificationUtils.showNotificationMessage(title, message, timeStamp, intent,ui_type,deep_link,external_link);
     }
 
     /**
      * Showing notification with text and image
      */
-    private void showNotificationMessageWithBigImage(Context context, String title, String message, String timeStamp, Intent intent, String imageUrl) {
+    private void showNotificationMessageWithBigImage(Context context, String title, String message, String timeStamp, Intent intent, String imageUrl,String ui_type,String deep_link,String external_link) {
         notificationUtils = new NotificationUtils(context);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        notificationUtils.showNotificationMessage(title, message, timeStamp, intent, imageUrl);
+        notificationUtils.showNotificationMessage(title, message, timeStamp, intent, imageUrl,ui_type,deep_link,external_link);
     }
     public Bitmap getBitmapFromURL(String strURL) {
         try {

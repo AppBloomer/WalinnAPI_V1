@@ -75,11 +75,21 @@ public class WAListenerService extends GcmListenerService {
 //            String imageUrl = data.getString("image");
 //             String timestamp = data.getString("timestamp");
             // JSONObject payload = data.getJSONObject("payload");
+
             String title = data.get("title");
             String message = data.get("message");
             String imageUrl = data.get("image");
             boolean isBackground = false;
             String timestamp = data.get ("timestamp");
+            String ui_type = data.get("ui_type");
+            String btn_1_name= data.get("btn_1_name");
+            String deep_link = data.get("deep_link");
+            String btn_2_name =data.get("btn_2_name");
+            String bg_color = data.get("bg_color");
+            String btn_1_color = data.get("btn_1_color");
+            String btn_2_color = data.get("btn_2_color");
+            String external_link = data.get("external_link");
+
             Log.e(TAG, "title: " + title);
             Log.e(TAG, "message: " + message);
             Log.e(TAG, "isBackground: " + isBackground);
@@ -96,6 +106,14 @@ public class WAListenerService extends GcmListenerService {
                 intent.putExtra("title",title);
                 intent.putExtra("message",message);
                 intent.putExtra("imageUrl",imageUrl);
+                intent.putExtra("ui_type",ui_type);
+                intent.putExtra("btn_1_name",btn_1_name);
+                intent.putExtra("deep_link",deep_link);
+                intent.putExtra("btn_2_name",btn_2_name);
+                intent.putExtra("bg_color",bg_color);
+                intent.putExtra( "btn_1_color",btn_1_color);
+                intent.putExtra("btn_2_color",btn_2_color);
+                intent.putExtra("external_link",external_link);
                 getApplicationContext().startActivity(intent);
 
 
@@ -119,10 +137,10 @@ public class WAListenerService extends GcmListenerService {
 
                 // check for image attachment
                 if (TextUtils.isEmpty(imageUrl)) {
-                    showNotificationMessage(getApplicationContext(), title, message, timestamp, resultIntent);
+                    showNotificationMessage(getApplicationContext(), title, message, timestamp, resultIntent,ui_type,deep_link,external_link);
                 } else {
                     // image is present, show notification with image
-                    showNotificationMessageWithBigImage(getApplicationContext(), title, message, timestamp, resultIntent, imageUrl);
+                    showNotificationMessageWithBigImage(getApplicationContext(), title, message, timestamp, resultIntent, imageUrl,ui_type,deep_link,external_link);
                 }
             }
         } catch (Exception e) {
@@ -133,19 +151,20 @@ public class WAListenerService extends GcmListenerService {
     /**
      * Showing notification with text only
      */
-    private void showNotificationMessage(Context context, String title, String message, String timeStamp, Intent intent) {
+    private void showNotificationMessage(Context context, String title, String message, String timeStamp, Intent intent,String ui_type,String deep_link,String external_link) {
+
         notificationUtils = new NotificationUtils(context);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        notificationUtils.showNotificationMessage(title, message, timeStamp, intent);
+        notificationUtils.showNotificationMessage(title, message, timeStamp, intent,ui_type,deep_link,external_link);
     }
 
     /**
      * Showing notification with text and image
      */
-    private void showNotificationMessageWithBigImage(Context context, String title, String message, String timeStamp, Intent intent, String imageUrl) {
+    private void showNotificationMessageWithBigImage(Context context, String title, String message, String timeStamp, Intent intent, String imageUrl,String ui_type,String deep_link,String external_link) {
         notificationUtils = new NotificationUtils(context);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        notificationUtils.showNotificationMessage(title, message, timeStamp, intent, imageUrl);
+        notificationUtils.showNotificationMessage(title, message, timeStamp, intent, imageUrl,ui_type,deep_link,external_link);
     }
     public Bitmap getBitmapFromURL(String strURL) {
         try {
