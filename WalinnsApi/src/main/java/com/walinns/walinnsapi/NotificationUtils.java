@@ -113,12 +113,15 @@ public class NotificationUtils {
                 Intent resume = null;
                 PendingIntent pendingIntent = null;
 
-                if(deep_link!=null&&!deep_link.isEmpty()){
+                if(deep_link!=null&&!deep_link.isEmpty()|| external_link!=null&&!external_link.isEmpty()){
                     if(deep_link.startsWith("https://")||deep_link.startsWith("http://"))
                     {
                         resume = new Intent(Intent.ACTION_VIEW,
+                                Uri.parse(deep_link));
+                        // mContext.startActivity(resume);
+                    }else if(external_link.startsWith("https://")||external_link.startsWith("http://")){
+                        resume = new Intent(Intent.ACTION_VIEW,
                                 Uri.parse(external_link));
-                        mContext.startActivity(resume);
                     }else {
                         String resumeName = mContext.getPackageName()+"."+deep_link;
 
@@ -136,7 +139,7 @@ public class NotificationUtils {
                 }
 
                 if(isCallable(resume)){
-                    pendingIntent = PendingIntent.getActivity(mContext, 1, resume, PendingIntent.FLAG_ONE_SHOT);
+                    pendingIntent = PendingIntent.getActivity(mContext, 1, resume, PendingIntent.FLAG_UPDATE_CURRENT);
                 }
                 action = new NotificationCompat.Action.Builder(0, "Go", pendingIntent).build();
                 action1 = new NotificationCompat.Action.Builder(0, "Cancel", pendingIntent).build();
@@ -153,6 +156,7 @@ public class NotificationUtils {
                         .addAction(action)
                         .addAction(action1)
                         .build();
+                notification.flags = Notification.DEFAULT_LIGHTS | Notification.FLAG_AUTO_CANCEL;
 
                 NotificationManager notificationManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
                 notificationManager.notify(WAConfig.NOTIFICATION_ID, notification);
@@ -171,7 +175,6 @@ public class NotificationUtils {
                         .setLargeIcon(BitmapFactory.decodeResource(mContext.getResources(), icon))
                         .setContentText(message)
                         .build();
-
                 NotificationManager notificationManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
                 notificationManager.notify(WAConfig.NOTIFICATION_ID, notification);
             }
@@ -185,24 +188,53 @@ public class NotificationUtils {
             bigPictureStyle.bigPicture(bitmap);
             Notification notification;
             NotificationCompat.Action action = null,action1=null;
-            String resumeName = "com.walinns.walinnsmobileanalytics.Main2Activity";
             Intent resume = null;
             PendingIntent pendingIntent = null;
-            try {
-                Class newClass = Class.forName(resumeName);
-                resume = new Intent(mContext, newClass);
-                System.out.println("Activity name!!! ...:" +isCallable(resume) + ".."+ newClass.getSimpleName() + "....."+resumeName);
-
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-                System.out.println("Activity name!!! ...: erorr" +e.getMessage() +"..."+e.toString() );
-
-            }
-            if(isCallable(resume)){
-                pendingIntent = PendingIntent.getActivity(mContext, 1, resume, PendingIntent.FLAG_ONE_SHOT);
-            }
+//            String resumeName = "com.walinns.walinnsmobileanalytics.Main2Activity";
+//            Intent resume = null;
+//            PendingIntent pendingIntent = null;
+//            try {
+//                Class newClass = Class.forName(resumeName);
+//                resume = new Intent(mContext, newClass);
+//                System.out.println("Activity name!!! ...:" +isCallable(resume) + ".."+ newClass.getSimpleName() + "....."+resumeName);
+//
+//            } catch (ClassNotFoundException e) {
+//                e.printStackTrace();
+//                System.out.println("Activity name!!! ...: erorr" +e.getMessage() +"..."+e.toString() );
+//
+//            }
+//            if(isCallable(resume)){
+//                pendingIntent = PendingIntent.getActivity(mContext, 1, resume, PendingIntent.FLAG_ONE_SHOT);
+//            }
             if(ui_type!=null&&!ui_type.isEmpty()&&ui_type.equals("banner")){
+                if(deep_link!=null&&!deep_link.isEmpty() || external_link!=null&&!external_link.isEmpty()){
+                    if(deep_link.startsWith("https://")||deep_link.startsWith("http://"))
+                    {
+                        resume = new Intent(Intent.ACTION_VIEW,
+                                Uri.parse(deep_link));
+                        // mContext.startActivity(resume);
+                    }else if(external_link.startsWith("https://")||external_link.startsWith("http://")){
+                        resume = new Intent(Intent.ACTION_VIEW,
+                                Uri.parse(external_link));
+                    }else {
+                        String resumeName = mContext.getPackageName()+"."+deep_link;
 
+                        try {
+                            Class newClass = Class.forName(resumeName);
+                            resume = new Intent(mContext, newClass);
+                            System.out.println("Activity name!!! ...:" +isCallable(resume) + ".."+ newClass.getSimpleName() + "....."+resumeName);
+
+                        } catch (ClassNotFoundException e) {
+                            e.printStackTrace();
+                            System.out.println("Activity name!!! ...: erorr" +e.getMessage() +"..."+e.toString() );
+
+                        }
+                    }
+                }
+
+                if(isCallable(resume)){
+                    pendingIntent = PendingIntent.getActivity(mContext, 1, resume, PendingIntent.FLAG_UPDATE_CURRENT);
+                }
                     action = new NotificationCompat.Action.Builder(0, "Go", pendingIntent).build();
                     action1 = new NotificationCompat.Action.Builder(0, "Cancel", pendingIntent).build();
                     notification = mBuilder.setSmallIcon(icon).setTicker(title).setWhen(0)
@@ -218,6 +250,7 @@ public class NotificationUtils {
                             .addAction(action)
                             .addAction(action1)
                             .build();
+                    notification.flags = Notification.DEFAULT_LIGHTS | Notification.FLAG_AUTO_CANCEL;
                     NotificationManager notificationManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
                     notificationManager.notify(WAConfig.NOTIFICATION_ID_BIG_IMAGE, notification);
 
@@ -237,8 +270,6 @@ public class NotificationUtils {
                 NotificationManager notificationManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
                 notificationManager.notify(WAConfig.NOTIFICATION_ID_BIG_IMAGE, notification);
             }
-
-
 
         }
 

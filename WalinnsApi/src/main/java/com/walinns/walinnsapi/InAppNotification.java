@@ -101,7 +101,7 @@ public class InAppNotification extends Activity implements View.OnClickListener 
 
     private void setView(int type,int height,String char_type){
         RelativeLayout relativeLayout = new RelativeLayout(this);
-
+        relativeLayout.setId(12);
         RelativeLayout.LayoutParams rel_params = new RelativeLayout
                 .LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,
                 height);
@@ -113,17 +113,14 @@ public class InAppNotification extends Activity implements View.OnClickListener 
         }
 
 
+
+
+        RelativeLayout relativeLayout1 = new RelativeLayout(this);
         LinearLayout parentLayout = new LinearLayout(this);
         LinearLayout linearLayout1= new LinearLayout(this);
         LinearLayout linearLayout2= new LinearLayout(this);
-//        if(char_type.equals("full")){
-//            linearLayout2.setOrientation(LinearLayout.VERTICAL);
-//        }else {
-            linearLayout2.setWeightSum(2);
-            linearLayout2.setOrientation(LinearLayout.HORIZONTAL);
-        //}
-
-
+        linearLayout2.setWeightSum(2);
+        linearLayout2.setOrientation(LinearLayout.HORIZONTAL);
         linearLayout2.setBackgroundColor(Color.TRANSPARENT);
         linearLayout2.setGravity(Gravity.BOTTOM);
         linearLayout1.setBackgroundColor(Color.TRANSPARENT);
@@ -136,6 +133,10 @@ public class InAppNotification extends Activity implements View.OnClickListener 
          params.setMargins(15,15,15,15);
          System.out.println("Request_data btn bg_clr:" + getIntent().getStringExtra("bg_color"));
          parentLayout.setBackgroundColor(Color.parseColor(getIntent().getStringExtra("bg_color")));
+
+      //  Image img = new Image(/images/MyImage.png);
+//        URL resource = MyJavaFile.class.getClassLoader()
+//                .getResource("PackageB/PackageBa/PackageBaa/MyImage.png");
 
         if(StringIsEmpty(getIntent().getStringExtra("title"))) {
             TextView textView = new TextView(this);
@@ -208,6 +209,23 @@ public class InAppNotification extends Activity implements View.OnClickListener 
             parentLayout.addView(linearLayout2, params);
         }
         relativeLayout.addView(parentLayout,rel_params);
+
+
+        //Close button
+
+        int resourceID = this.getResources().getIdentifier("ic_close", "drawable",getPackageName());
+        ImageView closeImg = new ImageView(this);
+        closeImg.setImageResource(resourceID);
+        RelativeLayout.LayoutParams closeIvLp = new RelativeLayout
+                .LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT);
+        // Position it at the top right corner
+        rel_params.addRule(RelativeLayout.ABOVE,relativeLayout.getId());
+        rel_params.addRule(RelativeLayout.END_OF, relativeLayout.getId());
+
+        relativeLayout1.addView(closeImg,closeIvLp);
+        relativeLayout.addView(relativeLayout1);
+
         setContentView(relativeLayout);
     }
 
@@ -272,5 +290,9 @@ public class InAppNotification extends Activity implements View.OnClickListener 
         System.out.println("Activity name list.size()...:" + list.size());
 
         return list.size() > 0;
+    }
+    private int getScaledPixels(int raw) {
+        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
+                raw, getResources().getDisplayMetrics());
     }
 }

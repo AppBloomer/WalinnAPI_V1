@@ -44,7 +44,7 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);//b2bac52c84ea0f0a4139fbaecf99936e
-        WalinnsAPI.getInstance().initialize(Main2Activity.this,"b9d2e92935000ffd585cc3092f9b03cd");
+        WalinnsAPI.getInstance().initialize(Main2Activity.this,"3c149e37c460d419a946");
         webView = (WebView) findViewById(R.id.webView);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

@@ -4,7 +4,7 @@
             "outputFile": "/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/bf15b7a53294e66c2fa154004d01176d/res/values-v24/values-v24.xml",
+                    "source": "/Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d08456a76c784d3f1c09ded61b96d878/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/248cda2695e314047d20eb3c644e25ae/res/values-v24/values-v24.xml",
+                    "source": "/Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a954607111fe0baa6582c42cd75e5359/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
