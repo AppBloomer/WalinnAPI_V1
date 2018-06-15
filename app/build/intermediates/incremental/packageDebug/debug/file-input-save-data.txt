@@ -1,35 +1,35 @@
 #Internal package file, do not edit.
-#Tue Jun 12 16:59:21 IST 2018
+#Thu Jun 14 17:27:44 IST 2018
 7.path=classes.dex
-2.base=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/3
+2.base=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/6
 5.set=DEX
-0.path=classes.dex
+0.path=classes2.dex
 2.baseType=DIRECTORY
-3.base=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/4
+3.base=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/3
 7.baseType=DIRECTORY
 2.set=DEX
 1.path=classes.dex
-4.base=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/1
+4.base=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/4
 7.set=DEX
 count=8
 5.baseType=DIRECTORY
 2.path=classes.dex
-5.base=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/2
+5.base=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/1
 4.set=DEX
 3.path=classes.dex
-6.base=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/1
+6.base=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/2
 3.baseType=DIRECTORY
 1.set=DEX
 4.path=classes.dex
-7.base=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/0
+7.base=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/7
 6.set=DEX
 1.baseType=DIRECTORY
 6.baseType=DIRECTORY
 5.path=classes.dex
-0.base=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/5
+0.base=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/2
 0.baseType=DIRECTORY
 3.set=DEX
-6.path=classes2.dex
-1.base=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/6
+6.path=classes.dex
+1.base=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/5
 4.baseType=DIRECTORY
 0.set=DEX

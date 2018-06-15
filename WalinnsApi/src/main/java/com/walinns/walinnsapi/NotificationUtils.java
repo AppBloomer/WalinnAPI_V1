@@ -47,11 +47,11 @@ public class NotificationUtils {
             this.mContext = mContext;
         }
 
-        public void showNotificationMessage(String title, String message, String timeStamp, Intent intent,String ui_type,String deep_link,String external_link) {
-             showNotificationMessage(title, message, timeStamp, intent, null,ui_type,deep_link,external_link);
+        public void showNotificationMessage(String title, String message, String timeStamp, Intent intent,String ui_type,String deep_link,String external_link,String btn1_name,String btn2_name) {
+             showNotificationMessage(title, message, timeStamp, intent, null,ui_type,deep_link,external_link,btn1_name,btn2_name);
         }
 
-        public void showNotificationMessage(final String title, final String message, final String timeStamp, Intent intent, String imageUrl,String ui_type,String deep_link,String external_link) {
+        public void showNotificationMessage(final String title, final String message, final String timeStamp, Intent intent, String imageUrl,String ui_type,String deep_link,String external_link,String btn1_name,String btn2_name) {
             // Check for empty push message
             if (TextUtils.isEmpty(message))
                 return;
@@ -92,20 +92,20 @@ public class NotificationUtils {
                     Bitmap bitmap = getBitmapFromURL(imageUrl);
 
                     if (bitmap != null) {
-                        showBigNotification(bitmap, mBuilder, icon, title, message, timeStamp, resultPendingIntent, alarmSound,ui_type,deep_link,external_link);
+                        showBigNotification(bitmap, mBuilder, icon, title, message, timeStamp, resultPendingIntent, alarmSound,ui_type,deep_link,external_link,btn1_name,btn2_name);
                     } else {
-                        showSmallNotification(mBuilder, icon, title, message, timeStamp, resultPendingIntent, alarmSound,ui_type,deep_link,external_link);
+                        showSmallNotification(mBuilder, icon, title, message, timeStamp, resultPendingIntent, alarmSound,ui_type,deep_link,external_link,btn1_name,btn2_name);
                     }
                 }
             } else {
-                showSmallNotification(mBuilder, icon, title, message, timeStamp, resultPendingIntent, alarmSound,ui_type,deep_link,external_link);
+                showSmallNotification(mBuilder, icon, title, message, timeStamp, resultPendingIntent, alarmSound,ui_type,deep_link,external_link,btn1_name,btn2_name);
                 playNotificationSound();
             }
         }
 
 
-        private void showSmallNotification(NotificationCompat.Builder mBuilder, int icon, String title, String message, String timeStamp, PendingIntent resultPendingIntent, Uri alarmSound,String ui_type,String deep_link,String external_link) {
-            if(ui_type!=null&&!ui_type.isEmpty()&&ui_type.equals("banner")){
+        private void showSmallNotification(NotificationCompat.Builder mBuilder, int icon, String title, String message, String timeStamp, PendingIntent resultPendingIntent, Uri alarmSound,String ui_type,String deep_link,String external_link,String btn1_name,String btn2_name) {
+            if(ui_type!=null&&!ui_type.isEmpty()&&ui_type.equals("text")){
                 NotificationCompat.InboxStyle inboxStyle = new NotificationCompat.InboxStyle();
                 inboxStyle.addLine(message);
                 Notification notification;
@@ -141,8 +141,8 @@ public class NotificationUtils {
                 if(isCallable(resume)){
                     pendingIntent = PendingIntent.getActivity(mContext, 1, resume, PendingIntent.FLAG_UPDATE_CURRENT);
                 }
-                action = new NotificationCompat.Action.Builder(0, "Go", pendingIntent).build();
-                action1 = new NotificationCompat.Action.Builder(0, "Cancel", pendingIntent).build();
+                action = new NotificationCompat.Action.Builder(0, btn1_name, pendingIntent).build();
+                action1 = new NotificationCompat.Action.Builder(0, btn2_name, pendingIntent).build();
                 notification = mBuilder.setSmallIcon(icon).setTicker(title).setWhen(0)
                         .setAutoCancel(true)
                         .setContentTitle(title)
@@ -180,7 +180,7 @@ public class NotificationUtils {
             }
         }
 
-        private void showBigNotification(final Bitmap bitmap, NotificationCompat.Builder mBuilder, int icon, final String title, final String message, String timeStamp, PendingIntent resultPendingIntent, Uri alarmSound,String ui_type,String deep_link,String external_link) {
+        private void showBigNotification(final Bitmap bitmap, NotificationCompat.Builder mBuilder, int icon, final String title, final String message, String timeStamp, PendingIntent resultPendingIntent, Uri alarmSound,String ui_type,String deep_link,String external_link,String btn1_name,String btn2_name) {
 
             bigPictureStyle = new NotificationCompat.BigPictureStyle();
             bigPictureStyle.setBigContentTitle(title);
@@ -235,8 +235,8 @@ public class NotificationUtils {
                 if(isCallable(resume)){
                     pendingIntent = PendingIntent.getActivity(mContext, 1, resume, PendingIntent.FLAG_UPDATE_CURRENT);
                 }
-                    action = new NotificationCompat.Action.Builder(0, "Go", pendingIntent).build();
-                    action1 = new NotificationCompat.Action.Builder(0, "Cancel", pendingIntent).build();
+                    action = new NotificationCompat.Action.Builder(0, btn1_name, pendingIntent).build();
+                    action1 = new NotificationCompat.Action.Builder(0, btn2_name, pendingIntent).build();
                     notification = mBuilder.setSmallIcon(icon).setTicker(title).setWhen(0)
                             .setAutoCancel(true)
                             .setContentTitle(title)
@@ -254,7 +254,7 @@ public class NotificationUtils {
                     NotificationManager notificationManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
                     notificationManager.notify(WAConfig.NOTIFICATION_ID_BIG_IMAGE, notification);
 
-            }else {
+            }else{
 
                 notification = mBuilder.setSmallIcon(icon).setTicker(title).setWhen(0)
                         .setAutoCancel(true)

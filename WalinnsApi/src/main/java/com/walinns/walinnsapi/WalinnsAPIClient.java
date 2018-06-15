@@ -35,7 +35,7 @@ import android.util.Patterns;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.google.android.gms.auth.GoogleAuthUtil;
+
 import com.google.android.gms.plus.model.people.Person;
 
 import org.json.JSONException;

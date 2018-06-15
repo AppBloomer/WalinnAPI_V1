@@ -100,6 +100,7 @@ public class InAppNotification extends Activity implements View.OnClickListener 
 
 
     private void setView(int type,int height,String char_type){
+        LinearLayout.LayoutParams paramstxt;
         RelativeLayout relativeLayout = new RelativeLayout(this);
         relativeLayout.setId(12);
         RelativeLayout.LayoutParams rel_params = new RelativeLayout
@@ -113,14 +114,19 @@ public class InAppNotification extends Activity implements View.OnClickListener 
         }
 
 
-
-
         RelativeLayout relativeLayout1 = new RelativeLayout(this);
         LinearLayout parentLayout = new LinearLayout(this);
         LinearLayout linearLayout1= new LinearLayout(this);
         LinearLayout linearLayout2= new LinearLayout(this);
-        linearLayout2.setWeightSum(2);
-        linearLayout2.setOrientation(LinearLayout.HORIZONTAL);
+        if(char_type.equals("full")){
+             paramstxt = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            linearLayout2.setOrientation(VERTICAL);
+        }else {
+            paramstxt = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f);
+            linearLayout2.setWeightSum(2);
+            linearLayout2.setOrientation(LinearLayout.HORIZONTAL);
+        }
         linearLayout2.setBackgroundColor(Color.TRANSPARENT);
         linearLayout2.setGravity(Gravity.BOTTOM);
         linearLayout1.setBackgroundColor(Color.TRANSPARENT);
@@ -131,8 +137,9 @@ public class InAppNotification extends Activity implements View.OnClickListener 
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
          parentLayout.setOrientation(VERTICAL);
          params.setMargins(15,15,15,15);
-         System.out.println("Request_data btn bg_clr:" + getIntent().getStringExtra("bg_color"));
-         parentLayout.setBackgroundColor(Color.parseColor(getIntent().getStringExtra("bg_color")));
+        if(StringIsEmpty(getIntent().getStringExtra("bg_color"))) {
+            parentLayout.setBackgroundColor(Color.parseColor(getIntent().getStringExtra("bg_color")));
+        }
 
       //  Image img = new Image(/images/MyImage.png);
 //        URL resource = MyJavaFile.class.getClassLoader()
@@ -157,9 +164,11 @@ public class InAppNotification extends Activity implements View.OnClickListener 
         }
 
         if(getIntent().getStringExtra("imageUrl")!=null&&!getIntent().getStringExtra("imageUrl").isEmpty()){
-            ImageView mImage = new ImageView(this);
-            mImage.setImageBitmap(WAUtils.StringToBitMap(getIntent().getStringExtra("imageUrl")));
-            linearLayout1.addView(mImage,params);
+            if(getIntent().getStringExtra("imageUrl").startsWith("https://")||getIntent().getStringExtra("imageUrl").startsWith("http://")) {
+                ImageView mImage = new ImageView(this);
+                mImage.setImageBitmap(WAUtils.StringToBitMap(getIntent().getStringExtra("imageUrl")));
+                linearLayout1.addView(mImage, params);
+            }
         }
 
          if(char_type.equals("rating")) {
@@ -185,9 +194,10 @@ public class InAppNotification extends Activity implements View.OnClickListener 
             textView1.setGravity(Gravity.CENTER);
             textView1.setTextColor(Color.parseColor("#000000"));
             textView1.setOnClickListener(this);
-            System.out.println("Request_data btn color:" + getIntent().getStringExtra("btn_1_color"));
-            textView1.setBackgroundColor(Color.parseColor(getIntent().getStringExtra("btn_1_color")));
-            LinearLayout.LayoutParams paramstxt = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f);
+            if(StringIsEmpty(getIntent().getStringExtra("btn_1_color"))) {
+                textView1.setBackgroundColor(Color.parseColor(getIntent().getStringExtra("btn_1_color")));
+            }
+           // LinearLayout.LayoutParams paramstxt = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f);
             linearLayout2.addView(textView1, paramstxt);
         }
 
@@ -198,13 +208,21 @@ public class InAppNotification extends Activity implements View.OnClickListener 
             textView_msg1.setGravity(Gravity.CENTER);
             textView_msg1.setTextColor(Color.parseColor("#000000"));
             textView_msg1.setOnClickListener(this);
-            textView_msg1.setBackgroundColor(Color.parseColor(getIntent().getStringExtra("btn_2_color")));
-            LinearLayout.LayoutParams paramstxt1 = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f);
-            paramstxt1.setMargins(15, 0, 0, 0);
-            linearLayout2.addView(textView_msg1, paramstxt1);
+            if(StringIsEmpty(getIntent().getStringExtra("btn_2_color"))) {
+                textView_msg1.setBackgroundColor(Color.parseColor(getIntent().getStringExtra("btn_2_color")));
+            }
+          //  LinearLayout.LayoutParams paramstxt1 = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f);
+            if(char_type.equals("full")){
+                paramstxt.setMargins(15, 20, 0, 0);
+            }else {
+                paramstxt.setMargins(15, 0, 0, 0);
+            }
+
+            linearLayout2.addView(textView_msg1, paramstxt);
         }
         parentLayout.addView(linearLayout1, params);
         if(StringIsEmpty(getIntent().getStringExtra("btn_1_name"))||StringIsEmpty(getIntent().getStringExtra("btn_2_name"))){
+
 
             parentLayout.addView(linearLayout2, params);
         }
@@ -213,18 +231,18 @@ public class InAppNotification extends Activity implements View.OnClickListener 
 
         //Close button
 
-        int resourceID = this.getResources().getIdentifier("ic_close", "drawable",getPackageName());
-        ImageView closeImg = new ImageView(this);
-        closeImg.setImageResource(resourceID);
-        RelativeLayout.LayoutParams closeIvLp = new RelativeLayout
-                .LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,
-                RelativeLayout.LayoutParams.WRAP_CONTENT);
-        // Position it at the top right corner
-        rel_params.addRule(RelativeLayout.ABOVE,relativeLayout.getId());
-        rel_params.addRule(RelativeLayout.END_OF, relativeLayout.getId());
-
-        relativeLayout1.addView(closeImg,closeIvLp);
-        relativeLayout.addView(relativeLayout1);
+//        int resourceID = this.getResources().getIdentifier("ic_close", "drawable",getPackageName());
+//        ImageView closeImg = new ImageView(this);
+//        closeImg.setImageResource(resourceID);
+//        RelativeLayout.LayoutParams closeIvLp = new RelativeLayout
+//                .LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,
+//                RelativeLayout.LayoutParams.WRAP_CONTENT);
+//        // Position it at the top right corner
+//        rel_params.addRule(RelativeLayout.ABOVE,relativeLayout.getId());
+//        rel_params.addRule(RelativeLayout.END_OF, relativeLayout.getId());
+//
+//        relativeLayout1.addView(closeImg,closeIvLp);
+       // relativeLayout.addView(relativeLayout1);
 
         setContentView(relativeLayout);
     }
@@ -243,7 +261,7 @@ public class InAppNotification extends Activity implements View.OnClickListener 
             case 5:
 
                 if(getIntent().getStringExtra("external_link")!=null&&!getIntent().getStringExtra("external_link").isEmpty()) {
-                    if (getIntent().getStringExtra("external_link").startsWith("https://")) {
+                    if (getIntent().getStringExtra("external_link").startsWith("https://")||getIntent().getStringExtra("external_link").startsWith("http://")) {
                         System.out.println("Request_data load url http" + getIntent().getStringExtra("external_link"));
                         Intent browserIntent = new Intent(Intent.ACTION_VIEW,
                                 Uri.parse(getIntent().getStringExtra("external_link")));
