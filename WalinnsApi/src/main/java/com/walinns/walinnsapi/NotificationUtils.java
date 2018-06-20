@@ -19,10 +19,11 @@ import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.content.ContextCompat;
 import android.text.Html;
 import android.text.TextUtils;
 import android.util.Patterns;
-
+import android.widget.RemoteViews;
 
 
 import java.io.IOException;
@@ -206,7 +207,7 @@ public class NotificationUtils {
 //            if(isCallable(resume)){
 //                pendingIntent = PendingIntent.getActivity(mContext, 1, resume, PendingIntent.FLAG_ONE_SHOT);
 //            }
-            if(ui_type!=null&&!ui_type.isEmpty()&&ui_type.equals("banner")){
+            if(ui_type!=null&&!ui_type.isEmpty()&&ui_type.equals("banner")||ui_type.equals("text")){
                 if(deep_link!=null&&!deep_link.isEmpty() || external_link!=null&&!external_link.isEmpty()){
                     if(deep_link.startsWith("https://")||deep_link.startsWith("http://"))
                     {
@@ -237,12 +238,16 @@ public class NotificationUtils {
                 }
                     action = new NotificationCompat.Action.Builder(0, btn1_name, pendingIntent).build();
                     action1 = new NotificationCompat.Action.Builder(0, btn2_name, pendingIntent).build();
-                    notification = mBuilder.setSmallIcon(icon).setTicker(title).setWhen(0)
+
+
+
+                notification = mBuilder.setSmallIcon(icon).setTicker(title).setWhen(0)
                             .setAutoCancel(true)
                             .setContentTitle(title)
                             .setContentIntent(resultPendingIntent)
                             .setSound(alarmSound)
                             .setStyle(bigPictureStyle)
+                            .setColor(ContextCompat.getColor(mContext, android.R.color.holo_blue_light))
                             .setWhen(getTimeMilliSec(timeStamp))
                             .setSmallIcon(icon)
                             .setLargeIcon(BitmapFactory.decodeResource(mContext.getResources(), icon))

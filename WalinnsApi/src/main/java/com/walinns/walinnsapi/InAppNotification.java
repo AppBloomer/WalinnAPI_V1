@@ -16,12 +16,14 @@ import android.graphics.Color;
 import android.graphics.Point;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.LayerDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.os.Parcelable;
 import android.os.StrictMode;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -87,7 +89,7 @@ public class InAppNotification extends Activity implements View.OnClickListener 
                 setView(RelativeLayout.ALIGN_PARENT_BOTTOM,RelativeLayout.LayoutParams.WRAP_CONTENT,"footer");
                 break;
             case "full":
-                setView(RelativeLayout.CENTER_IN_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT,"full");
+                setView(RelativeLayout.CENTER_IN_PARENT,RelativeLayout.LayoutParams.WRAP_CONTENT,"full");
                 break;
             case "header":
                 setView(RelativeLayout.ALIGN_PARENT_TOP,RelativeLayout.LayoutParams.WRAP_CONTENT,"header");
@@ -99,7 +101,8 @@ public class InAppNotification extends Activity implements View.OnClickListener 
     }
 
 
-    private void setView(int type,int height,String char_type){
+
+    private void setView(int type, int height, String char_type){
         LinearLayout.LayoutParams paramstxt;
         RelativeLayout relativeLayout = new RelativeLayout(this);
         relativeLayout.setId(12);
@@ -109,6 +112,7 @@ public class InAppNotification extends Activity implements View.OnClickListener 
         rel_params.addRule(type);
         if(char_type.equals("full")){
             rel_params.setMargins(15, 15, 15, 15);
+
         }else {
             rel_params.setMargins(0, 0, 0, 0);
         }
@@ -120,8 +124,10 @@ public class InAppNotification extends Activity implements View.OnClickListener 
         LinearLayout linearLayout2= new LinearLayout(this);
         if(char_type.equals("full")){
              paramstxt = new LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                    400, LinearLayout.LayoutParams.WRAP_CONTENT);
+            paramstxt.gravity = Gravity.CENTER;
             linearLayout2.setOrientation(VERTICAL);
+
         }else {
             paramstxt = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f);
             linearLayout2.setWeightSum(2);
@@ -138,7 +144,24 @@ public class InAppNotification extends Activity implements View.OnClickListener 
          parentLayout.setOrientation(VERTICAL);
          params.setMargins(15,15,15,15);
         if(StringIsEmpty(getIntent().getStringExtra("bg_color"))) {
-            parentLayout.setBackgroundColor(Color.parseColor(getIntent().getStringExtra("bg_color")));
+
+           // shape.setStroke(3, borderColor);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                GradientDrawable shape = new GradientDrawable();
+                shape.setShape(GradientDrawable.RECTANGLE);
+                if(char_type.equals("full")) {
+                    shape.setCornerRadii(new float[]{10, 10, 10, 10, 10, 10, 10, 10});
+                }else if(char_type.equals("footer")){
+                    shape.setCornerRadii(new float[]{10, 10, 10, 10, 0, 0, 0, 0});
+                }else {
+                    shape.setCornerRadii(new float[]{0, 0, 0, 0, 10, 10, 10, 10});
+                }
+                shape.setColor(Color.parseColor(getIntent().getStringExtra("bg_color")));
+                parentLayout.setBackground(shape);
+            }else {
+                parentLayout.setBackgroundColor(Color.parseColor(getIntent().getStringExtra("bg_color")));
+
+            }
         }
 
       //  Image img = new Image(/images/MyImage.png);
@@ -166,8 +189,18 @@ public class InAppNotification extends Activity implements View.OnClickListener 
         if(getIntent().getStringExtra("imageUrl")!=null&&!getIntent().getStringExtra("imageUrl").isEmpty()){
             if(getIntent().getStringExtra("imageUrl").startsWith("https://")||getIntent().getStringExtra("imageUrl").startsWith("http://")) {
                 ImageView mImage = new ImageView(this);
-                mImage.setImageBitmap(WAUtils.StringToBitMap(getIntent().getStringExtra("imageUrl")));
-                linearLayout1.addView(mImage, params);
+                if(char_type.equals("full")){
+                    LinearLayout.LayoutParams img_params = new LinearLayout.LayoutParams(
+                            400, 400);
+                    img_params.gravity = Gravity.CENTER;
+                    mImage.setImageBitmap(WAUtils.StringToBitMap(getIntent().getStringExtra("imageUrl")));
+                    linearLayout1.addView(mImage, img_params);
+                }else {
+                    mImage.setImageBitmap(WAUtils.StringToBitMap(getIntent().getStringExtra("imageUrl")));
+                    linearLayout1.addView(mImage, params);
+                }
+
+
             }
         }
 
@@ -213,7 +246,7 @@ public class InAppNotification extends Activity implements View.OnClickListener 
             }
           //  LinearLayout.LayoutParams paramstxt1 = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f);
             if(char_type.equals("full")){
-                paramstxt.setMargins(15, 20, 0, 0);
+                paramstxt.setMargins(15, 15, 0, 0);
             }else {
                 paramstxt.setMargins(15, 0, 0, 0);
             }

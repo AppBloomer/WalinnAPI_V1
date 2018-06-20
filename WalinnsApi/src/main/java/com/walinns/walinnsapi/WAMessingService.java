@@ -12,6 +12,7 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.text.Html;
 import android.text.TextUtils;
 import android.util.Log;
+import android.widget.RemoteViews;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
@@ -24,6 +25,7 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Map;
+
 
 /**
  * Created by walinnsinnovation on 30/12/17.
@@ -79,7 +81,9 @@ public class WAMessingService extends FirebaseMessagingService {
             }
         }else {
 
+
         }
+
         // Also if you intend on generating your own notifications as a result of a received FCM
         // message, here is where that should be initiated. See sendNotification method below.
     }

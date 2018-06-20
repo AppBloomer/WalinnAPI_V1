@@ -1,3 +1,0 @@
-# Referenced at /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:35
--keep class android.support.multidex.MultiDexApplication { <init>(...); }
-
