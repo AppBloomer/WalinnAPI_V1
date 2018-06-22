@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="Walinns_V1" module="app" revision="unspecified" status="integration" publication="20180620163022"/>
+  <info organisation="Walinns_V1" module="app" revision="unspecified" status="integration" publication="20180622101731"/>
   <configurations>
     <conf name="androidJacocoAgent" visibility="private"/>
     <conf name="androidJacocoAnt" visibility="private"/>
@@ -75,7 +75,6 @@
     <conf name="releaseWearApp" visibility="private"/>
     <conf name="releaseWearBundling" visibility="public" extends="releaseWearApp,wearApp"/>
     <conf name="runtimeOnly" visibility="private" extends="apk"/>
-    <conf name="signatures" visibility="public"/>
     <conf name="testAnnotationProcessor" visibility="private"/>
     <conf name="testApi" visibility="private" extends="testCompile"/>
     <conf name="testApk" visibility="private"/>
@@ -105,10 +104,7 @@
     <conf name="testWearApp" visibility="private"/>
     <conf name="wearApp" visibility="private"/>
   </configurations>
-  <publications>
-    <artifact name="app" type="jar" ext="jar" conf="archives" m:classifier="sources"/>
-    <artifact name="app" type="jar.asc" ext="asc" conf="archives,signatures" m:classifier="sources"/>
-  </publications>
+  <publications/>
   <dependencies>
     <dependency org="org.jacoco" name="org.jacoco.agent" rev="0.7.4.201502262128" conf="androidJacocoAgent-&gt;default">
       <artifact name="org.jacoco.agent" type="jar" ext="jar" m:classifier="runtime" conf="androidJacocoAgent"/>
@@ -124,7 +120,6 @@
     <dependency org="com.android.support" name="appcompat-v7" rev="27.1.1" conf="implementation-&gt;default"/>
     <dependency org="com.android.support.constraint" name="constraint-layout" rev="1.0.2" conf="implementation-&gt;default"/>
     <dependency org="com.android.support" name="design" rev="27.1.1" conf="implementation-&gt;default"/>
-    <dependency org="junit" name="junit" rev="4.12" conf="implementation-&gt;default"/>
     <dependency org="com.google.android.gms" name="play-services" rev="9.4.0" conf="implementation-&gt;default"/>
     <dependency org="com.google.firebase" name="firebase-messaging" rev="9.4.0" conf="implementation-&gt;default"/>
     <dependency org="com.google.android.gms" name="play-services-gcm" rev="9.4.0" conf="implementation-&gt;default"/>
@@ -133,6 +128,7 @@
     <dependency org="com.google.code.findbugs" name="jsr305" rev="3.0.1" conf="implementation-&gt;default"/>
     <dependency org="com.google.guava" name="guava" rev="19.0" conf="implementation-&gt;default"/>
     <dependency org="com.google.code.gson" name="gson" rev="2.5" conf="implementation-&gt;default"/>
+    <dependency org="com.android.support" name="multidex" rev="1.0.1" conf="implementation-&gt;default"/>
     <dependency org="com.android.support" name="multidex" rev="1.0.2" conf="releaseCompileClasspath-&gt;default"/>
     <dependency org="com.android.support" name="multidex" rev="1.0.2" conf="releaseRuntimeClasspath-&gt;default"/>
     <dependency org="com.google.truth" name="truth" rev="0.28" conf="testImplementation-&gt;default"/>

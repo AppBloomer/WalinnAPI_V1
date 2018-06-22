@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="Walinns_V1" module="WalinnsApi" revision="unspecified" status="integration" publication="20180620163249"/>
+  <info organisation="Walinns_V1" module="WalinnsApi" revision="unspecified" status="integration" publication="20180622101656"/>
   <configurations>
     <conf name="androidJacocoAgent" visibility="private"/>
     <conf name="androidJacocoAnt" visibility="private"/>
@@ -71,6 +71,7 @@
     <conf name="releaseUnitTestRuntimeClasspath" visibility="private" extends="testImplementation,testReleaseImplementation,testReleaseRuntimeOnly,testRuntimeOnly"/>
     <conf name="releaseWearApp" visibility="private"/>
     <conf name="runtimeOnly" visibility="private" extends="publish"/>
+    <conf name="signatures" visibility="public"/>
     <conf name="testAnnotationProcessor" visibility="private"/>
     <conf name="testApi" visibility="private" extends="testCompile"/>
     <conf name="testCompile" visibility="private"/>
@@ -102,6 +103,9 @@
   </configurations>
   <publications>
     <artifact name="WalinnsApi" type="aar" ext="aar" conf="archives,default"/>
+    <artifact name="WalinnsApi" type="aar.asc" ext="asc" conf="archives,signatures"/>
+    <artifact name="WalinnsApi" type="jar" ext="jar" conf="archives" m:classifier="sources"/>
+    <artifact name="WalinnsApi" type="jar.asc" ext="asc" conf="archives,signatures" m:classifier="sources"/>
   </publications>
   <dependencies>
     <dependency org="org.jacoco" name="org.jacoco.agent" rev="0.7.4.201502262128" conf="androidJacocoAgent-&gt;default">
@@ -119,5 +123,6 @@
     <dependency org="com.google.android.gms" name="play-services" rev="9.4.0" conf="implementation-&gt;default"/>
     <dependency org="com.google.firebase" name="firebase-messaging" rev="9.4.0" conf="implementation-&gt;default"/>
     <dependency org="com.google.android.gms" name="play-services-gcm" rev="9.4.0" conf="implementation-&gt;default"/>
+    <dependency org="junit" name="junit" rev="4.12" conf="implementation-&gt;default"/>
   </dependencies>
 </ivy-module>
