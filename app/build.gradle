@@ -50,6 +50,7 @@ dependencies {
     implementation 'com.google.guava:guava:19.0'
     implementation 'com.google.code.gson:gson:2.5'
     testImplementation 'com.google.truth:truth:0.28'
+    implementation project(':WalinnsApi')
     implementation  'com.android.support:multidex:1.0.1'
 
 }

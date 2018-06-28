@@ -27,12 +27,9 @@ public class APIClient {
     public String mUrl;
     public JSONObject mjsonObject;
     static String URL="https://wa.track.app.walinns.com/";
-    protected WALifeCycle mWalinnsactivitylifecycle;
-
     public APIClient(Context context){
         sharedPref=new WAPref(context);
     }
-
     public APIClient(Context context,String url,JSONObject jsonObject){
         this.mContext=context;
         this.mUrl=url;

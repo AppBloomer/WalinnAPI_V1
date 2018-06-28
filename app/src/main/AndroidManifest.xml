@@ -68,30 +68,27 @@
                 <!--<category android:name="com.walinns.walinnsmobileanalytics" />-->
             <!--</intent-filter>-->
         <!--</receiver>-->
-        <!--&lt;!&ndash; [END gcm_receiver] &ndash;&gt;-->
 
-        <!--&lt;!&ndash; [START gcm_listener] &ndash;&gt;-->
-        <!--<service-->
-            <!--android:name="com.walinns.walinnsapi.WAListenerService"-->
-            <!--android:exported="false" >-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.google.android.c2dm.intent.RECEIVE" />-->
-            <!--</intent-filter>-->
-        <!--</service>-->
-        <!--&lt;!&ndash; [END gcm_listener] &ndash;&gt;-->
-        <!--&lt;!&ndash; [START instanceId_listener] &ndash;&gt;-->
-        <!--<service-->
-            <!--android:name="com.walinns.walinnsapi.WAInstanceIDListenerService"-->
-            <!--android:exported="false">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.google.android.gms.iid.InstanceID"/>-->
-            <!--</intent-filter>-->
-        <!--</service>-->
-        <!--&lt;!&ndash; [END instanceId_listener] &ndash;&gt;-->
-        <!--<service-->
-            <!--android:name="com.walinns.walinnsapi.WAIntentService"-->
-            <!--android:exported="false">-->
-        <!--</service>-->
+
+        <service
+            android:name="com.walinns.walinnsapi.WAListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.walinns.walinnsapi.WAInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+         <service
+            android:name="com.walinns.walinnsapi.WAIntentService"
+            android:exported="false">
+        </service>
 
         <!-- <service -->
         <!-- android:name="com.clevertap.android.sdk.FcmTokenListenerService"> -->

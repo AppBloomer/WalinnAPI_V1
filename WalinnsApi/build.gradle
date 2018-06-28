@@ -130,16 +130,18 @@ android {
     }
 
     buildTypes {
-        release {
-            zipAlignEnabled true
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
+
         debug {
             debuggable true
             zipAlignEnabled true
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
         }
     }
 
@@ -166,7 +168,6 @@ dependencies {
     //noinspection GradleCompatible
     implementation 'com.google.android.gms:play-services-gcm:9.4.0'
     implementation 'junit:junit:4.12'
-
 
 }
 apply plugin: "com.google.gms.google-services"
