@@ -39,19 +39,16 @@ dependencies {
     implementation 'com.android.support:design:27.1.1'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    implementation 'com.google.android.gms:play-services:9.4.0'
-    //noinspection GradleCompatible
+     //noinspection GradleCompatible
     implementation 'com.google.firebase:firebase-messaging:9.4.0'
     //noinspection GradleCompatible
     implementation 'com.google.android.gms:play-services-gcm:9.4.0'
-    implementation project(':WalinnsApi')
     implementation 'com.github.bumptech.glide:glide:3.8.0'
     implementation 'com.google.code.findbugs:jsr305:3.0.1'
     implementation 'com.google.guava:guava:19.0'
     implementation 'com.google.code.gson:gson:2.5'
     testImplementation 'com.google.truth:truth:0.28'
-    implementation project(':WalinnsApi')
-    implementation  'com.android.support:multidex:1.0.1'
+    compile project(':WalinnsApi')
 
 }
 apply plugin: 'com.google.gms.google-services'

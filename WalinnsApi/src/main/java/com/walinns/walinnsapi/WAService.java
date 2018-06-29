@@ -50,7 +50,6 @@ public class WAService extends Service{
                 public void run() {
                     // display toast
                     // Toast.makeText(MyService.this, "Service is running", Toast.LENGTH_SHORT).show(); //300000 * 6
-                    System.out.println("Service max duration : " + WAUtils.applicationInForeground(getApplicationContext()) + "...." + WAUtils.getCurrentUTC() + "duarion....."+ WAUtils.convertUtctoCurrent(start_time,WAUtils.getCurrentUTC()));
 
                     if((!WAUtils.applicationInForeground(getApplicationContext())&&max_duration.equals(WAUtils.convertUtctoCurrent(start_time,WAUtils.getCurrentUTC())))||WAUtils.getCurrentUTC_12().equals("12:00:00 AM")){
                         JSONObject sessionProperties = new JSONObject();
@@ -58,8 +57,7 @@ public class WAService extends Service{
                             sessionProperties.put("$ae_session_length", WAUtils.convertUtctoCurrent(start_time,WAUtils.getCurrentUTC()));
                             sessionProperties.put("$start_time",start_time);
                             sessionProperties.put("$end_time",WAUtils.getCurrentUTC());
-                            System.out.println("Service max duration hash map :" + sessionProperties.toString());
-                            WALifeCycle.starttime=WAUtils.getCurrentUTC();
+                             WALifeCycle.starttime=WAUtils.getCurrentUTC();
                             WalinnsAPI.getInstance().track_("$ae_session", sessionProperties, true );
 
                         } catch (JSONException e) {

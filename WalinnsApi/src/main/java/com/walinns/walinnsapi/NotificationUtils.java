@@ -17,13 +17,11 @@ import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
-import android.support.annotation.Nullable;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.ContextCompat;
 import android.text.Html;
 import android.text.TextUtils;
 import android.util.Patterns;
-import android.widget.RemoteViews;
 
 
 import java.io.IOException;
@@ -40,7 +38,6 @@ import java.util.List;
  */
 
 public class NotificationUtils {
-        private static String TAG = NotificationUtils.class.getSimpleName();
 
         private Context mContext;
         NotificationCompat.BigPictureStyle bigPictureStyle;
@@ -129,11 +126,9 @@ public class NotificationUtils {
                         try {
                             Class newClass = Class.forName(resumeName);
                             resume = new Intent(mContext, newClass);
-                            System.out.println("Activity name!!! ...:" +isCallable(resume) + ".."+ newClass.getSimpleName() + "....."+resumeName);
 
                         } catch (ClassNotFoundException e) {
                             e.printStackTrace();
-                            System.out.println("Activity name!!! ...: erorr" +e.getMessage() +"..."+e.toString() );
 
                         }
                     }
@@ -191,22 +186,7 @@ public class NotificationUtils {
             NotificationCompat.Action action = null,action1=null;
             Intent resume = null;
             PendingIntent pendingIntent = null;
-//            String resumeName = "com.walinns.walinnsmobileanalytics.Main2Activity";
-//            Intent resume = null;
-//            PendingIntent pendingIntent = null;
-//            try {
-//                Class newClass = Class.forName(resumeName);
-//                resume = new Intent(mContext, newClass);
-//                System.out.println("Activity name!!! ...:" +isCallable(resume) + ".."+ newClass.getSimpleName() + "....."+resumeName);
-//
-//            } catch (ClassNotFoundException e) {
-//                e.printStackTrace();
-//                System.out.println("Activity name!!! ...: erorr" +e.getMessage() +"..."+e.toString() );
-//
-//            }
-//            if(isCallable(resume)){
-//                pendingIntent = PendingIntent.getActivity(mContext, 1, resume, PendingIntent.FLAG_ONE_SHOT);
-//            }
+
             if(ui_type!=null&&!ui_type.isEmpty()&&ui_type.equals("banner")||ui_type.equals("text")){
                 if(deep_link!=null&&!deep_link.isEmpty() || external_link!=null&&!external_link.isEmpty()){
                     if(deep_link.startsWith("https://")||deep_link.startsWith("http://"))
@@ -223,11 +203,9 @@ public class NotificationUtils {
                         try {
                             Class newClass = Class.forName(resumeName);
                             resume = new Intent(mContext, newClass);
-                            System.out.println("Activity name!!! ...:" +isCallable(resume) + ".."+ newClass.getSimpleName() + "....."+resumeName);
 
                         } catch (ClassNotFoundException e) {
                             e.printStackTrace();
-                            System.out.println("Activity name!!! ...: erorr" +e.getMessage() +"..."+e.toString() );
 
                         }
                     }
@@ -359,7 +337,6 @@ public class NotificationUtils {
     private boolean isCallable(Intent intent) {
         List<ResolveInfo> list = mContext.getPackageManager().queryIntentActivities(intent,
                 PackageManager.MATCH_DEFAULT_ONLY);
-        System.out.println("Activity name list.size()...:" + list.size());
 
         return list.size() > 0;
     }

@@ -28,7 +28,6 @@ public class WalinnsAPI {
 
         return client;
     }
-
     private void initialize(Context context, String apiKey) {
         getInstance().initialize(context, apiKey);
     }

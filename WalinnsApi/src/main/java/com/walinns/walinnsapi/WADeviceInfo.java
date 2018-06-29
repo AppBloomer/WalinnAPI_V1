@@ -19,16 +19,10 @@ import android.net.ConnectivityManager;
 import android.os.Build;
 import android.provider.ContactsContract;
 import android.provider.Settings;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
-import android.util.Log;
-import android.util.Patterns;
-import android.widget.Toast;
 
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GoogleApiAvailability;
+
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -102,7 +96,6 @@ public class WADeviceInfo {
 
 
         private CachedInfo() {
-            //  this.advertisingId = this.getAdvertisingId();
 
             this.versionName = this.getVersionName();
             this.osName = this.getOsName();
@@ -119,7 +112,7 @@ public class WADeviceInfo {
             this.language = this.getLanguage();
             this.gpsEnabled = this.checkGPSEnabled();
             this.connectivty= checkNetworkStatus(context);
-            this.playservice=this.isGooglePlayServicesAvailable();
+            this.playservice=true;
             this.bluetooth=this.isBluetoothCheck();
             this.screen_dpi=this.getScreen_dpi();
             this.screen_height=this.getScreen_height();
@@ -127,13 +120,11 @@ public class WADeviceInfo {
             this.age="min 21";
             this.gender="female";
             this.app_version=getApp_version();
-           // this.first_name = getFirstName();
-          //  this.last_name = getLastName();
+
             this.sdk_version = getSdk_version();
             this.city = getCity();
             this.state = getState();
-          //  this.phone_number = getPhoneNumber();
-        }
+         }
 
         private String getVersionName() {
             try {
@@ -146,8 +137,7 @@ public class WADeviceInfo {
 
     private String getSdk_version(){
         String libVersionName = com.walinns.walinnsapi.BuildConfig.VERSION_NAME;
-        System.out.println("sdk version android :"+ libVersionName);
-        return libVersionName;
+         return libVersionName;
 
     }
 
@@ -195,8 +185,7 @@ public class WADeviceInfo {
             TelephonyManager mTelephonyManager = (TelephonyManager)
                     WADeviceInfo.this.context.getSystemService(Context.TELEPHONY_SERVICE);
             int networkType = mTelephonyManager.getNetworkType();
-            System.out.println("Network_TYPE"+networkType);
-            if(networkType != 0) {
+             if(networkType != 0) {
 
                 switch (networkType) {
                     case TelephonyManager.NETWORK_TYPE_GPRS:
@@ -259,17 +248,17 @@ public class WADeviceInfo {
 
         }
 
-        private  boolean isGooglePlayServicesAvailable() {
-            GoogleApiAvailability googleApiAvailability = GoogleApiAvailability.getInstance();
-            int status = googleApiAvailability.isGooglePlayServicesAvailable(WADeviceInfo.this.context);
-            if(status != ConnectionResult.SUCCESS) {
-                if(googleApiAvailability.isUserResolvableError(status)) {
-                    googleApiAvailability.getErrorDialog((Activity) WADeviceInfo.this.context, status, 2404).show();
-                }
-                return false;
-            }
-            return true;
-        }
+//        private  boolean isGooglePlayServicesAvailable() {
+//            GoogleApiAvailability googleApiAvailability = GoogleApiAvailability.getInstance();
+//            int status = googleApiAvailability.isGooglePlayServicesAvailable(WADeviceInfo.this.context);
+//            if(status != ConnectionResult.SUCCESS) {
+//                if(googleApiAvailability.isUserResolvableError(status)) {
+//                    googleApiAvailability.getErrorDialog((Activity) WADeviceInfo.this.context, status, 2404).show();
+//                }
+//                return false;
+//            }
+//            return true;
+//        }
 
         private String getCountry() {
             String country;
@@ -325,8 +314,7 @@ public class WADeviceInfo {
                                 while(var4.hasNext()) {
                                     Address address = (Address)var4.next();
                                     if(address != null) {
-                                        System.out.println("Current location :"+ address.getLocality() +" city:"+ address.getAdminArea());
-                                        if(type.equals("country")) {
+                                         if(type.equals("country")) {
                                             return address.getCountryCode();
                                         }else if(type.equals("city")){
                                             return address.getLocality();
@@ -592,7 +580,6 @@ public class WADeviceInfo {
                         ContactsContract.Profile.DISPLAY_NAME));
                 String[] splited = name.split("\\s");
                 if (splited.length > 0) {
-                    System.out.println("cursor name :" + splited[0] + "..");
 
                     return splited[0];
                 }
@@ -616,7 +603,6 @@ public class WADeviceInfo {
                         ContactsContract.Profile.DISPLAY_NAME));
                 String[] splited = name.split("\\s");
                 if (splited.length > 0) {
-                    System.out.println("cursor Last name :" + splited[1] + "..");
 
                     return splited[1];
                 }

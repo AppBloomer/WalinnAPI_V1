@@ -22,9 +22,6 @@ public class WAGesture {
             private int mGestureSteps = 0;
             private long mTimePassedBetweenTaps = -1L;
             private boolean mDidTapDownBothFingers = false;
-            private final int TIME_BETWEEN_FINGERS_THRESHOLD = 100;
-            private final int TIME_BETWEEN_TAPS_THRESHOLD = 1000;
-            private final int TIME_FOR_LONG_TAP = 2500;
 
             public boolean onTouch(View v, MotionEvent event) {
                 if(event.getPointerCount() > 2) {

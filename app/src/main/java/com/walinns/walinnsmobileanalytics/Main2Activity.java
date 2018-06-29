@@ -11,7 +11,6 @@ import android.support.v7.widget.Toolbar;
 
 import android.view.View;
 
-
 import com.walinns.walinnsapi.WalinnsAPI;
 
 
@@ -22,10 +21,10 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+         WalinnsAPI.getInstance().initialize(this,"b9d2e92935000ffd585cc3092f9b03cd");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);//b2bac52c84ea0f0a4139fbaecf99936e
-        WalinnsAPI.getInstance().initialize(Main2Activity.this,"3c149e37c460d419a946");
-         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+          FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

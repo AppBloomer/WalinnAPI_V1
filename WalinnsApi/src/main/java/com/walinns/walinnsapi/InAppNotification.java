@@ -2,67 +2,28 @@ package com.walinns.walinnsapi;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.Dialog;
-import android.app.PendingIntent;
-import android.content.ActivityNotFoundException;
-import android.content.ComponentName;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.graphics.Point;
 import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.LayerDrawable;
 import android.net.Uri;
 import android.os.Build;
-import android.os.Environment;
-import android.os.Parcelable;
 import android.os.StrictMode;
-import android.support.annotation.RequiresApi;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
-import android.util.Log;
 import android.util.TypedValue;
-import android.view.GestureDetector;
 import android.view.Gravity;
-import android.view.KeyEvent;
-import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.webkit.CookieManager;
-import android.webkit.DownloadListener;
-import android.webkit.ValueCallback;
-import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.RelativeLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.io.File;
-import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.net.URLDecoder;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 import static android.widget.LinearLayout.VERTICAL;
 
@@ -72,7 +33,6 @@ public class InAppNotification extends Activity implements View.OnClickListener 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // setContentView(R.layout.activity_in_app_notification);
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
@@ -262,20 +222,7 @@ public class InAppNotification extends Activity implements View.OnClickListener 
         relativeLayout.addView(parentLayout,rel_params);
 
 
-        //Close button
 
-//        int resourceID = this.getResources().getIdentifier("ic_close", "drawable",getPackageName());
-//        ImageView closeImg = new ImageView(this);
-//        closeImg.setImageResource(resourceID);
-//        RelativeLayout.LayoutParams closeIvLp = new RelativeLayout
-//                .LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,
-//                RelativeLayout.LayoutParams.WRAP_CONTENT);
-//        // Position it at the top right corner
-//        rel_params.addRule(RelativeLayout.ABOVE,relativeLayout.getId());
-//        rel_params.addRule(RelativeLayout.END_OF, relativeLayout.getId());
-//
-//        relativeLayout1.addView(closeImg,closeIvLp);
-       // relativeLayout.addView(relativeLayout1);
 
         setContentView(relativeLayout);
     }
@@ -295,8 +242,7 @@ public class InAppNotification extends Activity implements View.OnClickListener 
 
                 if(getIntent().getStringExtra("external_link")!=null&&!getIntent().getStringExtra("external_link").isEmpty()) {
                     if (getIntent().getStringExtra("external_link").startsWith("https://")||getIntent().getStringExtra("external_link").startsWith("http://")) {
-                        System.out.println("Request_data load url http" + getIntent().getStringExtra("external_link"));
-                        Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                         Intent browserIntent = new Intent(Intent.ACTION_VIEW,
                                 Uri.parse(getIntent().getStringExtra("external_link")));
                         startActivity(browserIntent);
                     }
@@ -321,7 +267,6 @@ public class InAppNotification extends Activity implements View.OnClickListener 
                                 }
                             } catch (ClassNotFoundException e) {
                                 e.printStackTrace();
-                                System.out.println("Activity name!!! ...: erorr" +e.getMessage() +"..."+e.toString() );
 
                             }
                         }
@@ -338,7 +283,6 @@ public class InAppNotification extends Activity implements View.OnClickListener 
     private boolean isCallable(Intent intent) {
         List<ResolveInfo> list = getPackageManager().queryIntentActivities(intent,
                 PackageManager.MATCH_DEFAULT_ONLY);
-        System.out.println("Activity name list.size()...:" + list.size());
 
         return list.size() > 0;
     }

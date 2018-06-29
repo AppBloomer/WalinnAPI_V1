@@ -6,7 +6,6 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
-import android.util.Base64;
 
 import java.io.IOException;
 import java.net.URL;
@@ -43,8 +42,7 @@ public class WAUtils {
         String dateString = formatter.format(new Date(time));
         String date = ""+dateString;
         //localToGMT(date);
-        System.out.println("WAClient" + date);
-        logger.e("WAClient date_time",String.valueOf(time));
+         logger.e("WAClient date_time",String.valueOf(time));
         return date;
     }
     public static String getCurrentUTC(){
@@ -79,8 +77,7 @@ public class WAUtils {
         String timeDiffString =String.format("%02d", timeDiffSecs/3600)  +":"+
                 String.format("%02d", (timeDiffSecs%3600)/60)+":"+
                 String.format("%02d", (timeDiffSecs%3600)%60);
-        System.out.println("Time Diff = "+ timeDiffString);
-        return timeDiffString;
+         return timeDiffString;
     }
     public static boolean applicationInForeground(Context context) {
         boolean isInBackground = true;
@@ -110,8 +107,7 @@ public class WAUtils {
         Date time = Calendar.getInstance().getTime();
         SimpleDateFormat outputFmt = new SimpleDateFormat("HH:mm:ss a");
         outputFmt.setTimeZone(TimeZone.getDefault());
-        System.out.println("12 am time:" + outputFmt.format(time));
-        return outputFmt.format(time);
+         return outputFmt.format(time);
     }
     private static String getDate(String OurDate)
     {
@@ -124,7 +120,6 @@ public class WAUtils {
             SimpleDateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); //this format changeable
             dateFormatter.setTimeZone(TimeZone.getDefault());
             OurDate = dateFormatter.format(value);
-            System.out.println("Request_Data  date time Local time :" + OurDate);
 
             localToUTC(OurDate);
 
@@ -148,7 +143,6 @@ public class WAUtils {
             dateFormatter.setTimeZone(TimeZone.getTimeZone("UTC"));
             OurDate = dateFormatter.format(value);
 
-            System.out.println("Request_Data  date time UTC :" + OurDate);
 
             //Log.d("OurDate", OurDate);
         }
@@ -186,8 +180,7 @@ public class WAUtils {
             Bitmap image = BitmapFactory.decodeStream(url.openConnection().getInputStream());
             return image;
         } catch(IOException e) {
-            System.out.println(e);
-        }
+         }
         return null;
     }
 }

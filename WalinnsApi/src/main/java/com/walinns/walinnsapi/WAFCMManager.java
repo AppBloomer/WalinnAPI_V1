@@ -22,8 +22,7 @@ public class WAFCMManager {
     static WAPref sharedPref;
 
     static void onTokenRefresh(Context context) {
-        System.out.println("WAFCMManager"+ "WAFCMManager init");
-        WAFCMManager.context = context;
+         WAFCMManager.context = context;
         sharedPref=new WAPref(context);
         doFCMRefresh();
     }
@@ -36,7 +35,6 @@ public class WAFCMManager {
                     return;
                 }
                 String freshToken = FCMGetFreshToken();
-                System.out.println("WAFCMManager"+ "WAFCMManager init"+freshToken);
 
                 sharedPref.save(WAPref.push_token,freshToken);
                 WalinnsAPI.getInstance().sendpush();

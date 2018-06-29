@@ -1,15 +1,11 @@
 package com.walinns.walinnsapi;
 
-import android.app.NotificationManager;
-import android.app.PendingIntent;
+
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.media.RingtoneManager;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.NotificationCompat;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -39,13 +35,11 @@ public class WAListenerService extends GcmListenerService {
     // [START receive_message]
     @Override
     public void onMessageReceived(String from, Bundle data) {
-        System.out.println("Message received from gcm :"+ data.toString());
-        Map<String, String> data_h = new HashMap<>();
+         Map<String, String> data_h = new HashMap<>();
         String message = data.getString("message");
         Log.d(TAG, "From: " + from);
         Log.d(TAG, "Message: " + message);
-        System.out.println("Message received from gcm :"+ message);
-        if (from.startsWith("/topics/")) {
+         if (from.startsWith("/topics/")) {
             // message received from some topic.
         } else {
             // normal downstream message.
@@ -67,14 +61,7 @@ public class WAListenerService extends GcmListenerService {
         Log.e(TAG, "push json: " + data.toString());
 
         try {
-            // JSONObject data = json.getJSONObject("data");
 
-//            String title = data.getString("title");
-//            String message = data.getString("message");
-//            boolean isBackground = data.getBoolean("is_background");
-//            String imageUrl = data.getString("image");
-//             String timestamp = data.getString("timestamp");
-            // JSONObject payload = data.getJSONObject("payload");
 
             String title = data.get("title");
             String message = data.get("message");
@@ -99,7 +86,6 @@ public class WAListenerService extends GcmListenerService {
 
 
             if (!NotificationUtils.isAppIsInBackground(getApplicationContext())) {
-                System.out.println("App Status msg:" + "foreground" + "...."+ data.toString());
 
                 Intent intent = new Intent(getApplicationContext(),InAppNotification.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -116,17 +102,6 @@ public class WAListenerService extends GcmListenerService {
                 intent.putExtra("external_link",external_link);
                 getApplicationContext().startActivity(intent);
 
-
-//                Intent resultIntent = new Intent(WAConfig.PUSH_NOTIFICATION);
-//                resultIntent.putExtra("message", message);
-//
-//                // check for image attachment
-//                if (TextUtils.isEmpty(imageUrl)) {
-//                    showNotificationMessage(getApplicationContext(), title, message, timestamp, resultIntent);
-//                } else {
-//                    // image is present, show notification with image
-//                    showNotificationMessageWithBigImage(getApplicationContext(), title, message, timestamp, resultIntent, imageUrl);
-//                }
 
             } else {
                 // app is in background, show the notification in notification tray

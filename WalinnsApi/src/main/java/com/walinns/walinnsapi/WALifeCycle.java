@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -12,7 +11,6 @@ import android.os.Looper;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.net.Socket;
 import java.text.NumberFormat;
 import java.util.Locale;
 
@@ -133,8 +131,7 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
             public void run() {
                 logger.e("WAClient session length_if", String.valueOf(WALifeCycle.this.mIsForeground) + WALifeCycle.this.mPaused);
                 WALifeCycle.this.mInstance.sendpush();
-                System.out.println("WalinnsTrackerClient  tracker_session in"+ WALifeCycle.this.mIsForeground+"...."+WALifeCycle.this.mPaused);
-                if (WALifeCycle.this.mIsForeground && WALifeCycle.this.mPaused) {
+                 if (WALifeCycle.this.mIsForeground && WALifeCycle.this.mPaused) {
                     WALifeCycle.this.mIsForeground = false;
 
                     try {

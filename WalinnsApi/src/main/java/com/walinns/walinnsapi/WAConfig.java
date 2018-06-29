@@ -25,13 +25,7 @@ public class WAConfig {
     public static boolean DEBUG = false;
     private final int mMinSessionDuration;
     private final int mSessionTimeoutDuration;
-    public static final String TOPIC_GLOBAL = "global";
-    public static final String INAPP_X_PERCENT = "xp";
-    public static final String INAPP_Y_PERCENT = "yp";
-    public static final String INAPP_X_DP = "xdp";
-    public static final String INAPP_Y_DP = "ydp";
-    // broadcast receiver intent filters
-    public static final String REGISTRATION_COMPLETE = "registrationComplete";
+
     public static final String PUSH_NOTIFICATION = "pushNotification";
 
     // id to handle the notification in the notification tray
@@ -39,10 +33,8 @@ public class WAConfig {
     public static final int NOTIFICATION_ID_BIG_IMAGE = 101;
     static final String LABEL_NOTIFICATION_ICON = "CLEVERTAP_NOTIFICATION_ICON";
 
-    public static final String SHARED_PREF = "ah_firebase";
-    public static WAConfig getInstance(Context context) {
-        Object var1 = sInstanceLock;
-        synchronized(sInstanceLock) {
+     public static WAConfig getInstance(Context context) {
+         synchronized(sInstanceLock) {
             if(null == sInstance) {
                 logger.e("WalinnsTrackerClient instance null or not", "null");
 
@@ -92,9 +84,7 @@ public class WAConfig {
         this.mMinSessionDuration = metaData.getInt("com.example.walinnstracker.MinimumSessionDuration", 100);
         this.mSessionTimeoutDuration = metaData.getInt("com.example.walinnstracker.SessionTimeoutDuration", 2147483647);
     }
-    public synchronized void setSSLSocketFactory(SSLSocketFactory factory) {
-        this.mSSLSocketFactory = factory;
-    }
+
     public int getSessionTimeoutDuration() {
         return this.mSessionTimeoutDuration;
     }

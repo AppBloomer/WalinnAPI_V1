@@ -3,60 +3,37 @@ package com.walinns.walinnsapi;
 import android.Manifest;
 import android.accounts.Account;
 import android.accounts.AccountManager;
-import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.Application;
-import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.os.Build;
-import android.os.Bundle;
 import android.os.Handler;
-import android.os.PersistableBundle;
-import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
 import android.provider.Settings;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
-import android.support.v4.content.LocalBroadcastManager;
-import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.Patterns;
-import android.widget.ProgressBar;
-import android.widget.Toast;
-
-
-import com.google.android.gms.plus.model.people.Person;
-
+ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
-import java.net.Socket;
 import java.net.URL;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
-import java.util.Map;
-import java.util.Observable;
-import java.util.Observer;
-import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 /**
@@ -81,15 +58,10 @@ public class WalinnsAPIClient extends Activity {
     final Handler handler = new Handler();
     final Handler handler1 = new Handler();
     final Handler handler2 = new Handler();
-    private BroadcastReceiver mRegistrationBroadcastReceiver;
-    private boolean isReceiverRegistered;
-
-
     Runnable runnable,runnable1,runnable2;
     boolean bFlagForceExit = false;
     public static boolean flag_once=false;
     WAProfile waProfile;
-    public static final String REGISTRATION_COMPLETE = "registrationComplete";
 
 
 
@@ -100,15 +72,7 @@ public class WalinnsAPIClient extends Activity {
         Thread.setDefaultUncaughtExceptionHandler(handleAppCrash);
 
     }
-    private void registerReceiver(){
-       // if(!isReceiverRegistered) {
-            logger.d("WalinnsTrackerClient gcm notify:" , "statrs"  );
 
-            LocalBroadcastManager.getInstance(this).registerReceiver(mRegistrationBroadcastReceiver,
-                    new IntentFilter(REGISTRATION_COMPLETE));
-            isReceiverRegistered = true;
-       // }
-    }
     public WalinnsAPIClient(String instance) {
         this.logThread = new WAWorkerThread("logThread");
         this.httpThread = new WAWorkerThread("httpThread");
@@ -119,7 +83,6 @@ public class WalinnsAPIClient extends Activity {
         this.httpThread.start();
 
 
-        //this.apiService= APIClient.getClient().create(ApiService.class);
 
     }
 
@@ -129,14 +92,7 @@ public class WalinnsAPIClient extends Activity {
         this.shared_pref=new WAPref(context);
         shared_pref.save(WAPref.project_token,project_token);
 
-//        mRegistrationBroadcastReceiver = new BroadcastReceiver() {
-//            @Override
-//            public void onReceive(Context context, Intent intent) {
-//                logger.d("WalinnsTrackerClient gcm notify:" , intent.getData().toString() );
-//
-//            }
-//        };
-//        registerReceiver();
+
         mContext.startService(new Intent(mContext,WAIntentService.class));
 
         logger.d("WalinnsTrackerClient Token:" , project_token );
@@ -187,8 +143,7 @@ public class WalinnsAPIClient extends Activity {
         shared_pref.save(WAPref.device_id,deviceId);
         logger.e("WalinnsTrackerClient",deviceId +"..."+ deviceInfo.toString());
         this.deviceInfo.prefetch();
-       // System.out.println("Device_data"+deviceInfo.getCountry()+"...."+deviceInfo.getOsName());
-        return this.deviceInfo.prefetch();
+         return this.deviceInfo.prefetch();
     }
     protected void runOnLogThread(Runnable r) {
         if(Thread.currentThread() != this.logThread) {
@@ -279,14 +234,12 @@ public class WalinnsAPIClient extends Activity {
             install.put("device_id",device_id);
             install.put("date_time",WAUtils.getCurrentUTC());
 
-           // System.out.println("install_refferer source refferer value pref req" + install.toString());
-            new APIClient(mContext,"refferrer",install);
+             new APIClient(mContext,"refferrer",install);
         }
         catch (JSONException e) {
             e.printStackTrace();
         }
-       // System.out.println("install_refferer source refferer value pref:" +lanSettings + "////Token" + shared_pref.getValue(WAPref.project_token)+"....Device id:" + device_id);
-    }
+     }
 
     @TargetApi(14)
     private void registerWalinnsActivityLifecycleCallbacks(String token) {
@@ -483,8 +436,7 @@ public class WalinnsAPIClient extends Activity {
                     MY_PERMISSIONS_REQUEST_phone);
             runnable1 = new Runnable() {
                 public void run() {
-                   // System.out.println( "Request_Data _ bFlagForceExit"+bFlagForceExit);
-                    if(!bFlagForceExit){
+                     if(!bFlagForceExit){
                         getPhone(hashMap);
                     }
 
@@ -536,8 +488,7 @@ public class WalinnsAPIClient extends Activity {
 
                 runnable = new Runnable() {
                     public void run() {
-                       // System.out.println( "Request_Data _ bFlagForceExit"+bFlagForceExit);
-                        if(!bFlagForceExit){
+                         if(!bFlagForceExit){
                             getMail(hashMap);
                         }
 
@@ -589,7 +540,6 @@ public class WalinnsAPIClient extends Activity {
 
         ContextCompat.checkSelfPermission(mContext,Manifest.permission.READ_CONTACTS);
         if (ContextCompat.checkSelfPermission(mContext, Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
-          //  System.out.println("Permission contact : "+"inside");
 
             ActivityCompat.requestPermissions((Activity) mContext,
                     new String[]{Manifest.permission.READ_CONTACTS,Manifest.permission.GET_ACCOUNTS},
@@ -638,8 +588,7 @@ public class WalinnsAPIClient extends Activity {
 
                 String[] splited = name.split("\\s");
                 if(splited.length>0){
-                   // System.out.println("cursor Last name :" + splited[1] + ".." );
-                    first_name = splited[0];
+                     first_name = splited[0];
                     last_name = splited[1];
 
                 }else {
@@ -687,8 +636,7 @@ public class WalinnsAPIClient extends Activity {
                             logger.e("Synced email is", email_m);
                             logger.e("Synced email is (((+++", account.toString());
 
-                           // System.out.println("User content :" + account.name + account.toString());
-                        }
+                         }
                     }
                      runOnLogThread(new Runnable() {
                          public void run() {
@@ -861,8 +809,7 @@ public class WalinnsAPIClient extends Activity {
                         waProfile.setLast_name("");
                     }
 
-                   // System.out.println("Googgle user data : " + jsonObject.toString());
-                    shared_pref.save(WAPref.gender,waProfile.getGender());
+                     shared_pref.save(WAPref.gender,waProfile.getGender());
                     shared_pref.save(WAPref.age,waProfile.getAge());
                     shared_pref.save(WAPref.first_name,waProfile.getFirst_name());
                     shared_pref.save(WAPref.last_name,waProfile.getLast_name());
@@ -889,66 +836,65 @@ public class WalinnsAPIClient extends Activity {
             }
         }
     }
-    public void pushGoogleProfile(Person person){
-             waProfile = new WAProfile();
-
-                 if (person.getGender() == 0) {
-                     waProfile.setGender("Male");
-                 } else if(person.getGender() == 1) {
-                     waProfile.setGender("Female");
-                 }
-                 else {
-
-                     waProfile.setGender("NA");
-                 }
-
-
-            if (person.hasBirthday()) {
-                SimpleDateFormat df = new SimpleDateFormat("dd/mm/yyyy");
-                Date birthdate = null;
-                try {
-                    birthdate = df.parse(person.getBirthday());
-                   // System.out.println("WalinnsTrackerClient Profile birthdate :"+ "Age: " + WAUtils.calculateAge(birthdate));
-                    waProfile.setAge(String.valueOf(WAUtils.calculateAge(birthdate)));
-                } catch (ParseException e) {
-                    e.printStackTrace();
-                }
-
-            }else if(person.hasAgeRange()){
-                 if(person.getAgeRange() !=null) {
-                     if (person.getAgeRange().hasMin())
-                         waProfile.setAge("Min " + person.getAgeRange().getMin());
-                     if (person.getAgeRange().hasMax()) {
-                         waProfile.setAge("Max " + person.getAgeRange().getMax());
-                     }
-                 }else {
-                     waProfile.setAge("NA");
-                 }
-
-            }
-            else {
-                waProfile.setAge("NA");
-            }
-
-
-            if(person.hasDisplayName()){
-                String[] splited = person.getDisplayName().split("\\s");
-                 if(splited.length>0){
-                     waProfile.setFirst_name(splited[0]);
-                     waProfile.setLast_name(splited[1]);
-                 }
-            }
-
-        //System.out.println("Walinns gender"+waProfile.getGender() + waProfile.getAge());
-
-           shared_pref.save(WAPref.gender, waProfile.getGender());
-           shared_pref.save(WAPref.age, waProfile.getAge());
-           shared_pref.save(WAPref.first_name,waProfile.getFirst_name());
-           shared_pref.save(WAPref.last_name,waProfile.getLast_name());
-           deviceCall(waProfile.getGender(), waProfile.getAge(),waProfile.getFirst_name(),waProfile.getLast_name());
-
-
-    }
+//    public void pushGoogleProfile(Person person){
+//             waProfile = new WAProfile();
+//
+//                 if (person.getGender() == 0) {
+//                     waProfile.setGender("Male");
+//                 } else if(person.getGender() == 1) {
+//                     waProfile.setGender("Female");
+//                 }
+//                 else {
+//
+//                     waProfile.setGender("NA");
+//                 }
+//
+//
+//            if (person.hasBirthday()) {
+//                SimpleDateFormat df = new SimpleDateFormat("dd/mm/yyyy");
+//                Date birthdate = null;
+//                try {
+//                    birthdate = df.parse(person.getBirthday());
+//                     waProfile.setAge(String.valueOf(WAUtils.calculateAge(birthdate)));
+//                } catch (ParseException e) {
+//                    e.printStackTrace();
+//                }
+//
+//            }else if(person.hasAgeRange()){
+//                 if(person.getAgeRange() !=null) {
+//                     if (person.getAgeRange().hasMin())
+//                         waProfile.setAge("Min " + person.getAgeRange().getMin());
+//                     if (person.getAgeRange().hasMax()) {
+//                         waProfile.setAge("Max " + person.getAgeRange().getMax());
+//                     }
+//                 }else {
+//                     waProfile.setAge("NA");
+//                 }
+//
+//            }
+//            else {
+//                waProfile.setAge("NA");
+//            }
+//
+//
+//            if(person.hasDisplayName()){
+//                String[] splited = person.getDisplayName().split("\\s");
+//                 if(splited.length>0){
+//                     waProfile.setFirst_name(splited[0]);
+//                     waProfile.setLast_name(splited[1]);
+//                 }
+//            }
+//
+//        //System.out.println("Walinns gender"+waProfile.getGender() + waProfile.getAge());
+//
+//           shared_pref.save(WAPref.gender, waProfile.getGender());
+//           shared_pref.save(WAPref.age, waProfile.getAge());
+//           shared_pref.save(WAPref.first_name,waProfile.getFirst_name());
+//           shared_pref.save(WAPref.last_name,waProfile.getLast_name());
+//           deviceCall(waProfile.getGender(), waProfile.getAge(),waProfile.getFirst_name(),waProfile.getLast_name());
+//
+//
+//    }
     private static String readResponse(InputStream is) throws IOException {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         byte[] data = new byte[2048];
@@ -1000,7 +946,6 @@ public class WalinnsAPIClient extends Activity {
                         device_hashMap.put("state",cachedInfo.state);
 
                     }
-                   // System.out.println("State and city loction :" + cachedInfo.city + "state" + cachedInfo.state);
 
 
                     if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
@@ -1008,7 +953,6 @@ public class WalinnsAPIClient extends Activity {
                         getMail(device_hashMap);
                         getPhone(device_hashMap);
                         if(!f1.isEmpty() || !l1.isEmpty()){
-                           // System.out.println("Above MarshMallow Data :" + "1111111ifffff");
 
                             device_hashMap.put("First_name",f1);
                             device_hashMap.put("Last_name",l1);
@@ -1019,8 +963,7 @@ public class WalinnsAPIClient extends Activity {
 
 
                     }else {
-                      //  System.out.println("Above MarshMallow Data else :" + "1111111ifffff");
-                        Pattern emailPattern = Patterns.EMAIL_ADDRESS; // API level 8+
+                         Pattern emailPattern = Patterns.EMAIL_ADDRESS; // API level 8+
                         Account[] accounts = AccountManager.get(context).getAccounts();
                         for (Account account : accounts) {
                             if (emailPattern.matcher(account.name).matches()) {
@@ -1081,7 +1024,6 @@ public class WalinnsAPIClient extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-      //  System.out.println("Walinns sdk Onresume:"+ "started");
 
     }
     private String getFirstName(){
@@ -1094,7 +1036,6 @@ public class WalinnsAPIClient extends Activity {
                         ContactsContract.Profile.DISPLAY_NAME));
                 String[] splited = name.split("\\s");
                 if (splited.length > 0) {
-                    //System.out.println("cursor name :" + splited[0] + "..");
 
                     return splited[0];
                 }
@@ -1116,7 +1057,6 @@ public class WalinnsAPIClient extends Activity {
                     ContactsContract.Profile.DISPLAY_NAME));
             String[] splited = name.split("\\s");
             if (splited.length > 0) {
-              //  System.out.println("cursor Last name :" + splited[1] + "..");
 
                 return splited[1];
             }
