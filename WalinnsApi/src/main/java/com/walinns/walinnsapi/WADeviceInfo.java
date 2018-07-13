@@ -10,6 +10,8 @@ import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.location.Address;
 import android.location.Geocoder;
@@ -19,6 +21,8 @@ import android.net.ConnectivityManager;
 import android.os.Build;
 import android.provider.ContactsContract;
 import android.provider.Settings;
+import android.support.v4.app.NotificationManagerCompat;
+import android.support.v4.os.ConfigurationCompat;
 import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
 
@@ -87,6 +91,9 @@ public class WADeviceInfo {
         String sdk_version;
         String state;
         String city;
+        String notify_status;
+        String app_language;
+        String device_type;
        // String phone_number;
 
         boolean bluetooth;
@@ -124,6 +131,9 @@ public class WADeviceInfo {
             this.sdk_version = getSdk_version();
             this.city = getCity();
             this.state = getState();
+            this.notify_status = getNotifyStatus();
+            this.app_language = getApp_language();
+            this.device_type = getDevice_type();
          }
 
         private String getVersionName() {
@@ -140,7 +150,14 @@ public class WADeviceInfo {
          return libVersionName;
 
     }
+        private String getDevice_type(){
+            if(isTablet(context)){
+                return "Tablet";
+            }else {
+                return "Mobile";
+            }
 
+        }
 
         private String getOsName() {
             return "android";
@@ -151,7 +168,7 @@ public class WADeviceInfo {
         }
 
         private String getBrand() {
-            return Build.BRAND;
+            return Build.MODEL;
         }
 
         private String getManufacturer() {
@@ -314,7 +331,7 @@ public class WADeviceInfo {
                                 while(var4.hasNext()) {
                                     Address address = (Address)var4.next();
                                     if(address != null) {
-                                         if(type.equals("country")) {
+                                        if(type.equals("country")) {
                                             return address.getCountryCode();
                                         }else if(type.equals("city")){
                                             return address.getLocality();
@@ -361,6 +378,11 @@ public class WADeviceInfo {
         }
 
         private String getLanguage() {
+            return Resources.getSystem().getConfiguration().locale.getLanguage();
+        }
+
+        private String getApp_language(){
+
             return Locale.getDefault().getLanguage();
         }
 
@@ -615,5 +637,19 @@ public class WADeviceInfo {
 
     }
 
+    private String getNotifyStatus(){
+        boolean noti = NotificationManagerCompat.from(context).areNotificationsEnabled();
+        if(noti){
+            return "true";
+        }else {
+            return "false";
+        }
+
+    }
+    private boolean isTablet(Context context) {
+        boolean xlarge = ((context.getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) == 4);
+        boolean large = ((context.getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_LARGE);
+        return (xlarge || large);
+    }
 
 }

@@ -47,14 +47,19 @@ public class WAInstallRefferer extends BroadcastReceiver {
             try {
                 String result = URLDecoder.decode(referrer, "UTF-8");
                 if (result != null && !result.equals("")) {
-                     String[] referrerParts = result.split("&");
+                    String[] referrerParts = result.split("&");
                     String utmSource = getData(KEY_UTM_SOURCE, referrerParts);
                     String utm_medium = getData(KEY_UTM_MEDIUM, referrerParts);
                     String utm_term = getData(KEY_UTM_TERM, referrerParts);
+                    String campaign_name = getData(KEY_UTM_CAMPAIGN,referrerParts);
+                    String campaign_source = getData(KEY_UTM_CONTENT,referrerParts);
                     newPrefs.put("utm_source", utmSource);
                     newPrefs.put("utm_medium", utm_medium);
                     newPrefs.put("utm_term", utm_term);
-                    System.out.println("install_refferer source decode url.. :" + utmSource + "..." + utm_medium + "..." + utm_term);
+                    newPrefs.put("utm_campaign",campaign_name);
+                    newPrefs.put("utm_content",campaign_source);
+                    System.out.println("install_refferer source decode url.. :" + utmSource + "..." + utm_medium + "..." + utm_term+"...."+campaign_name+"..."+campaign_source);
+
                 }
 
             } catch (UnsupportedEncodingException e) {
@@ -84,6 +89,9 @@ public class WAInstallRefferer extends BroadcastReceiver {
     public static final String KEY_UTM_SOURCE = "utm_source";
     public static final String KEY_UTM_MEDIUM = "utm_medium";
     public static final String KEY_UTM_TERM= "utm_term";
+    public static final String KEY_UTM_CAMPAIGN="utm_campaign";
+    public static final String KEY_UTM_CONTENT = "utm_content";
+
 
 
     private static final String LOGTAG = "WalinnsAPi.InstRfrRcvr";

@@ -226,11 +226,32 @@ public class WalinnsAPIClient extends Activity {
         String device_id = Settings.Secure.getString(mContext.getContentResolver(), "android_id");
         try {
             if (referralInfo.getString("utm_source", null) != null) {
-                install.put("install_refferrer", referralInfo.getString("utm_source", null));
+                install.put("medium", referralInfo.getString("utm_source", null));
             }
             if (referralInfo.getString("referrer", null) != null) {
-                install.put("install_refferrer_test", referralInfo.getString("referrer", null));
+                install.put("refferer_url", referralInfo.getString("referrer", null));
             }
+            if(referralInfo.getString("utm_term", null) != null){
+                install.put("utm_term", referralInfo.getString("utm_term", null));
+            }
+            if(referralInfo.getString("utm_campaign", null) != null){
+                install.put("campign_name", referralInfo.getString("utm_campaign", null));
+            }
+            if(referralInfo.getString("utm_content", null) != null){
+                install.put("campign_source", referralInfo.getString("utm_content", null));
+            }
+            if (referralInfo.getString("utm_medium", null) != null) {
+                if(referralInfo.getString("utm_medium", null).equals("organic")){
+                    install.put("channel", referralInfo.getString("utm_medium", null));
+
+                }else if(referralInfo.getString("utm_medium", null).equals("(not%20set)")){
+                    install.put("channel", "Direct");
+                }else {
+                    install.put("channel", referralInfo.getString("utm_medium", null));
+                }
+            }
+
+
             install.put("device_id",device_id);
             install.put("date_time",WAUtils.getCurrentUTC());
 
@@ -915,6 +936,7 @@ public class WalinnsAPIClient extends Activity {
                 try {
                     device_hashMap.put("device_id",deviceId);
                     device_hashMap.put("device_model",cachedInfo.brand);
+                    device_hashMap.put("device_manufacture",cachedInfo.manufacturer);
                     device_hashMap.put("os_name",cachedInfo.osName);
                     device_hashMap.put("os_version",cachedInfo.osVersion);
                     device_hashMap.put("app_version",cachedInfo.app_version);
@@ -931,6 +953,9 @@ public class WalinnsAPIClient extends Activity {
                     device_hashMap.put("country", cachedInfo.country);
                     device_hashMap.put("date_time",WAUtils.getCurrentUTC());
                     device_hashMap.put("sdk_version",cachedInfo.sdk_version);
+                    device_hashMap.put("notify_status",cachedInfo.notify_status);
+                    device_hashMap.put("app_language",cachedInfo.app_language);
+                    device_hashMap.put("device_type",cachedInfo.device_type);
 
 
                     if(cachedInfo.city==null){

@@ -18,6 +18,7 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.app.NotificationManagerCompat;
 import android.support.v4.content.ContextCompat;
 import android.text.Html;
 import android.text.TextUtils;
@@ -103,6 +104,8 @@ public class NotificationUtils {
 
 
         private void showSmallNotification(NotificationCompat.Builder mBuilder, int icon, String title, String message, String timeStamp, PendingIntent resultPendingIntent, Uri alarmSound,String ui_type,String deep_link,String external_link,String btn1_name,String btn2_name) {
+
+
             if(ui_type!=null&&!ui_type.isEmpty()&&ui_type.equals("text")){
                 NotificationCompat.InboxStyle inboxStyle = new NotificationCompat.InboxStyle();
                 inboxStyle.addLine(message);
@@ -133,6 +136,7 @@ public class NotificationUtils {
                         }
                     }
                 }
+
 
                 if(isCallable(resume)){
                     pendingIntent = PendingIntent.getActivity(mContext, 1, resume, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -252,6 +256,9 @@ public class NotificationUtils {
                         .build();
                 NotificationManager notificationManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
                 notificationManager.notify(WAConfig.NOTIFICATION_ID_BIG_IMAGE, notification);
+
+
+
             }
 
         }
