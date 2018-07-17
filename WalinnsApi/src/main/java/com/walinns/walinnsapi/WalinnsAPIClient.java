@@ -231,9 +231,9 @@ public class WalinnsAPIClient extends Activity {
             if (referralInfo.getString("referrer", null) != null) {
                 install.put("refferer_url", referralInfo.getString("referrer", null));
             }
-            if(referralInfo.getString("utm_term", null) != null){
-                install.put("utm_term", referralInfo.getString("utm_term", null));
-            }
+//            if(referralInfo.getString("utm_term", null) != null){
+//                install.put("utm_term", referralInfo.getString("utm_term", null));
+//            }
             if(referralInfo.getString("utm_campaign", null) != null){
                 install.put("campign_name", referralInfo.getString("utm_campaign", null));
             }
