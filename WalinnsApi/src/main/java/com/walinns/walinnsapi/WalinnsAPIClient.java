@@ -1,28 +1,20 @@
 package com.walinns.walinnsapi;
 
-import android.Manifest;
-import android.accounts.Account;
-import android.accounts.AccountManager;
+
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.Application;
-import android.content.ContentResolver;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
-import android.database.Cursor;
+
 import android.os.Build;
 import android.os.Handler;
-import android.provider.ContactsContract;
 import android.provider.Settings;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.util.Log;
-import android.util.Patterns;
- import android.widget.Toast;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.ByteArrayOutputStream;
@@ -34,7 +26,6 @@ import java.net.URL;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.regex.Pattern;
 
 /**
  * Created by walinnsinnovation on 30/12/17.
@@ -51,15 +42,7 @@ public class WalinnsAPIClient extends Activity {
     protected String instanceName;
     protected WAPref shared_pref;
     protected WALifeCycle mWalinnsactivitylifecycle;
-    private static final int MY_PERMISSIONS_REQUEST = 1,MY_PERMISSIONS_REQUEST_phone = 111,MY_PERMISSIONS_REQUEST_NAME=2;
-    private String email_m= "na";
-    private String possibleEmail = "NA",phone_number = "NA",first_name = "NA",last_name = "NA";
     public JSONObject device_hashMap;
-    final Handler handler = new Handler();
-    final Handler handler1 = new Handler();
-    final Handler handler2 = new Handler();
-    Runnable runnable,runnable1,runnable2;
-    boolean bFlagForceExit = false;
     public static boolean flag_once=false;
     WAProfile waProfile;
 
@@ -128,7 +111,7 @@ public class WalinnsAPIClient extends Activity {
             if(!shared_pref.getValue(WAPref.last_name).isEmpty()){
                 l1 = shared_pref.getValue(WAPref.last_name);
             }
-            deviceCall(v1,v2,f1,l1);
+            deviceCall(v1,v2,f1,l1,"NA","default");
 
         }
         return this;
@@ -209,8 +192,7 @@ public class WalinnsAPIClient extends Activity {
             hashMap.put("event_name",event_name);
             hashMap.put("device_id",deviceId);
             hashMap.put("date_time",WAUtils.getCurrentUTC());
-            //Call<ResponseBody> call = apiService.event_post(hashMap);
-            //call.enqueue(callResponse);
+
             logger.e("WalinnTrackerClient date_time_event",hashMap.toString());
             new APIClient(mContext,"events",hashMap);
         } catch (JSONException e) {
@@ -338,8 +320,7 @@ public class WalinnsAPIClient extends Activity {
         final JSONObject finalHash = hash;
         this.runOnLogThread(new Runnable() {
             public void run() {
-                //  Call<ResponseBody> call = apiService.fetchAppUserDetailPost(hash);
-                // call.enqueue(callResponse);
+
                 new APIClient(mContext,"fetchAppUserDetail", finalHash);
             }
         });
@@ -375,11 +356,7 @@ public class WalinnsAPIClient extends Activity {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-                    // hash.put("date_time",Utils.getDate(Long.parseLong(String.valueOf(System.currentTimeMillis()))));
 
-
-                    //Call<ResponseBody> call = apiService.send_crash(hash);
-                    //call.enqueue(callResponse);
                     new APIClient(mContext,"crashReport", hash);
                 }
             }
@@ -403,8 +380,6 @@ public class WalinnsAPIClient extends Activity {
                     logger.e("WalinnsTrackerClient","ScreenView value is empty"+"Please enter valid name");
                 }
 
-                //Call<ResponseBody> call = apiService.screenView(hash);
-                // call.enqueue(callResponse);
                 new APIClient(mContext,"screenView", hash);
 
             }
@@ -435,8 +410,7 @@ public class WalinnsAPIClient extends Activity {
                         e.printStackTrace();
                     }
 
-                    //Call<ResponseBody> call = apiService.uninstallcount(hash);
-                    // call.enqueue(callResponse);
+
                     new APIClient(mContext,"uninstallcount", hash);
                 }
             }
@@ -448,301 +422,8 @@ public class WalinnsAPIClient extends Activity {
         registerWalinnsActivityLifecycleCallbacks(token);
     }
 
-    private  void getPhone(final JSONObject hashMap){
-        String[] permissons = {Manifest.permission.READ_PHONE_STATE,Manifest.permission.READ_CONTACTS
-                 };
-        if (ContextCompat.checkSelfPermission(mContext, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions((Activity)mContext,
-                    permissons,
-                    MY_PERMISSIONS_REQUEST_phone);
-            runnable1 = new Runnable() {
-                public void run() {
-                     if(!bFlagForceExit){
-                        getPhone(hashMap);
-                    }
 
 
-                }
-            };
-            handler1.postDelayed(runnable1,500);
-        }else {
-            TelephonyManager tMgr = (TelephonyManager)mContext.getSystemService(Context.TELEPHONY_SERVICE);
-            phone_number = tMgr.getLine1Number();
-            if(phone_number !=null && !phone_number.isEmpty()){
-                handler1.removeCallbacks(runnable1);
-                handler1.removeCallbacksAndMessages(null);
-            }
-        }
-
-
-        runOnLogThread(new Runnable() {
-            public void run() {
-                try {
-
-                    hashMap.put("phone_number",phone_number);
-
-                   // logger.e("Request_Data _ phone",phone_number);
-                    logger.e("Request_Data _ grant",hashMap.toString() + flag_once);
-                    new APIClient(mContext, "devices", hashMap);
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-    }
-    private void getMail(final JSONObject hashMap) {
-
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
-           // ContextCompat.checkSelfPermission(mContext,  Manifest.permission.GET_ACCOUNTS);
-            ContextCompat.checkSelfPermission(mContext,  Manifest.permission.GET_ACCOUNTS);
-
-            if (ContextCompat.checkSelfPermission(mContext, Manifest.permission.GET_ACCOUNTS) != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions((Activity)mContext,
-                        new String[]{
-                                Manifest.permission.GET_ACCOUNTS,
-                                Manifest.permission.READ_CONTACTS},
-                        MY_PERMISSIONS_REQUEST);
-//                ActivityCompat.requestPermissions((Activity)mContext,
-//                        new String[]{Manifest.permission.GET_ACCOUNTS},
-//                        MY_PERMISSIONS_REQUEST);
-
-                runnable = new Runnable() {
-                    public void run() {
-                         if(!bFlagForceExit){
-                            getMail(hashMap);
-                        }
-
-
-                    }
-                };
-                handler.postDelayed(runnable,500);
-
-            }else {
-
-                Pattern emailPattern = Patterns.EMAIL_ADDRESS; // API level 8+
-                Account[] accounts = AccountManager.get(mContext).getAccounts();
-                for (Account account : accounts) {
-                    if (emailPattern.matcher(account.name).matches()) {
-                        possibleEmail = account.name;
-
-                        bFlagForceExit = true;
-                        logger.e("Synced email is", possibleEmail);
-
-                        logger.e("Synced email is +++", account.toString());
-
-                    }
-                }
-
-                logger.e("Request_Data _ mail",possibleEmail);
-                if(!possibleEmail.equals("NA")){
-                    handler.removeCallbacks(runnable);
-                    handler.removeCallbacksAndMessages(null);
-                }
-            }
-
-            runOnLogThread(new Runnable() {
-                public void run() {
-                    try {
-                        hashMap.put("email",possibleEmail);
-                        logger.e("Request_Data _ grant",hashMap.toString() + flag_once);
-                        new APIClient(mContext, "devices", hashMap);
-
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
-        }
-
-    }
-
-     private  void getName(final JSONObject hashMap){
-
-        ContextCompat.checkSelfPermission(mContext,Manifest.permission.READ_CONTACTS);
-        if (ContextCompat.checkSelfPermission(mContext, Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
-
-            ActivityCompat.requestPermissions((Activity) mContext,
-                    new String[]{Manifest.permission.READ_CONTACTS,Manifest.permission.GET_ACCOUNTS},
-                    MY_PERMISSIONS_REQUEST_NAME);
-
-
-//        if (ContextCompat.checkSelfPermission(mContext, Manifest.permission.READ_CONTACTS)
-//                != PackageManager.PERMISSION_GRANTED) {
-//
-//            if (shouldShowRequestPermissionRationale(
-//                    Manifest.permission.WRITE_CONTACTS)) {
-//                // Show our own UI to explain to the user why we need to read the contacts
-//                // before actually requesting the permission and showing the default UI
-//            }
-//
-//            // Fire off an async request to actually get the permission
-//            // This will show the standard permission request dialog UI
-//            ActivityCompat.requestPermissions((Activity)mContext,new String[]{Manifest.permission.READ_CONTACTS},
-//                    MY_PERMISSIONS_REQUEST_NAME);
-//
-
-
-
-//            ActivityCompat.requestPermissions((Activity)mContext,
-//                    new String[]{Manifest.permission.READ_CONTACTS},
-//                    MY_PERMISSIONS_REQUEST_NAME);
-             runnable2 = new Runnable() {
-                public void run() {
-                   // System.out.println( "Request_Data _ bFlagForceExit"+bFlagForceExit);
-                    if(!bFlagForceExit){
-                        getName(hashMap);
-                    }
-
-
-                }
-            };
-            handler2.postDelayed(runnable2,500);
-        }else {
-
-            ContentResolver cr=mContext.getContentResolver();
-            Cursor curser = cr.query(ContactsContract.Profile.CONTENT_URI, null, null, null, null);
-            if(curser.getCount()>0){
-                curser.moveToFirst();
-                String name=curser.getString(curser.getColumnIndex(
-                        ContactsContract.Profile.DISPLAY_NAME));
-
-                String[] splited = name.split("\\s");
-                if(splited.length>0){
-                     first_name = splited[0];
-                    last_name = splited[1];
-
-                }else {
-                    first_name = "NA";
-                    last_name = "NA";
-                }
-
-            }
-            curser.close();
-            if(first_name !=null && !first_name.isEmpty()){
-                handler2.removeCallbacks(runnable1);
-                handler2.removeCallbacksAndMessages(null);
-            }
-        }
-
-
-        runOnLogThread(new Runnable() {
-            public void run() {
-                try {
-
-                    hashMap.put("First_name",first_name);
-                    hashMap.put("Last_name",last_name);
-                  //  logger.e("Request_Data _ first_name",first_name);
-                    logger.e("Request_Data _ grant",hashMap.toString() + flag_once);
-                    new APIClient(mContext, "devices", hashMap);
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-    }
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-        switch (requestCode) {
-
-            case MY_PERMISSIONS_REQUEST:
-                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(mContext, "Permission Granted", Toast.LENGTH_SHORT).show();
-                    Pattern emailPattern = Patterns.EMAIL_ADDRESS; // API level 8+
-                    Account[] accounts = AccountManager.get(mContext).getAccounts();
-                    for (Account account : accounts) {
-                        if (emailPattern.matcher(account.name).matches()) {
-                            possibleEmail = account.name;
-                            logger.e("Synced email is", email_m);
-                            logger.e("Synced email is (((+++", account.toString());
-
-                         }
-                    }
-                     runOnLogThread(new Runnable() {
-                         public void run() {
-                             try {
-                                 device_hashMap.put("email",possibleEmail);
-                             } catch (JSONException e) {
-                                 e.printStackTrace();
-                             }
-                             new APIClient(mContext, "devices", device_hashMap);
-                         }
-                     });
-                } else {
-                   // Toast.makeText(mContext, "Permission Denied", Toast.LENGTH_SHORT).show();
-                     Log.d("WalinnsApi Get_Task","Permission Denied");
-                }
-                return;
-
-
-
-
-            case MY_PERMISSIONS_REQUEST_phone:
-                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    TelephonyManager tMgr = (TelephonyManager)mContext.getSystemService(Context.TELEPHONY_SERVICE);
-                    phone_number = tMgr.getLine1Number();
-                    runOnLogThread(new Runnable() {
-                        public void run() {
-                            try {
-                                device_hashMap.put("phone_number",phone_number);
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                            new APIClient(mContext, "devices", device_hashMap);
-                        }
-                    });
-                }else {
-                    //Toast.makeText(mContext, "Permission Denied", Toast.LENGTH_SHORT).show();
-                    Log.d("WalinnsApi READ_PHONE_STATE","Permission Denied");
-                }
-                return;
-
-            case MY_PERMISSIONS_REQUEST_NAME:
-                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-                    runOnLogThread(new Runnable() {
-                        public void run() {
-                            try {
-                                ContentResolver cr=mContext.getContentResolver();
-                                Cursor curser = cr.query(ContactsContract.Profile.CONTENT_URI, null, null, null, null);
-                                if(curser.getCount()>0){
-                                    curser.moveToFirst();
-                                    String name=curser.getString(curser.getColumnIndex(
-                                            ContactsContract.Profile.DISPLAY_NAME));
-                                    String[] splited = name.split("\\s");
-                                    if(splited.length>0){
-                                       // System.out.println("cursor Last name :" + splited[1] + ".." );
-                                        first_name = splited[0];
-                                        last_name = splited[1];
-
-                                    }else {
-                                        first_name = "NA";
-                                        last_name = "NA";
-                                    }
-
-                                }
-                                curser.close();
-                                device_hashMap.put("First_name",first_name);
-                                device_hashMap.put("Last_name",last_name);
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                            new APIClient(mContext, "devices", device_hashMap);
-                        }
-                    });
-                }else {
-                    //Toast.makeText(mContext, "Permission Denied", Toast.LENGTH_SHORT).show();
-                    Log.d("WalinnsApi  READ_CONTACT","Permission Denied");
-
-                }
-                return;
-
-
-            // other 'case' lines to check for other
-            // permissions this app might request
-        }
-    }
 
     public void pushProfile(JSONObject jsonObject){
         waProfile = new WAProfile();
@@ -776,6 +457,18 @@ public class WalinnsAPIClient extends Activity {
                     waProfile.setLast_name(" ");
                 }
 
+                if(jsonObject.has("id")){
+                    try {
+                        URL profile_pic = new URL("https://graph.facebook.com/" + jsonObject.getString("id") + "/picture?width=200&height=150");
+                        Log.i("profile_pic", profile_pic + "");
+                        waProfile.setProfile_pic(profile_pic.toString());
+
+                    } catch (MalformedURLException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+
             } catch (JSONException e) {
                 e.printStackTrace();
             } catch (ParseException e) {
@@ -787,7 +480,8 @@ public class WalinnsAPIClient extends Activity {
             shared_pref.save(WAPref.age,waProfile.getAge());
             shared_pref.save(WAPref.first_name,waProfile.getFirst_name());
             shared_pref.save(WAPref.last_name,waProfile.getLast_name());
-            deviceCall(waProfile.getGender(), waProfile.getAge(),waProfile.getFirst_name(),waProfile.getLast_name());
+            shared_pref.save(WAPref.profile_pic,waProfile.getProfile_pic());
+            deviceCall(waProfile.getGender(), waProfile.getAge(),waProfile.getFirst_name(),waProfile.getLast_name(),waProfile.getProfile_pic(),"fb");
         }
     }
     public void pushProfile(String acess_token){
@@ -805,6 +499,7 @@ public class WalinnsAPIClient extends Activity {
                     String response = readResponse(is);
                     is.close();
                     JSONObject jsonObject = new JSONObject(response);
+                    System.out.println("Google login profile picture data :" + jsonObject.toString());
                     if (jsonObject.has("gender")) {
                         waProfile.setGender(jsonObject.getString("gender"));
                     } else {
@@ -830,17 +525,24 @@ public class WalinnsAPIClient extends Activity {
                         waProfile.setLast_name("");
                     }
 
+                    if(jsonObject.has("picture")){
+
+                        waProfile.setProfile_pic(jsonObject.getString("picture"));
+                    }else {
+                        waProfile.setProfile_pic("NA");
+                    }
+
                      shared_pref.save(WAPref.gender,waProfile.getGender());
                     shared_pref.save(WAPref.age,waProfile.getAge());
                     shared_pref.save(WAPref.first_name,waProfile.getFirst_name());
                     shared_pref.save(WAPref.last_name,waProfile.getLast_name());
-                    deviceCall(waProfile.getGender(), waProfile.getAge(),waProfile.getFirst_name(),waProfile.getLast_name());
+                    shared_pref.save(WAPref.profile_pic,waProfile.getProfile_pic());
+                    deviceCall(waProfile.getGender(), waProfile.getAge(),waProfile.getFirst_name(),waProfile.getLast_name(),waProfile.getProfile_pic(),"google");
                     return;
                 } else if (sc == 401) {
 
                     logger.e("Server auth error, please try again.", null);
-                    //Toast.makeText(mActivity, "Please try again", Toast.LENGTH_SHORT).show();
-                    //mActivity.finish();
+
                     return;
                 } else {
                     logger.e("Server returned the following error code: " + sc, null);
@@ -857,66 +559,7 @@ public class WalinnsAPIClient extends Activity {
             }
         }
     }
-//    public void pushGoogleProfile(Person person){
-//             waProfile = new WAProfile();
-//
-//                 if (person.getGender() == 0) {
-//                     waProfile.setGender("Male");
-//                 } else if(person.getGender() == 1) {
-//                     waProfile.setGender("Female");
-//                 }
-//                 else {
-//
-//                     waProfile.setGender("NA");
-//                 }
-//
-//
-//            if (person.hasBirthday()) {
-//                SimpleDateFormat df = new SimpleDateFormat("dd/mm/yyyy");
-//                Date birthdate = null;
-//                try {
-//                    birthdate = df.parse(person.getBirthday());
-//                     waProfile.setAge(String.valueOf(WAUtils.calculateAge(birthdate)));
-//                } catch (ParseException e) {
-//                    e.printStackTrace();
-//                }
-//
-//            }else if(person.hasAgeRange()){
-//                 if(person.getAgeRange() !=null) {
-//                     if (person.getAgeRange().hasMin())
-//                         waProfile.setAge("Min " + person.getAgeRange().getMin());
-//                     if (person.getAgeRange().hasMax()) {
-//                         waProfile.setAge("Max " + person.getAgeRange().getMax());
-//                     }
-//                 }else {
-//                     waProfile.setAge("NA");
-//                 }
-//
-//            }
-//            else {
-//                waProfile.setAge("NA");
-//            }
-//
-//
-//            if(person.hasDisplayName()){
-//                String[] splited = person.getDisplayName().split("\\s");
-//                 if(splited.length>0){
-//                     waProfile.setFirst_name(splited[0]);
-//                     waProfile.setLast_name(splited[1]);
-//                 }
-//            }
-//
-//        //System.out.println("Walinns gender"+waProfile.getGender() + waProfile.getAge());
-//
-//           shared_pref.save(WAPref.gender, waProfile.getGender());
-//           shared_pref.save(WAPref.age, waProfile.getAge());
-//           shared_pref.save(WAPref.first_name,waProfile.getFirst_name());
-//           shared_pref.save(WAPref.last_name,waProfile.getLast_name());
-//           deviceCall(waProfile.getGender(), waProfile.getAge(),waProfile.getFirst_name(),waProfile.getLast_name());
-//
-//
-//    }
-    private static String readResponse(InputStream is) throws IOException {
+     private static String readResponse(InputStream is) throws IOException {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         byte[] data = new byte[2048];
         int len = 0;
@@ -925,15 +568,14 @@ public class WalinnsAPIClient extends Activity {
         }
         return new String(bos.toByteArray(), "UTF-8");
     }
-    protected void deviceCall(final String v1, final String v2 , final String f1 , final String l1){
+    protected void deviceCall(final String v1, final String v2 , final String f1 , final String l1, final String profile_picture , final String flag){
         this.runOnLogThread(new Runnable() {
             @Override
             public void run() {
                 WADeviceInfo.CachedInfo cachedInfo=initializeDeviceInfo();
                 logger.e("Device_data)))",cachedInfo.country+ cachedInfo.model);
                  device_hashMap =new JSONObject();
-                //getPermissionToReadUserContacts();
-                try {
+                 try {
                     device_hashMap.put("device_id",deviceId);
                     device_hashMap.put("device_model",cachedInfo.brand);
                     device_hashMap.put("device_manufacture",cachedInfo.manufacturer);
@@ -947,8 +589,13 @@ public class WalinnsAPIClient extends Activity {
                     device_hashMap.put("screen_dpi",cachedInfo.screen_dpi);
                     device_hashMap.put("screen_height",cachedInfo.screen_height);
                     device_hashMap.put("screen_width",cachedInfo.screen_width);
-                    device_hashMap.put("gender",v1);
-                    device_hashMap.put("age", v2);
+                    if(flag.equals("fb")||flag.equals("google")) {
+                        device_hashMap.put("gender", v1);
+                        device_hashMap.put("age", v2);
+                    }else {
+                        device_hashMap.put("gender", "NA");
+                        device_hashMap.put("age", "NA");
+                    }
                     device_hashMap.put("language",cachedInfo.language);
                     device_hashMap.put("country", cachedInfo.country);
                     device_hashMap.put("date_time",WAUtils.getCurrentUTC());
@@ -956,6 +603,7 @@ public class WalinnsAPIClient extends Activity {
                     device_hashMap.put("notify_status",cachedInfo.notify_status);
                     device_hashMap.put("app_language",cachedInfo.app_language);
                     device_hashMap.put("device_type",cachedInfo.device_type);
+                    device_hashMap.put("profile_pic",profile_picture);
 
 
                     if(cachedInfo.city==null){
@@ -971,46 +619,18 @@ public class WalinnsAPIClient extends Activity {
                         device_hashMap.put("state",cachedInfo.state);
 
                     }
-
-
-                    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
-                       // System.out.println("Above MarshMallow Data ifff:" + "1111111ifffff");
-                        getMail(device_hashMap);
-                        getPhone(device_hashMap);
-                        if(!f1.isEmpty() || !l1.isEmpty()){
-
-                            device_hashMap.put("First_name",f1);
-                            device_hashMap.put("Last_name",l1);
-                        }else {
-                           // System.out.println("Above MarshMallow Data :" + "1111111");
-                            getName(device_hashMap);
-                        }
-
-
+                    if(flag.equals("user_profile")){
+                         device_hashMap.put("First_name",f1);
+                        device_hashMap.put("Last_name",l1);
+                        device_hashMap.put("email",v1);
+                        device_hashMap.put("phone_number",v2);
                     }else {
-                         Pattern emailPattern = Patterns.EMAIL_ADDRESS; // API level 8+
-                        Account[] accounts = AccountManager.get(context).getAccounts();
-                        for (Account account : accounts) {
-                            if (emailPattern.matcher(account.name).matches()) {
-                                possibleEmail = account.name;
-                                logger.e("Synced email is", possibleEmail);
-
-                            }
-                        }
-                        device_hashMap.put("email", possibleEmail);
-
-                        TelephonyManager tMgr = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
-                        phone_number = tMgr.getLine1Number();
-                        if(phone_number ==null){
-                            device_hashMap.put("phone_number", "NA");
-
-                        }
-                        device_hashMap.put("First_name",getFirstName());
-                        device_hashMap.put("Last_name",getLastName());
-                        logger.e("Request_Data",device_hashMap.toString());
-                        new APIClient(mContext, "devices", device_hashMap);
+                        device_hashMap.put("First_name","NA");
+                        device_hashMap.put("Last_name","NA");
+                        device_hashMap.put("email","NA");
+                        device_hashMap.put("phone_number","NA");
                     }
-
+                    new APIClient(mContext, "devices", device_hashMap);
 
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -1020,79 +640,50 @@ public class WalinnsAPIClient extends Activity {
         });
     }
 
-    @TargetApi(Build.VERSION_CODES.M)
-    public void getPermissionToReadUserContacts() {
-        // 1) Use the support library version ContextCompat.checkSelfPermission(...) to avoid
-        // checking the build version since Context.checkSelfPermission(...) is only available
-        // in Marshmallow
-        // 2) Always check for permission (even if permission has already been granted)
-        // since the user can revoke permissions at any time through Settings
-        if (ContextCompat.checkSelfPermission(mContext, android.Manifest.permission.READ_CONTACTS)
-                != PackageManager.PERMISSION_GRANTED) {
 
-            // The permission is NOT already granted.
-            // Check if the user has been asked about this permission already and denied
-            // it. If so, we want to give more explanation about why the permission is needed.
-            if (shouldShowRequestPermissionRationale(
-                    android.Manifest.permission.READ_CONTACTS)) {
-                // Show our own UI to explain to the user why we need to read the contacts
-                // before actually requesting the permission and showing the default UI
-            }
-
-            // Fire off an async request to actually get the permission
-            // This will show the standard permission request dialog UI
-            requestPermissions(new String[]{android.Manifest.permission.READ_CONTACTS},
-                    MY_PERMISSIONS_REQUEST_NAME);
-        }
-    }
 
     @Override
     protected void onResume() {
         super.onResume();
 
     }
-    private String getFirstName(){
 
-            ContentResolver cr = mContext.getContentResolver();
-            Cursor curser = cr.query(ContactsContract.Profile.CONTENT_URI, null, null, null, null);
-            if (curser.getCount() > 0) {
-                curser.moveToFirst();
-                String name = curser.getString(curser.getColumnIndex(
-                        ContactsContract.Profile.DISPLAY_NAME));
-                String[] splited = name.split("\\s");
-                if (splited.length > 0) {
 
-                    return splited[0];
-                }
 
+
+
+    public void pushUserProfile(JSONObject jsonObject){
+
+        UserProfile userProfile = new UserProfile();
+
+        try {
+            if(jsonObject.has("First_name")){
+                String name = jsonObject.getString("First_name");
+                userProfile.setFirst_name(name);
             }
-            curser.close();
-
-
-        return "NA";
-
-    }
-    private String getLastName() {
-
-        ContentResolver cr = mContext.getContentResolver();
-        Cursor curser = cr.query(ContactsContract.Profile.CONTENT_URI, null, null, null, null);
-        if (curser.getCount() > 0) {
-            curser.moveToFirst();
-            String name = curser.getString(curser.getColumnIndex(
-                    ContactsContract.Profile.DISPLAY_NAME));
-            String[] splited = name.split("\\s");
-            if (splited.length > 0) {
-
-                return splited[1];
+            if(jsonObject.has("Last_name")){
+                String last_name = jsonObject.getString("Last_name");
+                userProfile.setLast_name(last_name);
+            }
+            if(jsonObject.has("email")){
+                String email = jsonObject.getString("email");
+                userProfile.setEmail(email);
+            }
+            if(jsonObject.has("phone_number")){
+                String phone = jsonObject.getString("phone_number");
+                userProfile.setPhone_no(phone);
             }
 
+            shared_pref.save(WAPref.email,userProfile.getEmail());
+            shared_pref.save(WAPref.phone,userProfile.getPhone_no());
+            shared_pref.save(WAPref.first_name,userProfile.getFirst_name());
+            shared_pref.save(WAPref.last_name,userProfile.getLast_name());
+            deviceCall(userProfile.getEmail(),userProfile.getPhone_no(),userProfile.getFirst_name(),userProfile.getLast_name(),"NA","user_profile");
+
+
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
-        curser.close();
-
-
-        return "NA";
-
     }
-
 
 }

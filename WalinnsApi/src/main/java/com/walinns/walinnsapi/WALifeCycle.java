@@ -82,7 +82,6 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
     @Override
     public void onActivityStarted(Activity activity) {
         logger.e("WAClient Lifecycle", "onActivityStarted");
-        new WAGesture(this.mInstance, activity);
 
 
     }

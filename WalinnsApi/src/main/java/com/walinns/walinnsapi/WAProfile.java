@@ -10,6 +10,7 @@ public class WAProfile
     String age;
     String first_name;
     String last_name;
+    String profile_pic;
 
     public String getAge() {
         return age;
@@ -42,4 +43,13 @@ public class WAProfile
     public void setLast_name(String last_name) {
         this.last_name = last_name;
     }
+
+    public void setProfile_pic(String profile_pic) {
+        this.profile_pic = profile_pic;
+    }
+
+    public String getProfile_pic() {
+        return profile_pic;
+    }
+
 }

@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.walinns.walinnsAndroid</groupId>
   <artifactId>walinnsapi</artifactId>
-  <version>1.0.4</version>
+  <version>1.0.7</version>
   <packaging>aar</packaging>
   <name>WalinnsApi</name>
   <description>MobileAnalytics</description>
@@ -29,12 +29,6 @@
   </scm>
   <dependencies>
     <dependency>
-      <groupId>com.google.firebase</groupId>
-      <artifactId>firebase-core</artifactId>
-      <version>9.4.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>com.android.support</groupId>
       <artifactId>appcompat-v7</artifactId>
       <version>27.1.1</version>
@@ -55,13 +49,19 @@
     <dependency>
       <groupId>com.google.firebase</groupId>
       <artifactId>firebase-messaging</artifactId>
-      <version>9.4.0</version>
+      <version>11.0.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.google.android.gms</groupId>
       <artifactId>play-services-gcm</artifactId>
-      <version>9.4.0</version>
+      <version>11.0.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.android.gms</groupId>
+      <artifactId>play-services</artifactId>
+      <version>11.0.1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

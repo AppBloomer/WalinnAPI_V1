@@ -20,6 +20,10 @@ public class WAPref {
     static final String last_name = "last_name";
     static final String app_install = "app_install";
     static final String app_launch_count = "app_launch_count";
+    static final String email = "email";
+    static final String phone = "phone";
+    static final String profile_pic = "profile_pic";
+
 
     public WAPref(Context context) {
         sharedPreferences = context.getSharedPreferences("my_pref", 0);

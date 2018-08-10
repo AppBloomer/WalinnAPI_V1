@@ -123,8 +123,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 27
-        versionCode 1
-        versionName "1.0.5"
+        versionCode 8
+        versionName "1.0.7"
          testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
@@ -162,12 +162,12 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     //noinspection GradleCompatible
-    implementation 'com.google.firebase:firebase-messaging:9.4.0'
+    implementation 'com.google.firebase:firebase-messaging:11.0.1'
     //noinspection GradleCompatible
-    implementation 'com.google.android.gms:play-services-gcm:9.4.0'
+    implementation 'com.google.android.gms:play-services-gcm:11.0.1'
+    implementation 'com.google.android.gms:play-services:11.0.1'
     implementation 'junit:junit:4.12'
  }
-apply plugin: "com.google.gms.google-services"
 
 
 //apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
