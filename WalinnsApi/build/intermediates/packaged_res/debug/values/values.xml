@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#000000</color>
+    <string name="app_name">WalinnsAPI</string>
+    <string name="gcm_defaultSenderId">977100535175</string>
+</resources>

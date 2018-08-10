@@ -67,16 +67,16 @@ public class Main2Activity extends AppCompatActivity {
          }else {
              System.out.println("Notification is enabld or not"+ "no");
          }
-         Intent i = new Intent("com.android.vending.INSTALL_REFERRER");
-//Set Package name
-         i.setPackage("com.walinns.walinnsmobileanalytics");
-//referrer is a composition of the parameter of the campaing
-         i.putExtra("referrer", "utm_source%3Dgoogle" +
-                 "%26utm_medium%3Dcpc" +
-                 "%26utm_term%3Drunning%252Bshoes" +
-                 "%26utm_content%3Dlogolink" +
-                 "%26utm_campaign%3Dspring_sale");
-         sendBroadcast(i);
+//         Intent i = new Intent("com.android.vending.INSTALL_REFERRER");
+////Set Package name
+//         i.setPackage("com.walinns.walinnsmobileanalytics");
+////referrer is a composition of the parameter of the campaing
+//         i.putExtra("referrer", "utm_source%3Dgoogle" +
+//                 "%26utm_medium%3Dcpc" +
+//                 "%26utm_term%3Drunning%252Bshoes" +
+//                 "%26utm_content%3Dlogolink" +
+//                 "%26utm_campaign%3Dspring_sale");
+//         sendBroadcast(i);
 
 
          getMail();
