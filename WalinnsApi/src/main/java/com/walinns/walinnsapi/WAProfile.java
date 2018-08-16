@@ -11,6 +11,7 @@ public class WAProfile
     String first_name;
     String last_name;
     String profile_pic;
+    String email;
 
     public String getAge() {
         return age;
@@ -52,4 +53,11 @@ public class WAProfile
         return profile_pic;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getEmail() {
+        return email;
+    }
 }

@@ -4,27 +4,75 @@ ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/sr
 INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-114:12
 INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-114:12
 INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:2:1-114:12
+MERGED from [com.google.firebase:firebase-core:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-core-11.0.1.aar/83d6445716f614ae7a14658060847497/AndroidManifest.xml:2:1-6:12
 MERGED from [com.android.support:multidex:1.0.2] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/e4d52f79a421b73dfef13897a1a96b12/AndroidManifest.xml:17:1-22:12
+MERGED from [:WalinnsApi] /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/WalinnsApi/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:design:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/2acf872656d27f36b4d325c9d2833fea/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-11.0.1.aar/ba0f1dda78de2b1df44f25c011f9f427/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-cast-framework:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.1.aar/86fdcf585ce969c79f929e3b93240bbb/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-cast:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-11.0.1.aar/70973e0798f5dfd50749b6db99ff8fd4/AndroidManifest.xml:16:1-19:12
+MERGED from [com.android.support:mediarouter-v7:25.2.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/53dde1c80b69325917bd43045f1762e9/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/99cacb6d18bf16c53b501b3bdfede1e7/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/e48bb97204599dcae4fba77d82d2f1f4/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-messaging:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.0.1.aar/47e9f4921a65a70ad07ae641e6984445/AndroidManifest.xml:16:1-30:12
 MERGED from [com.google.android.gms:play-services-gcm:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.1.aar/5e7f23abe4fbc65af3ab33ee0b896b88/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.firebase:firebase-crash:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-crash-11.0.1.aar/f5d579e518f11fbfb02c824517c485fa/AndroidManifest.xml:16:1-25:12
+MERGED from [com.google.android.gms:play-services-tagmanager:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-11.0.1.aar/1c678d4bc5eaafc4aa5400418defa84a/AndroidManifest.xml:16:1-18:12
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:16:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:16:1-35:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/cd09e73d20d255150d634c07e82895e4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/cdd6b03def715a4bd9a593b297f585a3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.1.aar/e14a72b23f1baad946fa96c2fac5d285/AndroidManifest.xml:16:1-29:12
+MERGED from [com.google.firebase:firebase-config:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-config-11.0.1.aar/f85f3bc8685bb33ac09e64cb182afd43/AndroidManifest.xml:16:1-19:12
 MERGED from [com.google.firebase:firebase-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.0.1.aar/70d490b3d23764a055fd752849e61eab/AndroidManifest.xml:16:1-50:12
+MERGED from [com.google.firebase:firebase-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.0.1.aar/7ed1db9e853bfcbd9080476863335d47/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.firebase:firebase-database:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-database-11.0.1.aar/820101cdc914e700beb85912f35154e7/AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-database-connection:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-11.0.1.aar/d8663cb8cd1ea9e862b96b4c774ca975/AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.android.gms:play-services-appinvite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.1.aar/b8f083144756a9dc4b6615bc020b5afa/AndroidManifest.xml:16:1-27:12
+MERGED from [com.google.firebase:firebase-dynamic-links:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-11.0.1.aar/4a80d23e7aee7635b07393fbdd774336/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-storage:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-storage-11.0.1.aar/1e0fb8f254678a5ae0164c035badc369/AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.firebase:firebase-appindexing:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-11.0.1.aar/323672330c399b26f1626801eb61e90a/AndroidManifest.xml:16:1-19:12
 MERGED from [com.google.firebase:firebase-common:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-common-11.0.1.aar/97ec2e5e0ddde3899aad759ef7244732/AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.android.gms:play-services-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.1.aar/7d3988f1dc22c0411d1135b81219d956/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-ads:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-11.0.1.aar/60cc18a492e1bf658c5c943d675f4f91/AndroidManifest.xml:16:1-18:12
+MERGED from [com.google.android.gms:play-services-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.1.aar/aa1b3d9b414b0c6383c9946dbd193fc2/AndroidManifest.xml:16:1-27:12
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-v4-impl-11.0.1.aar/ae43a762091fff40b8dc87852df48c09/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-11.0.1.aar/0c6f9a662f8d22d5f3bc020c8868136e/AndroidManifest.xml:16:1-27:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.0.1.aar/203bb623e99c61e819727801da419b78/AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.android.gms:play-services-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.1.aar/ea9c1294b26449410b9e20eb4eed63eb/AndroidManifest.xml:16:1-26:12
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.0.1.aar/104f8c109a9bb8846e9900a06015e483/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-clearcut:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-11.0.1.aar/04d226d63015fe299e71cce68ba12316/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-awareness:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-awareness-11.0.1.aar/7c5fa54830cb95abd4be86430dfdb287/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-games:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-games-11.0.1.aar/ad5417e1ead582a3221071b57d870198/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-drive:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.0.1.aar/c857c031159faff2fd6d38cd5108d431/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-fitness:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-fitness-11.0.1.aar/4752ad52a963f094a51d71d549487b13/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-wallet:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-wallet-11.0.1.aar/5cf16b38c9e8ef7b55e6546c9c3a5c51/AndroidManifest.xml:16:1-20:12
+MERGED from [com.google.android.gms:play-services-identity:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-identity-11.0.1.aar/1d38badd91e913b0f9e6b3815a8feb07/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-instantapps:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-instantapps-11.0.1.aar/9c89f00db565ae0f024b91a2573c1ec9/AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.android.gms:play-services-location:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-location-11.0.1.aar/9d50dc6e6209b4555cdc5c12db1d4546/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-places:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-places-11.0.1.aar/25d6466e7d64f389cba9423341915be1/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.1.aar/31aa91bdc04eca0f803940ee88fb1d6a/AndroidManifest.xml:16:1-25:12
+MERGED from [com.google.android.gms:play-services-nearby:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-nearby-11.0.1.aar/669654b6a61b3cccf1176c67cf6da4f8/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-panorama:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-panorama-11.0.1.aar/07debf02e3a108ad9d686140206c438e/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-plus:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-plus-11.0.1.aar/d490b7980b95e117a1c179916b4d7e64/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-safetynet:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-11.0.1.aar/4a07ac543d13f693cac8d430a01b1ced/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.android.gms:play-services-vision:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-vision-11.0.1.aar/5690d99d67441558130fdf9c8bb14153/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-vision-common:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.0.1.aar/d9f04e43bf2db6f152b7428180c81e7c/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-wearable:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-wearable-11.0.1.aar/d0e3591c509ce210de06b9b019c04e5a/AndroidManifest.xml:16:1-19:12
 MERGED from [com.google.android.gms:play-services-base:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.1.aar/9d6d204d7052c24820f816d0de1bd6cb/AndroidManifest.xml:16:1-21:12
 MERGED from [com.google.android.gms:play-services-tasks:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.1.aar/ccb68f121367a71284afa9ee1b522fc7/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.1.aar/67ec993b2d5417d16eb186898a28419c/AndroidManifest.xml:16:1-27:12
+MERGED from [com.google.firebase:firebase-storage-common:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-11.0.1.aar/b8bfaad02b1c6ed75664f23159539f23/AndroidManifest.xml:2:1-4:12
+MERGED from [com.google.android.gms:play-services-gass:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-gass-11.0.1.aar/fd2f9a0f3701a040af2c9ee782880ff8/AndroidManifest.xml:2:1-5:12
 MERGED from [com.google.android.gms:play-services-basement:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.1.aar/0aaadbb057213393ca626a579f15fe32/AndroidManifest.xml:16:1-23:12
 MERGED from [com.android.support:support-v4:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/5bb1564d8dd6217227f69c41962f70e6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/72b223ac75c0df005b11bc05fc6773de/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/7ccf9c30d7b1ae37419dc739fcabe5f5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/cd09e73d20d255150d634c07e82895e4/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/93847714611fcc880929576dae474616/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/11648b2ac3d5a3d38010ebf9d9e4adcc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/4edcc7b22ac52b222e5deade31cdcbd4/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/cdd6b03def715a4bd9a593b297f585a3/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/b3ac39fa34ca58f82ee3677a1900e63c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/4edcc7b22ac52b222e5deade31cdcbd4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:palette-v7:25.2.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/palette-v7-25.2.0.aar/110b46d4b2e198a7e1e540d8223a93c2/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/11648b2ac3d5a3d38010ebf9d9e4adcc/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/c327a81ffe1f2e45e2ba53446d5a02e5/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/d1b7a90d34fcf4c33cafa6e1ff31b981/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/4f0c29307617d5dc44d5b63ec1c934dd/AndroidManifest.xml:17:1-22:12
@@ -61,10 +109,28 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:9:5-67
 MERGED from [com.google.android.gms:play-services-gcm:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.1.aar/5e7f23abe4fbc65af3ab33ee0b896b88/AndroidManifest.xml:21:5-66
 MERGED from [com.google.android.gms:play-services-gcm:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.1.aar/5e7f23abe4fbc65af3ab33ee0b896b88/AndroidManifest.xml:21:5-66
+MERGED from [com.google.firebase:firebase-crash:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-crash-11.0.1.aar/f5d579e518f11fbfb02c824517c485fa/AndroidManifest.xml:18:5-66
+MERGED from [com.google.firebase:firebase-crash:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-crash-11.0.1.aar/f5d579e518f11fbfb02c824517c485fa/AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.1.aar/e14a72b23f1baad946fa96c2fac5d285/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.1.aar/e14a72b23f1baad946fa96c2fac5d285/AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.0.1.aar/70d490b3d23764a055fd752849e61eab/AndroidManifest.xml:20:5-66
 MERGED from [com.google.firebase:firebase-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.0.1.aar/70d490b3d23764a055fd752849e61eab/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.1.aar/b8f083144756a9dc4b6615bc020b5afa/AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.1.aar/b8f083144756a9dc4b6615bc020b5afa/AndroidManifest.xml:18:5-66
 MERGED from [com.google.android.gms:play-services-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.1.aar/7d3988f1dc22c0411d1135b81219d956/AndroidManifest.xml:21:5-66
 MERGED from [com.google.android.gms:play-services-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.1.aar/7d3988f1dc22c0411d1135b81219d956/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.1.aar/aa1b3d9b414b0c6383c9946dbd193fc2/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.1.aar/aa1b3d9b414b0c6383c9946dbd193fc2/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-11.0.1.aar/0c6f9a662f8d22d5f3bc020c8868136e/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-11.0.1.aar/0c6f9a662f8d22d5f3bc020c8868136e/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.1.aar/31aa91bdc04eca0f803940ee88fb1d6a/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.1.aar/31aa91bdc04eca0f803940ee88fb1d6a/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.1.aar/67ec993b2d5417d16eb186898a28419c/AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.1.aar/67ec993b2d5417d16eb186898a28419c/AndroidManifest.xml:19:5-66
 	android:name
 		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:9:22-64
 uses-permission#android.permission.GET_TASKS
@@ -77,8 +143,24 @@ ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/sr
 		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:11:22-65
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:12:5-78
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.1.aar/e14a72b23f1baad946fa96c2fac5d285/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.1.aar/e14a72b23f1baad946fa96c2fac5d285/AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.0.1.aar/70d490b3d23764a055fd752849e61eab/AndroidManifest.xml:19:5-78
 MERGED from [com.google.firebase:firebase-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.0.1.aar/70d490b3d23764a055fd752849e61eab/AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.1.aar/aa1b3d9b414b0c6383c9946dbd193fc2/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.1.aar/aa1b3d9b414b0c6383c9946dbd193fc2/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-11.0.1.aar/0c6f9a662f8d22d5f3bc020c8868136e/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-11.0.1.aar/0c6f9a662f8d22d5f3bc020c8868136e/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.1.aar/31aa91bdc04eca0f803940ee88fb1d6a/AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.1.aar/31aa91bdc04eca0f803940ee88fb1d6a/AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-nearby:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-nearby-11.0.1.aar/669654b6a61b3cccf1176c67cf6da4f8/AndroidManifest.xml:4:5-78
+MERGED from [com.google.android.gms:play-services-nearby:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-nearby-11.0.1.aar/669654b6a61b3cccf1176c67cf6da4f8/AndroidManifest.xml:4:5-78
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.1.aar/67ec993b2d5417d16eb186898a28419c/AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.1.aar/67ec993b2d5417d16eb186898a28419c/AndroidManifest.xml:20:5-78
 	android:name
 		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:12:22-76
 uses-permission#com.google.android.c2dm.permission.RECEIVE
@@ -93,8 +175,16 @@ MERGED from [com.google.android.gms:play-services-iid:11.0.1] /Users/walinnsinno
 		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:13:22-79
 uses-permission#android.permission.WAKE_LOCK
 ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:14:5-68
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.1.aar/e14a72b23f1baad946fa96c2fac5d285/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.1.aar/e14a72b23f1baad946fa96c2fac5d285/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.0.1.aar/70d490b3d23764a055fd752849e61eab/AndroidManifest.xml:21:5-67
 MERGED from [com.google.firebase:firebase-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.0.1.aar/70d490b3d23764a055fd752849e61eab/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.1.aar/aa1b3d9b414b0c6383c9946dbd193fc2/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.1.aar/aa1b3d9b414b0c6383c9946dbd193fc2/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-11.0.1.aar/0c6f9a662f8d22d5f3bc020c8868136e/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-11.0.1.aar/0c6f9a662f8d22d5f3bc020c8868136e/AndroidManifest.xml:24:5-67
 	android:name
 		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:14:22-65
 uses-permission#android.permission.GET_ACCOUNTS
@@ -103,24 +193,100 @@ ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/sr
 		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:15:22-68
 application
 ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:17:5-112:19
+MERGED from [com.google.firebase:firebase-core:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-core-11.0.1.aar/83d6445716f614ae7a14658060847497/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-core:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-core-11.0.1.aar/83d6445716f614ae7a14658060847497/AndroidManifest.xml:5:5-20
+MERGED from [:WalinnsApi] /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/WalinnsApi/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [:WalinnsApi] /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/WalinnsApi/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-12:19
+MERGED from [com.google.android.gms:play-services:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-11.0.1.aar/ba0f1dda78de2b1df44f25c011f9f427/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-11.0.1.aar/ba0f1dda78de2b1df44f25c011f9f427/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-cast-framework:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.1.aar/86fdcf585ce969c79f929e3b93240bbb/AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast-framework:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.1.aar/86fdcf585ce969c79f929e3b93240bbb/AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-11.0.1.aar/70973e0798f5dfd50749b6db99ff8fd4/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-cast:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-11.0.1.aar/70973e0798f5dfd50749b6db99ff8fd4/AndroidManifest.xml:18:5-19
+MERGED from [com.android.support:mediarouter-v7:25.2.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/53dde1c80b69325917bd43045f1762e9/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:mediarouter-v7:25.2.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/53dde1c80b69325917bd43045f1762e9/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/e48bb97204599dcae4fba77d82d2f1f4/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/e48bb97204599dcae4fba77d82d2f1f4/AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-messaging:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.0.1.aar/47e9f4921a65a70ad07ae641e6984445/AndroidManifest.xml:19:5-29:19
 MERGED from [com.google.firebase:firebase-messaging:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.0.1.aar/47e9f4921a65a70ad07ae641e6984445/AndroidManifest.xml:19:5-29:19
 MERGED from [com.google.android.gms:play-services-gcm:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.1.aar/5e7f23abe4fbc65af3ab33ee0b896b88/AndroidManifest.xml:23:5-19
 MERGED from [com.google.android.gms:play-services-gcm:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.1.aar/5e7f23abe4fbc65af3ab33ee0b896b88/AndroidManifest.xml:23:5-19
+MERGED from [com.google.firebase:firebase-crash:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-crash-11.0.1.aar/f5d579e518f11fbfb02c824517c485fa/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-crash:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-crash-11.0.1.aar/f5d579e518f11fbfb02c824517c485fa/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.1.aar/e14a72b23f1baad946fa96c2fac5d285/AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.1.aar/e14a72b23f1baad946fa96c2fac5d285/AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-config:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-config-11.0.1.aar/f85f3bc8685bb33ac09e64cb182afd43/AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-config:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-config-11.0.1.aar/f85f3bc8685bb33ac09e64cb182afd43/AndroidManifest.xml:18:5-19
 MERGED from [com.google.firebase:firebase-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.0.1.aar/70d490b3d23764a055fd752849e61eab/AndroidManifest.xml:28:5-49:19
 MERGED from [com.google.firebase:firebase-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.0.1.aar/70d490b3d23764a055fd752849e61eab/AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.0.1.aar/7ed1db9e853bfcbd9080476863335d47/AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.0.1.aar/7ed1db9e853bfcbd9080476863335d47/AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.android.gms:play-services-appinvite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.1.aar/b8f083144756a9dc4b6615bc020b5afa/AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.android.gms:play-services-appinvite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.1.aar/b8f083144756a9dc4b6615bc020b5afa/AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.firebase:firebase-dynamic-links:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-11.0.1.aar/4a80d23e7aee7635b07393fbdd774336/AndroidManifest.xml:5:3-17
+MERGED from [com.google.firebase:firebase-dynamic-links:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-11.0.1.aar/4a80d23e7aee7635b07393fbdd774336/AndroidManifest.xml:5:3-17
+MERGED from [com.google.firebase:firebase-appindexing:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-11.0.1.aar/323672330c399b26f1626801eb61e90a/AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-appindexing:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-11.0.1.aar/323672330c399b26f1626801eb61e90a/AndroidManifest.xml:18:5-19
 MERGED from [com.google.firebase:firebase-common:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-common-11.0.1.aar/97ec2e5e0ddde3899aad759ef7244732/AndroidManifest.xml:4:5-7:19
 MERGED from [com.google.firebase:firebase-common:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-common-11.0.1.aar/97ec2e5e0ddde3899aad759ef7244732/AndroidManifest.xml:4:5-7:19
 MERGED from [com.google.android.gms:play-services-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.1.aar/7d3988f1dc22c0411d1135b81219d956/AndroidManifest.xml:23:5-19
 MERGED from [com.google.android.gms:play-services-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.1.aar/7d3988f1dc22c0411d1135b81219d956/AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.1.aar/aa1b3d9b414b0c6383c9946dbd193fc2/AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.1.aar/aa1b3d9b414b0c6383c9946dbd193fc2/AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-v4-impl-11.0.1.aar/ae43a762091fff40b8dc87852df48c09/AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-v4-impl-11.0.1.aar/ae43a762091fff40b8dc87852df48c09/AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-11.0.1.aar/0c6f9a662f8d22d5f3bc020c8868136e/AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-11.0.1.aar/0c6f9a662f8d22d5f3bc020c8868136e/AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.1.aar/ea9c1294b26449410b9e20eb4eed63eb/AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.1.aar/ea9c1294b26449410b9e20eb4eed63eb/AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-clearcut:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-11.0.1.aar/04d226d63015fe299e71cce68ba12316/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-clearcut:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-11.0.1.aar/04d226d63015fe299e71cce68ba12316/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-awareness:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-awareness-11.0.1.aar/7c5fa54830cb95abd4be86430dfdb287/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-awareness:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-awareness-11.0.1.aar/7c5fa54830cb95abd4be86430dfdb287/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-games-11.0.1.aar/ad5417e1ead582a3221071b57d870198/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-games-11.0.1.aar/ad5417e1ead582a3221071b57d870198/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.0.1.aar/c857c031159faff2fd6d38cd5108d431/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.0.1.aar/c857c031159faff2fd6d38cd5108d431/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-fitness:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-fitness-11.0.1.aar/4752ad52a963f094a51d71d549487b13/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-fitness:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-fitness-11.0.1.aar/4752ad52a963f094a51d71d549487b13/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-identity:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-identity-11.0.1.aar/1d38badd91e913b0f9e6b3815a8feb07/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-identity:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-identity-11.0.1.aar/1d38badd91e913b0f9e6b3815a8feb07/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-location:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-location-11.0.1.aar/9d50dc6e6209b4555cdc5c12db1d4546/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-location:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-location-11.0.1.aar/9d50dc6e6209b4555cdc5c12db1d4546/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-places:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-places-11.0.1.aar/25d6466e7d64f389cba9423341915be1/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-places:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-places-11.0.1.aar/25d6466e7d64f389cba9423341915be1/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.1.aar/31aa91bdc04eca0f803940ee88fb1d6a/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.1.aar/31aa91bdc04eca0f803940ee88fb1d6a/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-nearby:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-nearby-11.0.1.aar/669654b6a61b3cccf1176c67cf6da4f8/AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-nearby:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-nearby-11.0.1.aar/669654b6a61b3cccf1176c67cf6da4f8/AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-panorama:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-panorama-11.0.1.aar/07debf02e3a108ad9d686140206c438e/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-panorama:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-panorama-11.0.1.aar/07debf02e3a108ad9d686140206c438e/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-plus-11.0.1.aar/d490b7980b95e117a1c179916b4d7e64/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-plus-11.0.1.aar/d490b7980b95e117a1c179916b4d7e64/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-11.0.1.aar/4a07ac543d13f693cac8d430a01b1ced/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-11.0.1.aar/4a07ac543d13f693cac8d430a01b1ced/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-vision:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-vision-11.0.1.aar/5690d99d67441558130fdf9c8bb14153/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-vision:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-vision-11.0.1.aar/5690d99d67441558130fdf9c8bb14153/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-vision-common:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.0.1.aar/d9f04e43bf2db6f152b7428180c81e7c/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-vision-common:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.0.1.aar/d9f04e43bf2db6f152b7428180c81e7c/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-wearable:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-wearable-11.0.1.aar/d0e3591c509ce210de06b9b019c04e5a/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-wearable:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-wearable-11.0.1.aar/d0e3591c509ce210de06b9b019c04e5a/AndroidManifest.xml:18:5-19
 MERGED from [com.google.android.gms:play-services-base:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.1.aar/9d6d204d7052c24820f816d0de1bd6cb/AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.android.gms:play-services-base:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.1.aar/9d6d204d7052c24820f816d0de1bd6cb/AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.android.gms:play-services-tasks:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.1.aar/ccb68f121367a71284afa9ee1b522fc7/AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-tasks:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.1.aar/ccb68f121367a71284afa9ee1b522fc7/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.1.aar/67ec993b2d5417d16eb186898a28419c/AndroidManifest.xml:23:5-26:19
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.1.aar/67ec993b2d5417d16eb186898a28419c/AndroidManifest.xml:23:5-26:19
+MERGED from [com.google.android.gms:play-services-gass:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-gass-11.0.1.aar/fd2f9a0f3701a040af2c9ee782880ff8/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-gass:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-gass-11.0.1.aar/fd2f9a0f3701a040af2c9ee782880ff8/AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-basement:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.1.aar/0aaadbb057213393ca626a579f15fe32/AndroidManifest.xml:19:5-21:19
 MERGED from [com.google.android.gms:play-services-basement:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.1.aar/0aaadbb057213393ca626a579f15fe32/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:palette-v7:25.2.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/palette-v7-25.2.0.aar/110b46d4b2e198a7e1e540d8223a93c2/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:palette-v7:25.2.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/palette-v7-25.2.0.aar/110b46d4b2e198a7e1e540d8223a93c2/AndroidManifest.xml:22:5-23:19
 	tools:node
 		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml:23:9-27
 	android:supportsRtl
@@ -231,10 +397,22 @@ uses-sdk
 INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml
 INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml
+MERGED from [com.google.firebase:firebase-core:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-core-11.0.1.aar/83d6445716f614ae7a14658060847497/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-core:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-core-11.0.1.aar/83d6445716f614ae7a14658060847497/AndroidManifest.xml:4:5-43
 MERGED from [com.android.support:multidex:1.0.2] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/e4d52f79a421b73dfef13897a1a96b12/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:multidex:1.0.2] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/e4d52f79a421b73dfef13897a1a96b12/AndroidManifest.xml:20:5-43
+MERGED from [:WalinnsApi] /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/WalinnsApi/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:WalinnsApi] /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/WalinnsApi/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/2acf872656d27f36b4d325c9d2833fea/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/2acf872656d27f36b4d325c9d2833fea/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-11.0.1.aar/ba0f1dda78de2b1df44f25c011f9f427/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-11.0.1.aar/ba0f1dda78de2b1df44f25c011f9f427/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-cast-framework:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.1.aar/86fdcf585ce969c79f929e3b93240bbb/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-cast-framework:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.1.aar/86fdcf585ce969c79f929e3b93240bbb/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-cast:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-11.0.1.aar/70973e0798f5dfd50749b6db99ff8fd4/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-cast:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-11.0.1.aar/70973e0798f5dfd50749b6db99ff8fd4/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:mediarouter-v7:25.2.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/53dde1c80b69325917bd43045f1762e9/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:mediarouter-v7:25.2.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/53dde1c80b69325917bd43045f1762e9/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/99cacb6d18bf16c53b501b3bdfede1e7/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/99cacb6d18bf16c53b501b3bdfede1e7/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/e48bb97204599dcae4fba77d82d2f1f4/AndroidManifest.xml:5:5-7:41
@@ -243,16 +421,102 @@ MERGED from [com.google.firebase:firebase-messaging:11.0.1] /Users/walinnsinnova
 MERGED from [com.google.firebase:firebase-messaging:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.0.1.aar/47e9f4921a65a70ad07ae641e6984445/AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-gcm:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.1.aar/5e7f23abe4fbc65af3ab33ee0b896b88/AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-gcm:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-gcm-11.0.1.aar/5e7f23abe4fbc65af3ab33ee0b896b88/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-crash:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-crash-11.0.1.aar/f5d579e518f11fbfb02c824517c485fa/AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-crash:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-crash-11.0.1.aar/f5d579e518f11fbfb02c824517c485fa/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-11.0.1.aar/1c678d4bc5eaafc4aa5400418defa84a/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-11.0.1.aar/1c678d4bc5eaafc4aa5400418defa84a/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/cd09e73d20d255150d634c07e82895e4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/cd09e73d20d255150d634c07e82895e4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/cdd6b03def715a4bd9a593b297f585a3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/cdd6b03def715a4bd9a593b297f585a3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.1.aar/e14a72b23f1baad946fa96c2fac5d285/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.1.aar/e14a72b23f1baad946fa96c2fac5d285/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-config:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-config-11.0.1.aar/f85f3bc8685bb33ac09e64cb182afd43/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-config:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-config-11.0.1.aar/f85f3bc8685bb33ac09e64cb182afd43/AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.0.1.aar/70d490b3d23764a055fd752849e61eab/AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.0.1.aar/70d490b3d23764a055fd752849e61eab/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.0.1.aar/7ed1db9e853bfcbd9080476863335d47/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-auth-11.0.1.aar/7ed1db9e853bfcbd9080476863335d47/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-database:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-database-11.0.1.aar/820101cdc914e700beb85912f35154e7/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-database-11.0.1.aar/820101cdc914e700beb85912f35154e7/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-11.0.1.aar/d8663cb8cd1ea9e862b96b4c774ca975/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-11.0.1.aar/d8663cb8cd1ea9e862b96b4c774ca975/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-appinvite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.1.aar/b8f083144756a9dc4b6615bc020b5afa/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-appinvite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.1.aar/b8f083144756a9dc4b6615bc020b5afa/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-dynamic-links:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-11.0.1.aar/4a80d23e7aee7635b07393fbdd774336/AndroidManifest.xml:3:3-41
+MERGED from [com.google.firebase:firebase-dynamic-links:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-11.0.1.aar/4a80d23e7aee7635b07393fbdd774336/AndroidManifest.xml:3:3-41
+MERGED from [com.google.firebase:firebase-storage:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-storage-11.0.1.aar/1e0fb8f254678a5ae0164c035badc369/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-storage-11.0.1.aar/1e0fb8f254678a5ae0164c035badc369/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-appindexing:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-11.0.1.aar/323672330c399b26f1626801eb61e90a/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-appindexing:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-11.0.1.aar/323672330c399b26f1626801eb61e90a/AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-common:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-common-11.0.1.aar/97ec2e5e0ddde3899aad759ef7244732/AndroidManifest.xml:3:5-43
 MERGED from [com.google.firebase:firebase-common:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-common-11.0.1.aar/97ec2e5e0ddde3899aad759ef7244732/AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.1.aar/7d3988f1dc22c0411d1135b81219d956/AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-iid-11.0.1.aar/7d3988f1dc22c0411d1135b81219d956/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-ads:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-11.0.1.aar/60cc18a492e1bf658c5c943d675f4f91/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-ads:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-11.0.1.aar/60cc18a492e1bf658c5c943d675f4f91/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.1.aar/aa1b3d9b414b0c6383c9946dbd193fc2/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.1.aar/aa1b3d9b414b0c6383c9946dbd193fc2/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-v4-impl-11.0.1.aar/ae43a762091fff40b8dc87852df48c09/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-v4-impl-11.0.1.aar/ae43a762091fff40b8dc87852df48c09/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-11.0.1.aar/0c6f9a662f8d22d5f3bc020c8868136e/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-11.0.1.aar/0c6f9a662f8d22d5f3bc020c8868136e/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.0.1.aar/203bb623e99c61e819727801da419b78/AndroidManifest.xml:3:3-41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.0.1.aar/203bb623e99c61e819727801da419b78/AndroidManifest.xml:3:3-41
+MERGED from [com.google.android.gms:play-services-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.1.aar/ea9c1294b26449410b9e20eb4eed63eb/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.1.aar/ea9c1294b26449410b9e20eb4eed63eb/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.0.1.aar/104f8c109a9bb8846e9900a06015e483/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.0.1.aar/104f8c109a9bb8846e9900a06015e483/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-clearcut:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-11.0.1.aar/04d226d63015fe299e71cce68ba12316/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-clearcut:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-11.0.1.aar/04d226d63015fe299e71cce68ba12316/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-awareness:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-awareness-11.0.1.aar/7c5fa54830cb95abd4be86430dfdb287/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-awareness:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-awareness-11.0.1.aar/7c5fa54830cb95abd4be86430dfdb287/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-games:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-games-11.0.1.aar/ad5417e1ead582a3221071b57d870198/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-games:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-games-11.0.1.aar/ad5417e1ead582a3221071b57d870198/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-drive:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.0.1.aar/c857c031159faff2fd6d38cd5108d431/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-drive:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-drive-11.0.1.aar/c857c031159faff2fd6d38cd5108d431/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-fitness:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-fitness-11.0.1.aar/4752ad52a963f094a51d71d549487b13/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-fitness:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-fitness-11.0.1.aar/4752ad52a963f094a51d71d549487b13/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-wallet:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-wallet-11.0.1.aar/5cf16b38c9e8ef7b55e6546c9c3a5c51/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-wallet:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-wallet-11.0.1.aar/5cf16b38c9e8ef7b55e6546c9c3a5c51/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-identity:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-identity-11.0.1.aar/1d38badd91e913b0f9e6b3815a8feb07/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-identity:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-identity-11.0.1.aar/1d38badd91e913b0f9e6b3815a8feb07/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-instantapps:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-instantapps-11.0.1.aar/9c89f00db565ae0f024b91a2573c1ec9/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-instantapps:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-instantapps-11.0.1.aar/9c89f00db565ae0f024b91a2573c1ec9/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-location-11.0.1.aar/9d50dc6e6209b4555cdc5c12db1d4546/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-location-11.0.1.aar/9d50dc6e6209b4555cdc5c12db1d4546/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-places:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-places-11.0.1.aar/25d6466e7d64f389cba9423341915be1/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-places:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-places-11.0.1.aar/25d6466e7d64f389cba9423341915be1/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.1.aar/31aa91bdc04eca0f803940ee88fb1d6a/AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-maps:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.1.aar/31aa91bdc04eca0f803940ee88fb1d6a/AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-nearby:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-nearby-11.0.1.aar/669654b6a61b3cccf1176c67cf6da4f8/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-nearby:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-nearby-11.0.1.aar/669654b6a61b3cccf1176c67cf6da4f8/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-panorama:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-panorama-11.0.1.aar/07debf02e3a108ad9d686140206c438e/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-panorama:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-panorama-11.0.1.aar/07debf02e3a108ad9d686140206c438e/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-plus:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-plus-11.0.1.aar/d490b7980b95e117a1c179916b4d7e64/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-plus:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-plus-11.0.1.aar/d490b7980b95e117a1c179916b4d7e64/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-11.0.1.aar/4a07ac543d13f693cac8d430a01b1ced/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-11.0.1.aar/4a07ac543d13f693cac8d430a01b1ced/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-vision:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-vision-11.0.1.aar/5690d99d67441558130fdf9c8bb14153/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-vision:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-vision-11.0.1.aar/5690d99d67441558130fdf9c8bb14153/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-vision-common:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.0.1.aar/d9f04e43bf2db6f152b7428180c81e7c/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-vision-common:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-vision-common-11.0.1.aar/d9f04e43bf2db6f152b7428180c81e7c/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-wearable:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-wearable-11.0.1.aar/d0e3591c509ce210de06b9b019c04e5a/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-wearable:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-wearable-11.0.1.aar/d0e3591c509ce210de06b9b019c04e5a/AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-base:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.1.aar/9d6d204d7052c24820f816d0de1bd6cb/AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-base:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.1.aar/9d6d204d7052c24820f816d0de1bd6cb/AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-tasks:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.1.aar/ccb68f121367a71284afa9ee1b522fc7/AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-tasks:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.1.aar/ccb68f121367a71284afa9ee1b522fc7/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.1.aar/67ec993b2d5417d16eb186898a28419c/AndroidManifest.xml:22:5-43
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.1.aar/67ec993b2d5417d16eb186898a28419c/AndroidManifest.xml:22:5-43
+MERGED from [com.google.firebase:firebase-storage-common:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-11.0.1.aar/b8bfaad02b1c6ed75664f23159539f23/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage-common:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-11.0.1.aar/b8bfaad02b1c6ed75664f23159539f23/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-gass:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-gass-11.0.1.aar/fd2f9a0f3701a040af2c9ee782880ff8/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-gass:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-gass-11.0.1.aar/fd2f9a0f3701a040af2c9ee782880ff8/AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-basement:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.1.aar/0aaadbb057213393ca626a579f15fe32/AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-basement:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.1.aar/0aaadbb057213393ca626a579f15fe32/AndroidManifest.xml:17:5-43
 MERGED from [com.android.support:support-v4:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/5bb1564d8dd6217227f69c41962f70e6/AndroidManifest.xml:20:5-44
@@ -261,18 +525,16 @@ MERGED from [com.android.support:support-fragment:27.1.1] /Users/walinnsinnovati
 MERGED from [com.android.support:support-fragment:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/72b223ac75c0df005b11bc05fc6773de/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/7ccf9c30d7b1ae37419dc739fcabe5f5/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/7ccf9c30d7b1ae37419dc739fcabe5f5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/cd09e73d20d255150d634c07e82895e4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/cd09e73d20d255150d634c07e82895e4/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/93847714611fcc880929576dae474616/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/93847714611fcc880929576dae474616/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/11648b2ac3d5a3d38010ebf9d9e4adcc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/11648b2ac3d5a3d38010ebf9d9e4adcc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/4edcc7b22ac52b222e5deade31cdcbd4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/4edcc7b22ac52b222e5deade31cdcbd4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/cdd6b03def715a4bd9a593b297f585a3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/cdd6b03def715a4bd9a593b297f585a3/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/b3ac39fa34ca58f82ee3677a1900e63c/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/b3ac39fa34ca58f82ee3677a1900e63c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/4edcc7b22ac52b222e5deade31cdcbd4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/4edcc7b22ac52b222e5deade31cdcbd4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:palette-v7:25.2.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/palette-v7-25.2.0.aar/110b46d4b2e198a7e1e540d8223a93c2/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:palette-v7:25.2.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/palette-v7-25.2.0.aar/110b46d4b2e198a7e1e540d8223a93c2/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/11648b2ac3d5a3d38010ebf9d9e4adcc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/11648b2ac3d5a3d38010ebf9d9e4adcc/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/c327a81ffe1f2e45e2ba53446d5a02e5/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/c327a81ffe1f2e45e2ba53446d5a02e5/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/d1b7a90d34fcf4c33cafa6e1ff31b981/AndroidManifest.xml:20:5-44
@@ -293,12 +555,100 @@ INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app
 		INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml
 		ADDED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/AndroidManifest.xml
+receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
+ADDED from [com.google.android.gms:play-services-cast-framework:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.1.aar/86fdcf585ce969c79f929e3b93240bbb/AndroidManifest.xml:5:9-99
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.1.aar/86fdcf585ce969c79f929e3b93240bbb/AndroidManifest.xml:5:19-97
+service#com.google.android.gms.cast.framework.media.MediaNotificationService
+ADDED from [com.google.android.gms:play-services-cast-framework:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.1.aar/86fdcf585ce969c79f929e3b93240bbb/AndroidManifest.xml:6:9-103
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.1.aar/86fdcf585ce969c79f929e3b93240bbb/AndroidManifest.xml:6:18-101
+service#com.google.android.gms.cast.framework.ReconnectionService
+ADDED from [com.google.android.gms:play-services-cast-framework:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.1.aar/86fdcf585ce969c79f929e3b93240bbb/AndroidManifest.xml:7:9-92
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.1.aar/86fdcf585ce969c79f929e3b93240bbb/AndroidManifest.xml:7:18-90
 service#com.google.firebase.messaging.FirebaseMessagingService
 ADDED from [com.google.firebase:firebase-messaging:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.0.1.aar/47e9f4921a65a70ad07ae641e6984445/AndroidManifest.xml:23:9-27:19
 	android:exported
 		ADDED from [com.google.firebase:firebase-messaging:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.0.1.aar/47e9f4921a65a70ad07ae641e6984445/AndroidManifest.xml:23:88-111
 	android:name
 		ADDED from [com.google.firebase:firebase-messaging:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.0.1.aar/47e9f4921a65a70ad07ae641e6984445/AndroidManifest.xml:23:18-87
+service#com.google.android.gms.tagmanager.TagManagerService
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:24:9-134
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:24:110-132
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:24:85-109
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:24:18-84
+activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:25:9-32:20
+	android:noHistory
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:25:118-142
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:25:94-117
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:25:19-93
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:tagmanager.c.${applicationId}
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:26:13-31:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:tagmanager.c.com.walinns.walinnsmobileanalytics
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:26:13-31:29
+data
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:27:17-71
+	android:scheme
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:27:23-69
+action#android.intent.action.VIEW
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:28:17-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:28:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:29:17-75
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:29:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-11.0.1.aar/c62b028a2a4e438e8f67b684e534ffa7/AndroidManifest.xml:30:27-75
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.1.aar/e14a72b23f1baad946fa96c2fac5d285/AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.1.aar/e14a72b23f1baad946fa96c2fac5d285/AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:27:162-184
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:27:185-208
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:27:17-104
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.1.aar/e14a72b23f1baad946fa96c2fac5d285/AndroidManifest.xml:27:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.0.1.aar/e14a72b23f1baad946fa96c2fac5d285/AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:32:16-87
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:33:7-197
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:33:148-170
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:33:171-195
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:33:91-147
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.0.1.aar/fefbf3f0ec5f66f7d9ee0ee74812f62a/AndroidManifest.xml:33:16-90
 permission#${applicationId}.permission.C2D_MESSAGE
 ADDED from [com.google.firebase:firebase-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.0.1.aar/70d490b3d23764a055fd752849e61eab/AndroidManifest.xml:24:5-109
 	android:protectionLevel
@@ -351,6 +701,20 @@ ADDED from [com.google.firebase:firebase-iid:11.0.1] /Users/walinnsinnovation/.g
 		ADDED from [com.google.firebase:firebase-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.0.1.aar/70d490b3d23764a055fd752849e61eab/AndroidManifest.xml:43:83-106
 	android:name
 		ADDED from [com.google.firebase:firebase-iid:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.0.1.aar/70d490b3d23764a055fd752849e61eab/AndroidManifest.xml:43:18-82
+activity#com.google.android.gms.appinvite.PreviewActivity
+ADDED from [com.google.android.gms:play-services-appinvite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.1.aar/b8f083144756a9dc4b6615bc020b5afa/AndroidManifest.xml:20:9-25:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-appinvite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.1.aar/b8f083144756a9dc4b6615bc020b5afa/AndroidManifest.xml:20:51-74
+	android:theme
+		ADDED from [com.google.android.gms:play-services-appinvite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.1.aar/b8f083144756a9dc4b6615bc020b5afa/AndroidManifest.xml:20:75-121
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.1.aar/b8f083144756a9dc4b6615bc020b5afa/AndroidManifest.xml:20:19-50
+intent-filter#action:name:com.google.android.gms.appinvite.ACTION_PREVIEW+category:name:android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-appinvite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.1.aar/b8f083144756a9dc4b6615bc020b5afa/AndroidManifest.xml:21:13-24:29
+action#com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.1.aar/b8f083144756a9dc4b6615bc020b5afa/AndroidManifest.xml:22:17-89
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-11.0.1.aar/b8f083144756a9dc4b6615bc020b5afa/AndroidManifest.xml:22:25-87
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-common-11.0.1.aar/97ec2e5e0ddde3899aad759ef7244732/AndroidManifest.xml:6:9-194
 	android:authorities
@@ -361,6 +725,30 @@ ADDED from [com.google.firebase:firebase-common:11.0.1] /Users/walinnsinnovation
 		ADDED from [com.google.firebase:firebase-common:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-common-11.0.1.aar/97ec2e5e0ddde3899aad759ef7244732/AndroidManifest.xml:6:169-192
 	android:name
 		ADDED from [com.google.firebase:firebase-common:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/firebase-common-11.0.1.aar/97ec2e5e0ddde3899aad759ef7244732/AndroidManifest.xml:6:79-143
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.1.aar/ea9c1294b26449410b9e20eb4eed63eb/AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.1.aar/ea9c1294b26449410b9e20eb4eed63eb/AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.1.aar/ea9c1294b26449410b9e20eb4eed63eb/AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.1.aar/ea9c1294b26449410b9e20eb4eed63eb/AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.1.aar/ea9c1294b26449410b9e20eb4eed63eb/AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.1.aar/ea9c1294b26449410b9e20eb4eed63eb/AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.1.aar/ea9c1294b26449410b9e20eb4eed63eb/AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.1.aar/ea9c1294b26449410b9e20eb4eed63eb/AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.0.1.aar/ea9c1294b26449410b9e20eb4eed63eb/AndroidManifest.xml:24:18-63
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.1.aar/31aa91bdc04eca0f803940ee88fb1d6a/AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.1.aar/31aa91bdc04eca0f803940ee88fb1d6a/AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-maps-11.0.1.aar/31aa91bdc04eca0f803940ee88fb1d6a/AndroidManifest.xml:21:52-75
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.1.aar/9d6d204d7052c24820f816d0de1bd6cb/AndroidManifest.xml:19:9-172
 	android:exported
@@ -369,6 +757,14 @@ ADDED from [com.google.android.gms:play-services-base:11.0.1] /Users/walinnsinno
 		ADDED from [com.google.android.gms:play-services-base:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.1.aar/9d6d204d7052c24820f816d0de1bd6cb/AndroidManifest.xml:19:86-145
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.1.aar/9d6d204d7052c24820f816d0de1bd6cb/AndroidManifest.xml:19:19-85
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.1.aar/67ec993b2d5417d16eb186898a28419c/AndroidManifest.xml:25:9-232
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.1.aar/67ec993b2d5417d16eb186898a28419c/AndroidManifest.xml:25:72-181
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.1.aar/67ec993b2d5417d16eb186898a28419c/AndroidManifest.xml:25:182-230
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.1.aar/67ec993b2d5417d16eb186898a28419c/AndroidManifest.xml:25:19-71
 meta-data#com.google.android.gms.version
 ADDED from [com.google.android.gms:play-services-basement:11.0.1] /Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.1.aar/0aaadbb057213393ca626a579f15fe32/AndroidManifest.xml:20:9-121
 	android:value

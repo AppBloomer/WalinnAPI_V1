@@ -160,6 +160,7 @@ public class NotificationUtils {
 
                 NotificationManager notificationManager = (NotificationManager) mContext.getSystemService(Context.NOTIFICATION_SERVICE);
                 notificationManager.notify(WAConfig.NOTIFICATION_ID, notification);
+
             }else {
                 NotificationCompat.InboxStyle inboxStyle = new NotificationCompat.InboxStyle();
                 inboxStyle.addLine(message);
@@ -190,6 +191,8 @@ public class NotificationUtils {
             NotificationCompat.Action action = null,action1=null;
             Intent resume = null;
             PendingIntent pendingIntent = null;
+
+            System.out.println("Notification clicked or not "+ title);
 
             if(ui_type!=null&&!ui_type.isEmpty()&&ui_type.equals("banner")||ui_type.equals("text")){
                 if(deep_link!=null&&!deep_link.isEmpty() || external_link!=null&&!external_link.isEmpty()){
@@ -347,4 +350,5 @@ public class NotificationUtils {
 
         return list.size() > 0;
     }
+
 }

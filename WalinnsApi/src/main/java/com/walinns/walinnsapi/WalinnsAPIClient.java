@@ -111,7 +111,7 @@ public class WalinnsAPIClient extends Activity {
             if(!shared_pref.getValue(WAPref.last_name).isEmpty()){
                 l1 = shared_pref.getValue(WAPref.last_name);
             }
-            deviceCall(v1,v2,f1,l1,"NA","default");
+            deviceCall(v1,v2,f1,l1,"NA","default","NA");
 
         }
         return this;
@@ -468,6 +468,11 @@ public class WalinnsAPIClient extends Activity {
                     }
                 }
 
+                if(jsonObject.has("email")){
+                    waProfile.setEmail(jsonObject.getString("email"));
+
+                }
+
 
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -481,7 +486,8 @@ public class WalinnsAPIClient extends Activity {
             shared_pref.save(WAPref.first_name,waProfile.getFirst_name());
             shared_pref.save(WAPref.last_name,waProfile.getLast_name());
             shared_pref.save(WAPref.profile_pic,waProfile.getProfile_pic());
-            deviceCall(waProfile.getGender(), waProfile.getAge(),waProfile.getFirst_name(),waProfile.getLast_name(),waProfile.getProfile_pic(),"fb");
+            shared_pref.save(WAPref.email,waProfile.getEmail());
+            deviceCall(waProfile.getGender(), waProfile.getAge(),waProfile.getFirst_name(),waProfile.getLast_name(),waProfile.getProfile_pic(),"fb",waProfile.getEmail());
         }
     }
     public void pushProfile(String acess_token){
@@ -532,12 +538,12 @@ public class WalinnsAPIClient extends Activity {
                         waProfile.setProfile_pic("NA");
                     }
 
-                     shared_pref.save(WAPref.gender,waProfile.getGender());
+                    shared_pref.save(WAPref.gender,waProfile.getGender());
                     shared_pref.save(WAPref.age,waProfile.getAge());
                     shared_pref.save(WAPref.first_name,waProfile.getFirst_name());
                     shared_pref.save(WAPref.last_name,waProfile.getLast_name());
                     shared_pref.save(WAPref.profile_pic,waProfile.getProfile_pic());
-                    deviceCall(waProfile.getGender(), waProfile.getAge(),waProfile.getFirst_name(),waProfile.getLast_name(),waProfile.getProfile_pic(),"google");
+                    deviceCall(waProfile.getGender(), waProfile.getAge(),waProfile.getFirst_name(),waProfile.getLast_name(),waProfile.getProfile_pic(),"google","NA");
                     return;
                 } else if (sc == 401) {
 
@@ -568,7 +574,7 @@ public class WalinnsAPIClient extends Activity {
         }
         return new String(bos.toByteArray(), "UTF-8");
     }
-    protected void deviceCall(final String v1, final String v2 , final String f1 , final String l1, final String profile_picture , final String flag){
+    protected void deviceCall(final String v1, final String v2 , final String f1 , final String l1, final String profile_picture , final String flag,final String email_new){
         this.runOnLogThread(new Runnable() {
             @Override
             public void run() {
@@ -620,15 +626,18 @@ public class WalinnsAPIClient extends Activity {
 
                     }
                     if(flag.equals("user_profile")){
-                         device_hashMap.put("First_name",f1);
+                        device_hashMap.put("First_name",f1);
                         device_hashMap.put("Last_name",l1);
                         device_hashMap.put("email",v1);
                         device_hashMap.put("phone_number",v2);
                     }else {
-                        device_hashMap.put("First_name","NA");
-                        device_hashMap.put("Last_name","NA");
-                        device_hashMap.put("email","NA");
-                        device_hashMap.put("phone_number","NA");
+                        device_hashMap.put("First_name",f1);
+                        device_hashMap.put("Last_name",l1);
+                        device_hashMap.put("email",v1);
+                        device_hashMap.put("phone_number",v2);
+                    }
+                    if(email_new !=null && !email_new.isEmpty()){
+                        device_hashMap.put("email",email_new);
                     }
                     new APIClient(mContext, "devices", device_hashMap);
 
@@ -678,7 +687,7 @@ public class WalinnsAPIClient extends Activity {
             shared_pref.save(WAPref.phone,userProfile.getPhone_no());
             shared_pref.save(WAPref.first_name,userProfile.getFirst_name());
             shared_pref.save(WAPref.last_name,userProfile.getLast_name());
-            deviceCall(userProfile.getEmail(),userProfile.getPhone_no(),userProfile.getFirst_name(),userProfile.getLast_name(),"NA","user_profile");
+            deviceCall(userProfile.getEmail(),userProfile.getPhone_no(),userProfile.getFirst_name(),userProfile.getLast_name(),"NA","user_profile","NA");
 
 
         } catch (JSONException e) {

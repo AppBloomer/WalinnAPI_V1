@@ -4,6 +4,23 @@
             "outputFile": "/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
+                    "source": "/Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-wallet-11.0.1.aar/5cf16b38c9e8ef7b55e6546c9c3a5c51/res/values-en-rCA/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "244",
+                        "endColumns": "99",
+                        "endOffsets": "343"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1907",
+                        "endColumns": "103",
+                        "endOffsets": "2006"
+                    }
+                },
+                {
                     "source": "/Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/99cacb6d18bf16c53b501b3bdfede1e7/res/values-en-rCA/values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
