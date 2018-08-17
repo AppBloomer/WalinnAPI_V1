@@ -23,6 +23,7 @@ public class WAPref {
     static final String email = "email";
     static final String phone = "phone";
     static final String profile_pic = "profile_pic";
+    static final String noify_clicked = "noify_clicked";
 
 
     public WAPref(Context context) {

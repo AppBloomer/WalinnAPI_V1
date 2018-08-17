@@ -98,7 +98,7 @@ public class NotificationUtils {
                 }
             } else {
                 showSmallNotification(mBuilder, icon, title, message, timeStamp, resultPendingIntent, alarmSound,ui_type,deep_link,external_link,btn1_name,btn2_name);
-                playNotificationSound();
+               // playNotificationSound();
             }
         }
 
@@ -162,6 +162,10 @@ public class NotificationUtils {
                 notificationManager.notify(WAConfig.NOTIFICATION_ID, notification);
 
             }else {
+
+                System.out.println("Notification clicked or not ****** "+ title);
+
+
                 NotificationCompat.InboxStyle inboxStyle = new NotificationCompat.InboxStyle();
                 inboxStyle.addLine(message);
                 Notification notification;
@@ -245,6 +249,7 @@ public class NotificationUtils {
                     notificationManager.notify(WAConfig.NOTIFICATION_ID_BIG_IMAGE, notification);
 
             }else{
+                System.out.println("Notification clicked or not @@@@@@@ "+ title);
 
                 notification = mBuilder.setSmallIcon(icon).setTicker(title).setWhen(0)
                         .setAutoCancel(true)

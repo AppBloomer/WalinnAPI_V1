@@ -3,6 +3,7 @@ package com.walinns.walinnsapi;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v4.content.LocalBroadcastManager;
 
 import android.text.TextUtils;
@@ -26,6 +27,8 @@ public class WAMessingService extends FirebaseMessagingService {
 
     private static final WALog logger = WALog.getLogger();
     private static final String TAG = WAMessingService.class.getSimpleName();
+    public static String notification_clicked = "NA";
+    WAPref waPref;
 
     private NotificationUtils notificationUtils;
 
@@ -54,14 +57,22 @@ public class WAMessingService extends FirebaseMessagingService {
 
         // Check if message contains a notification payload.
         if (remoteMessage.getNotification() != null) {
-            Log.e(TAG, "Notification Body: " + remoteMessage.getNotification().getBody());
+            Log.e(TAG, "Notification clicked Body: " + remoteMessage.getNotification().getBody());
+            waPref = new WAPref(getApplicationContext());
+            notification_clicked = "received";
+            waPref.save(WAPref.noify_clicked,notification_clicked);
+            Log.e(TAG, "Notification clicked Body after: " + waPref.getValue(WAPref.noify_clicked));
+
+            WalinnsAPI.getInstance().track("default_event",remoteMessage.getNotification().getBody()+" received");
+
             handleNotification(remoteMessage.getNotification().getBody());
         }
 
         // Check if message contains a data payload.
         if (remoteMessage.getData().size() > 0) {
             Log.e(TAG, "Data Payload: " + remoteMessage.getData().toString());
-
+            notification_clicked = "received";
+            waPref.save(WAPref.noify_clicked,notification_clicked);
             try {
                 Map<String, String> data = remoteMessage.getData();
 
@@ -90,7 +101,7 @@ public class WAMessingService extends FirebaseMessagingService {
         if (!NotificationUtils.isAppIsInBackground(getApplicationContext())) {
             // app is in foreground, broadcast the push message
 
-             Intent pushNotification = new Intent(WAConfig.PUSH_NOTIFICATION);
+            Intent pushNotification = new Intent(WAConfig.PUSH_NOTIFICATION);
             pushNotification.putExtra("message", message);
             LocalBroadcastManager.getInstance(this).sendBroadcast(pushNotification);
 
@@ -115,8 +126,6 @@ public class WAMessingService extends FirebaseMessagingService {
 
     private void handleDataMessage(Map<String, String> data) {
         Log.e(TAG, "push json: " + data.toString());
-
-
 
         try {
 
@@ -195,5 +204,7 @@ public class WAMessingService extends FirebaseMessagingService {
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         notificationUtils.showNotificationMessage(title, message, timeStamp, intent, imageUrl,ui_type,deep_link,external_link,btn1_name,btn2_name);
     }
+
+
 
 }

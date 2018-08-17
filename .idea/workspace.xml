@@ -6,9 +6,9 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Notification clicked or not" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Request_data" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d693dbe3-1495-4d67-972c-f926d242ff9c" name="Default" comment="">
@@ -23,686 +23,83 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/WalinnsApi.iml" afterPath="$PROJECT_DIR$/WalinnsApi/WalinnsApi.iml" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/buildConfig/release/com/walinns/walinnsapi/BuildConfig.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/arch/core/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/arch/lifecycle/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/arch/lifecycle/livedata/core/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/arch/lifecycle/viewmodel/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/support/compat/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/support/constraint/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/support/coreui/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/support/coreutils/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/support/design/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/support/fragment/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/support/graphics/drawable/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/support/graphics/drawable/animated/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/support/mediacompat/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/support/transition/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/support/v4/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/support/v7/appcompat/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/support/v7/mediarouter/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/support/v7/palette/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/android/support/v7/recyclerview/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/ads/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/ads/impl/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/analytics/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/appindexing/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/appinvite/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/auth/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/auth/api/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/base/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/cast/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/cast/framework/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/clearcut/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/contextmanager/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/drive/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/fitness/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/games/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/gass/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/gcm/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/identity/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/iid/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/instantapps/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/location/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/maps/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/measurement/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/measurement/impl/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/nearby/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/panorama/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/play_services/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/plus/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/safetynet/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/tagmanager/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/tagmanager/impl/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/tasks/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/vision/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/wallet/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/android/gms/wearable/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/firebase/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/firebase/auth/api/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/firebase/crash/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/firebase/database/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/firebase/database/connection/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/firebase/dynamiclinks/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/firebase/iid/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/firebase/messaging/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/firebase/remoteconfig/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/google/firebase/storage/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/generated/source/r/release/com/walinns/walinnsapi/R.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/arch/core/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/arch/lifecycle/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/arch/lifecycle/livedata/core/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/arch/lifecycle/viewmodel/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/compat/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/compat/R$bool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/compat/R$color.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/compat/R$dimen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/compat/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/compat/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/compat/R$integer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/compat/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/compat/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/compat/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/compat/R$styleable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/compat/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/constraint/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/constraint/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/constraint/R$styleable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/constraint/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreui/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreui/R$bool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreui/R$color.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreui/R$dimen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreui/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreui/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreui/R$integer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreui/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreui/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreui/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreui/R$styleable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreui/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreutils/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreutils/R$bool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreutils/R$color.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreutils/R$dimen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreutils/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreutils/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreutils/R$integer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreutils/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreutils/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreutils/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreutils/R$styleable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/coreutils/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/design/R$anim.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/design/R$animator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/design/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/design/R$bool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/design/R$color.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/design/R$dimen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/design/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/design/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/design/R$integer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/design/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/design/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/design/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/design/R$styleable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/design/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/fragment/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/fragment/R$bool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/fragment/R$color.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/fragment/R$dimen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/fragment/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/fragment/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/fragment/R$integer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/fragment/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/fragment/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/fragment/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/fragment/R$styleable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/fragment/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/R$bool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/R$color.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/R$dimen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/R$integer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/R$styleable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/animated/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/animated/R$bool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/animated/R$color.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/animated/R$dimen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/animated/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/animated/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/animated/R$integer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/animated/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/animated/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/animated/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/animated/R$styleable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/graphics/drawable/animated/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/mediacompat/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/mediacompat/R$bool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/mediacompat/R$color.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/mediacompat/R$dimen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/mediacompat/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/mediacompat/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/mediacompat/R$integer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/mediacompat/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/mediacompat/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/mediacompat/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/mediacompat/R$styleable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/mediacompat/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/transition/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/transition/R$bool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/transition/R$color.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/transition/R$dimen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/transition/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/transition/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/transition/R$integer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/transition/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/transition/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/transition/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/transition/R$styleable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/transition/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v4/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v4/R$bool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v4/R$color.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v4/R$dimen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v4/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v4/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v4/R$integer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v4/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v4/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v4/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v4/R$styleable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v4/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/appcompat/R$anim.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/appcompat/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/appcompat/R$bool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/appcompat/R$color.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/appcompat/R$dimen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/appcompat/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/appcompat/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/appcompat/R$integer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/appcompat/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/appcompat/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/appcompat/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/appcompat/R$styleable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/appcompat/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/mediarouter/R$anim.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/mediarouter/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/mediarouter/R$bool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/mediarouter/R$color.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/mediarouter/R$dimen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/mediarouter/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/mediarouter/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/mediarouter/R$integer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/mediarouter/R$interpolator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/mediarouter/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/mediarouter/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/mediarouter/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/mediarouter/R$styleable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/mediarouter/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/palette/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/recyclerview/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/recyclerview/R$bool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/recyclerview/R$color.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/recyclerview/R$dimen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/recyclerview/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/recyclerview/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/recyclerview/R$integer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/recyclerview/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/recyclerview/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/recyclerview/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/recyclerview/R$styleable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/android/support/v7/recyclerview/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/R$array.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/R$color.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/R$dimen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/R$integer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/R$raw.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/R$styleable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/ads/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/ads/impl/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/analytics/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/appindexing/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/appinvite/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/auth/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/auth/api/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/base/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/cast/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/cast/framework/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/clearcut/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/contextmanager/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/drive/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/fitness/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/games/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/gass/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/gcm/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/identity/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/iid/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/instantapps/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/location/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/maps/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/measurement/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/measurement/impl/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/nearby/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/panorama/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/play_services/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/plus/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/safetynet/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/tagmanager/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/tagmanager/impl/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/tasks/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/vision/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/wallet/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/android/gms/wearable/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/firebase/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/firebase/auth/api/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/firebase/crash/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/firebase/database/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/firebase/database/connection/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/firebase/dynamiclinks/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/firebase/iid/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/firebase/messaging/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/firebase/remoteconfig/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/google/firebase/storage/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/APIClient.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/BuildConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/InAppNotification.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/ManifestMetaData.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/NotificationUtils.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R$anim.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R$animator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R$array.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R$attr.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R$bool.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R$color.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R$dimen.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R$drawable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R$id.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R$integer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R$interpolator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R$layout.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R$raw.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R$string.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R$style.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R$styleable.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/R.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/UserProfile.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAConfig.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WADeviceInfo$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WADeviceInfo$CachedInfo.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WADeviceInfo.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAFCMManager$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAFCMManager$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAFCMManager.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAInstallRefferer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAInstanceIDListenerService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAInstanceIDService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAIntentService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WALifeCycle$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WALifeCycle.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAListenerService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WALog.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAMessingService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAPref.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAProfile.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAService$TimeDisplay$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAService$TimeDisplay.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAUtils.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WAWorkerThread.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WTLog.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WalinnsAPI.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WalinnsAPIClient$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WalinnsAPIClient$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WalinnsAPIClient$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WalinnsAPIClient$4$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WalinnsAPIClient$4.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WalinnsAPIClient$5.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WalinnsAPIClient$6.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WalinnsAPIClient$7.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WalinnsAPIClient$8.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/release/com/walinns/walinnsapi/WalinnsAPIClient.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/extractedTypedefs/release/typedefs.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/incremental/compileReleaseAidl/dependency.store" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/incremental/mergeReleaseShaders/merger.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/incremental/packageReleaseAssets/merger.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/incremental/packageReleaseResources/merged.dir/values/values.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/incremental/release-mergeJavaRes/merge-state" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/incremental/release-mergeJniLibs/merge-state" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/javaPrecompile/release/annotationProcessors.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/manifests/aapt/release/AndroidManifest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/manifests/aapt/release/output.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/manifests/full/release/AndroidManifest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/manifests/full/release/output.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/packaged-classes/release/classes.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/packaged_res/release/values/values.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/res/symbol-table-with-package/release/package-aware-r.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/symbols/release/R.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/transforms/mergeJavaRes/release/0.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/transforms/mergeJavaRes/release/__content__.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/transforms/mergeJniLibs/release/__content__.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/transforms/stripDebugSymbol/release/__content__.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/ivy.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/libs/WalinnsApi-sources.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/libs/WalinnsApi-sources.jar.asc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/outputs/aar/WalinnsApi-release.aar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/outputs/aar/WalinnsApi-release.aar.asc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/outputs/logs/manifest-merger-release-report.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/poms/pom-default.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/poms/pom-default.xml.asc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/tmp/androidSourcesJar/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/NotificationUtils.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/NotificationUtils.class" />
+      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WAMessingService.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WAMessingService.class" />
+      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WAPref.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WAPref.class" />
+      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$1.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$1.class" />
+      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$2.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$2.class" />
+      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$3.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$3.class" />
+      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$4$1.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$4$1.class" />
+      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$4.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$4.class" />
+      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$5.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$5.class" />
+      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$6.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$6.class" />
+      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$7.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$7.class" />
+      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$8.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$8.class" />
+      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient.class" />
+      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/intermediate-jars/debug/classes.jar" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/intermediate-jars/debug/classes.jar" />
       <change beforePath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/NotificationUtils.java" afterPath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/NotificationUtils.java" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAProfile.java" afterPath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAProfile.java" />
+      <change beforePath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAMessingService.java" afterPath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAMessingService.java" />
+      <change beforePath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAPref.java" afterPath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAPref.java" />
       <change beforePath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WalinnsAPIClient.java" afterPath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WalinnsAPIClient.java" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/compat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/compat/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/constraint/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/constraint/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/coreui/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/coreui/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/coreutils/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/coreutils/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/fragment/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/fragment/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/graphics/drawable/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/graphics/drawable/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/graphics/drawable/animated/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/graphics/drawable/animated/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/mediacompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/mediacompat/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/transition/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/transition/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v4/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v4/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/recyclerview/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/walinns/walinnsmobileanalytics/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/walinns/walinnsmobileanalytics/R.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-af.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-af.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-am.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-am.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ar.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ar.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-az.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-az.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-b+sr+Latn.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-b+sr+Latn.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-be.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-be.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-bg.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-bg.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-bn.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-bn.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-bs.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-bs.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ca.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ca.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-cs.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-cs.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-da.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-da.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-de.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-de.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-el.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-el.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-en-rAU.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-en-rAU.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-en-rCA.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-en-rCA.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-en-rGB.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-en-rGB.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-en-rIN.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-en-rIN.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-es-rUS.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-es-rUS.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-es.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-es.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-et.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-et.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-eu.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-eu.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-fa.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-fa.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-fi.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-fi.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-fr-rCA.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-fr-rCA.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-fr.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-fr.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-gl.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-gl.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-gu.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-gu.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-hi.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-hi.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-hr.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-hr.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-hu.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-hu.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-hy.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-hy.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-in.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-in.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-is.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-is.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-it.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-it.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-iw.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-iw.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ja.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ja.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ka.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ka.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-kk.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-kk.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-km.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-km.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-kn.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-kn.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ko.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ko.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ky.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ky.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-land.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-land.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-lo.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-lo.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-lt.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-lt.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-lv.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-lv.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-mk.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-mk.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ml.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ml.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-mn.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-mn.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-mr.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-mr.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ms.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ms.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-my.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-my.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-nb.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-nb.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ne.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ne.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-nl.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-nl.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-pa.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-pa.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-pl.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-pl.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-pt-rBR.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-pt-rBR.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-pt-rPT.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-pt-rPT.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-pt.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-pt.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ro.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ro.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ru.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ru.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-si.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-si.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-sk.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-sk.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-sl.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-sl.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-sq.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-sq.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-sr.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-sr.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-sv.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-sv.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-sw.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-sw.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-sw600dp-v13.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-sw600dp-v13.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ta.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ta.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-te.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-te.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-th.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-th.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-tl.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-tl.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-tr.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-tr.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-uk.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-uk.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ur.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-ur.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-uz.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-uz.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-v21.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-v21.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-vi.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-vi.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-watch-v20.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-watch-v20.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-zh-rCN.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-zh-rCN.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-zh-rHK.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-zh-rHK.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-zh-rTW.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-zh-rTW.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-zu.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-zu.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-am/values-am.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-am/values-am.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ar/values-ar.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ar/values-ar.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az/values-az.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az/values-az.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-be/values-be.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-be/values-be.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn/values-bn.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn/values-bn.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bs/values-bs.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bs/values-bs.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-cs/values-cs.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-cs/values-cs.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-da/values-da.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-da/values-da.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-et/values-et.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-et/values-et.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-eu/values-eu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-eu/values-eu.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fa/values-fa.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fa/values-fa.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gl/values-gl.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gl/values-gl.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gu/values-gu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gu/values-gu.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hi/values-hi.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hi/values-hi.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hy/values-hy.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hy/values-hy.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-in/values-in.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-in/values-in.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is/values-is.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is/values-is.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-it/values-it.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-it/values-it.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk/values-kk.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk/values-kk.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km/values-km.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km/values-km.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kn/values-kn.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kn/values-kn.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky/values-ky.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lv/values-lv.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lv/values-lv.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml/values-ml.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml/values-ml.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mr/values-mr.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mr/values-mr.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ne/values-ne.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ne/values-ne.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa/values-pa.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa/values-pa.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ro/values-ro.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ro/values-ro.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ru/values-ru.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ru/values-ru.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si/values-si.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si/values-si.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sk/values-sk.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sk/values-sk.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq/values-sq.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq/values-sq.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr/values-sr.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr/values-sr.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ta/values-ta.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ta/values-ta.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-te/values-te.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-te/values-te.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tl/values-tl.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tl/values-tl.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ur/values-ur.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ur/values-ur.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uz/values-uz.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uz/values-uz.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-vi/values-vi.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-vi/values-vi.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/compat/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/compat/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/coreui/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/coreui/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/coreutils/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/coreutils/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/fragment/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/fragment/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/graphics/drawable/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/graphics/drawable/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/mediacompat/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/mediacompat/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/transition/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/transition/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v4/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v4/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/mediarouter/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/mediarouter/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/google/android/gms/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/google/android/gms/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsapi/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsapi/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/Main2Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/Main2Activity$1.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/Main2Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/Main2Activity.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/R$string.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/R$style.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/R$styleable.class" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/0_HT9bpTVOSgJcvTE795fr3aBEk=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/0_HT9bpTVOSgJcvTE795fr3aBEk=" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/multi-dex/debug/manifest_keep.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/multi-dex/debug/manifest_keep.txt" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-af_values-af.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-af_values-af.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-am_values-am.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-am_values-am.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ar_values-ar.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ar_values-ar.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-az_values-az.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-az_values-az.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-b+sr+Latn_values-b+sr+Latn.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-b+sr+Latn_values-b+sr+Latn.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-be_values-be.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-be_values-be.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-bg_values-bg.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-bg_values-bg.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-bn_values-bn.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-bn_values-bn.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-bs_values-bs.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-bs_values-bs.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ca_values-ca.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ca_values-ca.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-cs_values-cs.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-cs_values-cs.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-da_values-da.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-da_values-da.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-de_values-de.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-de_values-de.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-el_values-el.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-el_values-el.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-en-rAU_values-en-rAU.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-en-rAU_values-en-rAU.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-en-rCA_values-en-rCA.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-en-rCA_values-en-rCA.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-en-rGB_values-en-rGB.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-en-rGB_values-en-rGB.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-en-rIN_values-en-rIN.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-en-rIN_values-en-rIN.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-es-rUS_values-es-rUS.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-es-rUS_values-es-rUS.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-es_values-es.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-es_values-es.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-et_values-et.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-et_values-et.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-eu_values-eu.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-eu_values-eu.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-fa_values-fa.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-fa_values-fa.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-fi_values-fi.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-fi_values-fi.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-fr-rCA_values-fr-rCA.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-fr-rCA_values-fr-rCA.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-fr_values-fr.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-fr_values-fr.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-gl_values-gl.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-gl_values-gl.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-gu_values-gu.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-gu_values-gu.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-hi_values-hi.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-hi_values-hi.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-hr_values-hr.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-hr_values-hr.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-hu_values-hu.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-hu_values-hu.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-hy_values-hy.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-hy_values-hy.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-in_values-in.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-in_values-in.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-is_values-is.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-is_values-is.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-it_values-it.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-it_values-it.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-iw_values-iw.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-iw_values-iw.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ja_values-ja.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ja_values-ja.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ka_values-ka.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ka_values-ka.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-kk_values-kk.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-kk_values-kk.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-km_values-km.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-km_values-km.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-kn_values-kn.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-kn_values-kn.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ko_values-ko.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ko_values-ko.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ky_values-ky.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ky_values-ky.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-land_values-land.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-land_values-land.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-lo_values-lo.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-lo_values-lo.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-lt_values-lt.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-lt_values-lt.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-lv_values-lv.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-lv_values-lv.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-mk_values-mk.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-mk_values-mk.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ml_values-ml.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ml_values-ml.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-mn_values-mn.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-mn_values-mn.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-mr_values-mr.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-mr_values-mr.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ms_values-ms.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ms_values-ms.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-my_values-my.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-my_values-my.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-nb_values-nb.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-nb_values-nb.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ne_values-ne.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ne_values-ne.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-nl_values-nl.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-nl_values-nl.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-pa_values-pa.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-pa_values-pa.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-pl_values-pl.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-pl_values-pl.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-pt-rBR_values-pt-rBR.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-pt-rBR_values-pt-rBR.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-pt-rPT_values-pt-rPT.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-pt-rPT_values-pt-rPT.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-pt_values-pt.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-pt_values-pt.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ro_values-ro.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ro_values-ro.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ru_values-ru.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ru_values-ru.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-si_values-si.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-si_values-si.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-sk_values-sk.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-sk_values-sk.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-sl_values-sl.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-sl_values-sl.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-sq_values-sq.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-sq_values-sq.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-sr_values-sr.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-sr_values-sr.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-sv_values-sv.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-sv_values-sv.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-sw600dp-v13_values-sw600dp-v13.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-sw600dp-v13_values-sw600dp-v13.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-sw_values-sw.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-sw_values-sw.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ta_values-ta.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ta_values-ta.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-te_values-te.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-te_values-te.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-th_values-th.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-th_values-th.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-tl_values-tl.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-tl_values-tl.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-tr_values-tr.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-tr_values-tr.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-uk_values-uk.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-uk_values-uk.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ur_values-ur.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-ur_values-ur.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-uz_values-uz.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-uz_values-uz.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-v21_values-v21.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-v21_values-v21.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-vi_values-vi.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-vi_values-vi.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-watch-v20_values-watch-v20.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-watch-v20_values-watch-v20.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-zh-rCN_values-zh-rCN.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-zh-rCN_values-zh-rCN.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-zh-rHK_values-zh-rHK.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-zh-rHK_values-zh-rHK.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-zu_values-zu.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values-zu_values-zu.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/227.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/227.jar" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/228.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/228.jar" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/229.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/229.jar" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/compat/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/compat/R$string.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/coreui/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/coreui/R$string.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/coreutils/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/coreutils/R$string.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/design/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/design/R$string.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/fragment/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/fragment/R$string.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/graphics/drawable/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/graphics/drawable/R$string.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/graphics/drawable/animated/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/graphics/drawable/animated/R$string.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/mediacompat/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/mediacompat/R$string.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/transition/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/transition/R$string.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/v4/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/v4/R$string.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/v7/appcompat/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/v7/appcompat/R$string.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/v7/mediarouter/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/v7/mediarouter/R$string.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/v7/recyclerview/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/v7/recyclerview/R$string.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/google/android/gms/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/google/android/gms/R$string.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsapi/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsapi/R$string.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/Main2Activity$1.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/Main2Activity$1.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/Main2Activity.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/Main2Activity.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/R$string.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/R$style.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/R$style.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/R$styleable.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/R$styleable.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/1/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/1/classes.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/4/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/4/classes.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/5/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/5/classes.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/6/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/6/classes.dex" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/walinns/walinnsmobileanalytics/Main2Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/walinns/walinnsmobileanalytics/Main2Activity.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -728,31 +125,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <file leaf-file-name="WAFCMManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAFCMManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="50" column="52" lean-forward="true" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
+            <state relative-caret-position="1830">
+              <caret line="132" column="46" lean-forward="false" selection-start-line="132" selection-start-column="46" selection-end-line="132" selection-end-column="46" />
+              <folding>
+                <element signature="e#927#1529#0" expanded="true" />
+                <element signature="e#1528#1529#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WAMessingService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAMessingService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="73" column="32" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocalBroadcastManager.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-core-utils/27.1.1/8fb37fd2f8dbc23482865700d2c340ae030ea561/support-core-utils-27.1.1-sources.jar!/android/support/v4/content/LocalBroadcastManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="210" column="19" lean-forward="false" selection-start-line="210" selection-start-column="19" selection-end-line="210" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+      <file leaf-file-name="WAPref.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAPref.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WAInstanceIDListenerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAInstanceIDListenerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            <state relative-caret-position="131">
+              <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -761,88 +173,52 @@
       <file leaf-file-name="WAInstanceIDService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAInstanceIDService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="174">
+              <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NotificationUtils.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/NotificationUtils.java">
+      <file leaf-file-name="WALifeCycle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WALifeCycle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-261">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="-545">
+              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
-                <element signature="e#954#972#0" expanded="true" />
+                <element signature="e#5040#7184#0" expanded="true" />
+                <element signature="e#7183#7184#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WalinnsAPIClient.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserProfile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/UserProfile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WalinnsAPIClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WalinnsAPIClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-865">
-              <caret line="500" column="40" lean-forward="false" selection-start-line="500" selection-start-column="40" selection-end-line="500" selection-end-column="40" />
+            <state relative-caret-position="152">
+              <caret line="246" column="9" lean-forward="true" selection-start-line="246" selection-start-column="9" selection-end-line="246" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6249#6418#0" expanded="true" />
-                <element signature="e#6417#6418#0" expanded="true" />
-                <element signature="e#11330#11633#0" expanded="true" />
-                <element signature="e#11632#11633#0" expanded="true" />
-                <element signature="e#12592#12738#0" expanded="true" />
-                <element signature="e#12737#12738#0" expanded="true" />
-                <element signature="e#12820#13399#0" expanded="true" />
-                <element signature="e#13178#13364#0" expanded="true" />
-                <element signature="e#13363#13364#0" expanded="true" />
-                <element signature="e#13398#13399#0" expanded="true" />
-                <element signature="e#13456#14164#0" expanded="true" />
-                <element signature="e#14163#14164#0" expanded="true" />
-                <element signature="e#14245#15029#0" expanded="true" />
-                <element signature="e#15028#15029#0" expanded="true" />
-                <element signature="e#15493#16231#0" expanded="true" />
-                <element signature="e#16230#16231#0" expanded="true" />
-                <element signature="e#23456#27116#0" expanded="true" />
-                <element signature="e#27115#27116#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WAPref.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAPref.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WAProfile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAProfile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-              <folding>
-                <element signature="e#1038#1039#0" expanded="true" />
-                <element signature="e#1072#1073#0" expanded="true" />
-                <element signature="e#1104#1105#0" expanded="true" />
-                <element signature="e#1132#1133#0" expanded="true" />
+                <element signature="e#12767#12913#0" expanded="true" />
+                <element signature="e#12912#12913#0" expanded="true" />
+                <element signature="e#12995#13574#0" expanded="true" />
+                <element signature="e#13353#13539#0" expanded="true" />
+                <element signature="e#13538#13539#0" expanded="true" />
+                <element signature="e#13573#13574#0" expanded="true" />
+                <element signature="e#14420#15204#0" expanded="true" />
+                <element signature="e#15203#15204#0" expanded="true" />
+                <element signature="e#23631#27388#0" expanded="true" />
+                <element signature="e#27387#27388#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -851,11 +227,19 @@
       <file leaf-file-name="Main2Activity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/walinns/walinnsmobileanalytics/Main2Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1863">
-              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="77" column="42" lean-forward="false" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotificationUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/NotificationUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="194" column="50" lean-forward="false" selection-start-line="194" selection-start-column="50" selection-end-line="194" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -874,16 +258,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>multidex</find>
-      <find>s</find>
-      <find>S</find>
-      <find>Sys</find>
-      <find>Syst</find>
-      <find>System</find>
-      <find>System.ou</find>
-      <find>System.out</find>
-      <find>System.out.</find>
-      <find>System.out.pr</find>
       <find>System.out.print</find>
       <find>System.out.printl</find>
       <find>System.out.println</find>
@@ -904,6 +278,16 @@
       <find>MY_PERMISSIONS_REQUEST</find>
       <find>phone_number</find>
       <find>phone</find>
+      <find>resultPendingIntent</find>
+      <find>Notification</find>
+      <find>playNotificationSound</find>
+      <find>TAG</find>
+      <find>showBigNotification</find>
+      <find>Notification clicked or not</find>
+      <find>devioc</find>
+      <find>shared_pref</find>
+      <find>handleNotification</find>
+      <find>deviceca</find>
     </findStrings>
     <replaceStrings>
       <replace>MainActivity</replace>
@@ -4005,24 +3389,24 @@
         <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/InAppNotification.java" />
         <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAIntentService.java" />
         <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAListenerService.java" />
-        <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAMessingService.java" />
         <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAUtils.java" />
         <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WTLog.java" />
         <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WADeviceInfo.java" />
         <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAInstallRefferer.java" />
         <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/UserProfile.java" />
-        <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAPref.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WALifeCycle.java" />
         <option value="$PROJECT_DIR$/WalinnsApi/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/WalinnsApi/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/walinns/walinnsmobileanalytics/Main2Activity.java" />
         <option value="$PROJECT_DIR$/gradle.properties" />
-        <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/NotificationUtils.java" />
         <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAProfile.java" />
-        <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WalinnsAPIClient.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/walinns/walinnsmobileanalytics/Main2Activity.java" />
+        <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/NotificationUtils.java" />
+        <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAPref.java" />
+        <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAMessingService.java" />
+        <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WalinnsAPIClient.java" />
       </list>
     </option>
   </component>
@@ -4193,7 +3577,7 @@
     <property name="android.profiler.active" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/WalinnsApi/src/main/res" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534418634102" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534504149508" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -4581,8 +3965,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4047619" sideWeight="0.5060423" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265306" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.4939577" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2813036" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42881647" sideWeight="0.4939577" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.516295" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -4651,13 +4035,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WalinnsApi/build/intermediates/bundles/debug/res/values/values.xml" />
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/app/Activity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -4757,13 +4134,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAMessingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WTLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1485">
@@ -4813,13 +4183,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/UserProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -4842,13 +4205,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAGesture.java" />
-    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WALifeCycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WalinnsApi/google-services.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -4871,13 +4227,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAIntentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="85" column="37" lean-forward="false" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4905,87 +4255,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAFCMManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAInstanceIDListenerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAInstanceIDService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/walinns/walinnsmobileanalytics/Main2Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1863">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAProfile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding>
-            <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1104#1105#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAPref.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WalinnsAPIClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-865">
-          <caret line="500" column="40" lean-forward="false" selection-start-line="500" selection-start-column="40" selection-end-line="500" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6249#6418#0" expanded="true" />
-            <element signature="e#6417#6418#0" expanded="true" />
-            <element signature="e#11330#11633#0" expanded="true" />
-            <element signature="e#11632#11633#0" expanded="true" />
-            <element signature="e#12592#12738#0" expanded="true" />
-            <element signature="e#12737#12738#0" expanded="true" />
-            <element signature="e#12820#13399#0" expanded="true" />
-            <element signature="e#13178#13364#0" expanded="true" />
-            <element signature="e#13363#13364#0" expanded="true" />
-            <element signature="e#13398#13399#0" expanded="true" />
-            <element signature="e#13456#14164#0" expanded="true" />
-            <element signature="e#14163#14164#0" expanded="true" />
-            <element signature="e#14245#15029#0" expanded="true" />
-            <element signature="e#15028#15029#0" expanded="true" />
-            <element signature="e#15493#16231#0" expanded="true" />
-            <element signature="e#16230#16231#0" expanded="true" />
-            <element signature="e#23456#27116#0" expanded="true" />
-            <element signature="e#27115#27116#0" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="false" />
+            <element signature="e#1072#1073#0" expanded="false" />
+            <element signature="e#1104#1105#0" expanded="false" />
+            <element signature="e#1132#1133#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4998,7 +4276,7 @@
         <state relative-caret-position="-261">
           <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
-            <element signature="e#954#972#0" expanded="true" />
+            <element signature="e#954#972#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -5014,16 +4292,123 @@
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
-          <caret line="50" column="52" lean-forward="true" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
+          <caret line="50" column="52" lean-forward="false" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAInstanceIDListenerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAIntentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="88" column="32" lean-forward="false" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WALifeCycle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-545">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#5040#7184#0" expanded="true" />
+            <element signature="e#7183#7184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/UserProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAInstanceIDService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAFCMManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1830">
+          <caret line="132" column="46" lean-forward="false" selection-start-line="132" selection-start-column="46" selection-end-line="132" selection-end-column="46" />
+          <folding>
+            <element signature="e#927#1529#0" expanded="true" />
+            <element signature="e#1528#1529#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/NotificationUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+        <state relative-caret-position="181">
+          <caret line="194" column="50" lean-forward="false" selection-start-line="194" selection-start-column="50" selection-end-line="194" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAPref.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/walinns/walinnsmobileanalytics/Main2Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="77" column="42" lean-forward="false" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-core-utils/27.1.1/8fb37fd2f8dbc23482865700d2c340ae030ea561/support-core-utils-27.1.1-sources.jar!/android/support/v4/content/LocalBroadcastManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="210" column="19" lean-forward="false" selection-start-line="210" selection-start-column="19" selection-end-line="210" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAMessingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="73" column="32" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WalinnsAPIClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="246" column="9" lean-forward="true" selection-start-line="246" selection-start-column="9" selection-end-line="246" selection-end-column="9" />
+          <folding>
+            <element signature="e#12767#12913#0" expanded="true" />
+            <element signature="e#12912#12913#0" expanded="true" />
+            <element signature="e#12995#13574#0" expanded="true" />
+            <element signature="e#13353#13539#0" expanded="true" />
+            <element signature="e#13538#13539#0" expanded="true" />
+            <element signature="e#13573#13574#0" expanded="true" />
+            <element signature="e#14420#15204#0" expanded="true" />
+            <element signature="e#15203#15204#0" expanded="true" />
+            <element signature="e#23631#27388#0" expanded="true" />
+            <element signature="e#27387#27388#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

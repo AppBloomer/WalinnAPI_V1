@@ -32,6 +32,8 @@ import android.view.View;
 import android.widget.Toast;
 
 
+import com.walinns.walinnsapi.WalinnsAPI;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -67,6 +69,7 @@ public class Main2Activity extends AppCompatActivity {
          }else {
              System.out.println("Notification is enabld or not"+ "no");
          }
+         WalinnsAPI.getInstance().initialize(Main2Activity.this,"6b1430805f237acf4f3d");
 //         Intent i = new Intent("com.android.vending.INSTALL_REFERRER");
 ////Set Package name
 //         i.setPackage("com.walinns.walinnsmobileanalytics");

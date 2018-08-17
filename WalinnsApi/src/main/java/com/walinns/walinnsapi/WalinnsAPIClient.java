@@ -27,6 +27,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import static com.walinns.walinnsapi.WAMessingService.notification_clicked;
+
 /**
  * Created by walinnsinnovation on 30/12/17.
  */
@@ -79,6 +81,7 @@ public class WalinnsAPIClient extends Activity {
         mContext.startService(new Intent(mContext,WAIntentService.class));
 
         logger.d("WalinnsTrackerClient Token:" , project_token );
+        logger.e("Notification clicked or not init ",shared_pref.getValue(WAPref.noify_clicked));
 
         return this.initialize(context, project_token, (String)null);
     }
@@ -579,7 +582,7 @@ public class WalinnsAPIClient extends Activity {
             @Override
             public void run() {
                 WADeviceInfo.CachedInfo cachedInfo=initializeDeviceInfo();
-                logger.e("Device_data)))",cachedInfo.country+ cachedInfo.model);
+                logger.e("Notification clicked or not",shared_pref.getValue(WAPref.noify_clicked));
                  device_hashMap =new JSONObject();
                  try {
                     device_hashMap.put("device_id",deviceId);
@@ -610,6 +613,7 @@ public class WalinnsAPIClient extends Activity {
                     device_hashMap.put("app_language",cachedInfo.app_language);
                     device_hashMap.put("device_type",cachedInfo.device_type);
                     device_hashMap.put("profile_pic",profile_picture);
+                    device_hashMap.put("notify_status",notification_clicked);
 
 
                     if(cachedInfo.city==null){
