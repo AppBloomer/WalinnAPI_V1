@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Request_data" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Notification clicked or not" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
@@ -14,92 +14,20 @@
     <list default="true" id="d693dbe3-1495-4d67-972c-f926d242ff9c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_truth_truth_0_28_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_10_jar.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_1_jar.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/NotificationUtils.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/NotificationUtils.class" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WAMessingService.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WAMessingService.class" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WAPref.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WAPref.class" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$1.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$1.class" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$2.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$2.class" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$3.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$3.class" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$4$1.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$4$1.class" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$4.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$4.class" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$5.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$5.class" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$6.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$6.class" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$7.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$7.class" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$8.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient$8.class" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient.class" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/classes/debug/com/walinns/walinnsapi/WalinnsAPIClient.class" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/build/intermediates/intermediate-jars/debug/classes.jar" afterPath="$PROJECT_DIR$/WalinnsApi/build/intermediates/intermediate-jars/debug/classes.jar" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/NotificationUtils.java" afterPath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/NotificationUtils.java" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAMessingService.java" afterPath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAMessingService.java" />
-      <change beforePath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAPref.java" afterPath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAPref.java" />
       <change beforePath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WalinnsAPIClient.java" afterPath="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WalinnsAPIClient.java" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/compat/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/compat/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/coreui/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/coreui/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/coreutils/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/coreutils/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/design/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/fragment/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/fragment/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/graphics/drawable/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/graphics/drawable/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/mediacompat/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/mediacompat/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/transition/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/transition/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v4/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v4/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/mediarouter/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/mediarouter/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/google/android/gms/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/google/android/gms/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsapi/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsapi/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/Main2Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/Main2Activity$1.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/Main2Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/Main2Activity.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/R$style.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/walinns/walinnsmobileanalytics/R$styleable.class" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/0_HT9bpTVOSgJcvTE795fr3aBEk=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/0_HT9bpTVOSgJcvTE795fr3aBEk=" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/227.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/227.jar" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/228.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/228.jar" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/229.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/229.jar" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/compat/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/compat/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/coreui/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/coreui/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/coreutils/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/coreutils/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/design/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/design/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/fragment/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/fragment/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/graphics/drawable/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/graphics/drawable/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/graphics/drawable/animated/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/graphics/drawable/animated/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/mediacompat/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/mediacompat/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/transition/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/transition/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/v4/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/v4/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/v7/appcompat/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/v7/appcompat/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/v7/mediarouter/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/v7/mediarouter/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/v7/recyclerview/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/android/support/v7/recyclerview/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/google/android/gms/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/google/android/gms/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsapi/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsapi/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/Main2Activity$1.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/Main2Activity$1.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/Main2Activity.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/Main2Activity.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/R$style.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/R$style.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/R$styleable.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/34/com/walinns/walinnsmobileanalytics/R$styleable.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/1/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/1/classes.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/4/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/4/classes.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/5/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/5/classes.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/6/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/6/classes.dex" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/walinns/walinnsmobileanalytics/Main2Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/walinns/walinnsmobileanalytics/Main2Activity.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -125,15 +53,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="49" column="50" lean-forward="false" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="WAFCMManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAFCMManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1830">
-              <caret line="132" column="46" lean-forward="false" selection-start-line="132" selection-start-column="46" selection-end-line="132" selection-end-column="46" />
-              <folding>
-                <element signature="e#927#1529#0" expanded="true" />
-                <element signature="e#1528#1529#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="195">
+              <caret line="20" column="45" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,8 +76,8 @@
       <file leaf-file-name="WAMessingService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAMessingService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="73" column="32" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="32" />
+            <state relative-caret-position="280">
+              <caret line="71" column="30" lean-forward="false" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,7 +88,7 @@
       <file leaf-file-name="LocalBroadcastManager.java" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-core-utils/27.1.1/8fb37fd2f8dbc23482865700d2c340ae030ea561/support-core-utils-27.1.1-sources.jar!/android/support/v4/content/LocalBroadcastManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
+            <state relative-caret-position="2760">
               <caret line="210" column="19" lean-forward="false" selection-start-line="210" selection-start-column="19" selection-end-line="210" selection-end-column="19" />
               <folding />
             </state>
@@ -163,7 +98,7 @@
       <file leaf-file-name="WAPref.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAPref.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
+            <state relative-caret-position="360">
               <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="37" />
               <folding />
             </state>
@@ -173,22 +108,9 @@
       <file leaf-file-name="WAInstanceIDService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAInstanceIDService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
+            <state relative-caret-position="210">
               <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WALifeCycle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WALifeCycle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-545">
-              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-              <folding>
-                <element signature="e#5040#7184#0" expanded="true" />
-                <element signature="e#7183#7184#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -206,20 +128,9 @@
       <file leaf-file-name="WalinnsAPIClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WalinnsAPIClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="246" column="9" lean-forward="true" selection-start-line="246" selection-start-column="9" selection-end-line="246" selection-end-column="9" />
-              <folding>
-                <element signature="e#12767#12913#0" expanded="true" />
-                <element signature="e#12912#12913#0" expanded="true" />
-                <element signature="e#12995#13574#0" expanded="true" />
-                <element signature="e#13353#13539#0" expanded="true" />
-                <element signature="e#13538#13539#0" expanded="true" />
-                <element signature="e#13573#13574#0" expanded="true" />
-                <element signature="e#14420#15204#0" expanded="true" />
-                <element signature="e#15203#15204#0" expanded="true" />
-                <element signature="e#23631#27388#0" expanded="true" />
-                <element signature="e#27387#27388#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="183">
+              <caret line="593" column="78" lean-forward="false" selection-start-line="593" selection-start-column="78" selection-end-line="593" selection-end-column="78" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -227,7 +138,7 @@
       <file leaf-file-name="Main2Activity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/walinns/walinnsmobileanalytics/Main2Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
+            <state relative-caret-position="585">
               <caret line="77" column="42" lean-forward="false" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
               <folding />
             </state>
@@ -237,7 +148,7 @@
       <file leaf-file-name="NotificationUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/NotificationUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
+            <state relative-caret-position="2400">
               <caret line="194" column="50" lean-forward="false" selection-start-line="194" selection-start-column="50" selection-end-line="194" selection-end-column="50" />
               <folding />
             </state>
@@ -258,7 +169,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>System.out.print</find>
       <find>System.out.printl</find>
       <find>System.out.println</find>
       <find>walinns</find>
@@ -287,6 +197,7 @@
       <find>devioc</find>
       <find>shared_pref</find>
       <find>handleNotification</find>
+      <find>notify_status</find>
       <find>deviceca</find>
     </findStrings>
     <replaceStrings>
@@ -3401,12 +3312,12 @@
         <option value="$PROJECT_DIR$/WalinnsApi/build.gradle" />
         <option value="$PROJECT_DIR$/gradle.properties" />
         <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAProfile.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/walinns/walinnsmobileanalytics/Main2Activity.java" />
         <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/NotificationUtils.java" />
         <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAPref.java" />
         <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAMessingService.java" />
         <option value="$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WalinnsAPIClient.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
       </list>
     </option>
   </component>
@@ -3450,8 +3361,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -3565,7 +3475,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3577,7 +3488,7 @@
     <property name="android.profiler.active" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/WalinnsApi/src/main/res" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534504149508" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534573549262" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -3963,22 +3874,22 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4047619" sideWeight="0.5060423" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265306" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42881647" sideWeight="0.4939577" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.516295" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4974271" sideWeight="0.4939577" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34991422" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28323263" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21440823" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40137222" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26415095" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977912" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26415095" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -4289,14 +4200,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="50" column="52" lean-forward="false" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAInstanceIDListenerService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -4318,8 +4221,8 @@
         <state relative-caret-position="-545">
           <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
-            <element signature="e#5040#7184#0" expanded="true" />
-            <element signature="e#7183#7184#0" expanded="true" />
+            <element signature="e#5040#7184#0" expanded="false" />
+            <element signature="e#7183#7184#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4332,28 +4235,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAInstanceIDService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAFCMManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="132" column="46" lean-forward="false" selection-start-line="132" selection-start-column="46" selection-end-line="132" selection-end-column="46" />
-          <folding>
-            <element signature="e#927#1529#0" expanded="true" />
-            <element signature="e#1528#1529#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/NotificationUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
+        <state relative-caret-position="2400">
           <caret line="194" column="50" lean-forward="false" selection-start-line="194" selection-start-column="50" selection-end-line="194" selection-end-column="50" />
           <folding />
         </state>
@@ -4361,32 +4245,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAPref.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
+        <state relative-caret-position="360">
           <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/walinns/walinnsmobileanalytics/Main2Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="77" column="42" lean-forward="false" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-core-utils/27.1.1/8fb37fd2f8dbc23482865700d2c340ae030ea561/support-core-utils-27.1.1-sources.jar!/android/support/v4/content/LocalBroadcastManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="2760">
           <caret line="210" column="19" lean-forward="false" selection-start-line="210" selection-start-column="19" selection-end-line="210" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAInstanceIDService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/walinns/walinnsmobileanalytics/Main2Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="77" column="42" lean-forward="false" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAFCMManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="45" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="50" lean-forward="false" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WAMessingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="73" column="32" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="32" />
+        <state relative-caret-position="280">
+          <caret line="71" column="30" lean-forward="false" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -4395,20 +4303,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WalinnsApi/src/main/java/com/walinns/walinnsapi/WalinnsAPIClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="246" column="9" lean-forward="true" selection-start-line="246" selection-start-column="9" selection-end-line="246" selection-end-column="9" />
-          <folding>
-            <element signature="e#12767#12913#0" expanded="true" />
-            <element signature="e#12912#12913#0" expanded="true" />
-            <element signature="e#12995#13574#0" expanded="true" />
-            <element signature="e#13353#13539#0" expanded="true" />
-            <element signature="e#13538#13539#0" expanded="true" />
-            <element signature="e#13573#13574#0" expanded="true" />
-            <element signature="e#14420#15204#0" expanded="true" />
-            <element signature="e#15203#15204#0" expanded="true" />
-            <element signature="e#23631#27388#0" expanded="true" />
-            <element signature="e#27387#27388#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="183">
+          <caret line="593" column="78" lean-forward="false" selection-start-line="593" selection-start-column="78" selection-end-line="593" selection-end-column="78" />
+          <folding />
         </state>
       </provider>
     </entry>
