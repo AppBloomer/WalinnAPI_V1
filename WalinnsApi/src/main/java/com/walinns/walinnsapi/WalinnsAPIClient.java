@@ -5,13 +5,18 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.Application;
 
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 
 import android.os.Build;
+import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
+import android.support.annotation.Nullable;
+import android.support.v4.content.LocalBroadcastManager;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -67,6 +72,11 @@ public class WalinnsAPIClient extends Activity {
         this.logThread.start();
         this.httpThread.start();
 
+    }
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
 
     }
@@ -76,13 +86,18 @@ public class WalinnsAPIClient extends Activity {
         new APIClient(mContext);
         this.shared_pref=new WAPref(context);
         shared_pref.save(WAPref.project_token,project_token);
-
-
         mContext.startService(new Intent(mContext,WAIntentService.class));
-
         logger.d("WalinnsTrackerClient Token:" , project_token );
         logger.e("Notification clicked or not init ",shared_pref.getValue(WAPref.noify_clicked));
-
+        if(getIntent()!=null){
+            if(getIntent().getStringExtra("message")!=null){
+                logger.d("Push notification text:" , getIntent().getStringExtra("message") );
+            }else {
+                logger.d("Push notification text:" ,  "first else detected" );
+            }
+        }else {
+            logger.d("Push notification text:" ,  "else detected" );
+        }
         return this.initialize(context, project_token, (String)null);
     }
 
@@ -191,13 +206,22 @@ public class WalinnsAPIClient extends Activity {
         logger.e("walinnstrackerclient device_id",deviceId);
         JSONObject hashMap= new JSONObject();
         try {
-            hashMap.put("event_type",eventType);
+
             hashMap.put("event_name",event_name);
             hashMap.put("device_id",deviceId);
             hashMap.put("date_time",WAUtils.getCurrentUTC());
 
-            logger.e("WalinnTrackerClient date_time_event",hashMap.toString());
-            new APIClient(mContext,"events",hashMap);
+            if(eventType.equals("default_event_push")){
+                hashMap.put("event_type","push_default_event");
+                logger.e("WalinnTrackerClient date_time_event",hashMap.toString());
+
+                new APIClient(mContext, "default_event_push", hashMap);
+            }else {
+                hashMap.put("event_type",eventType);
+                logger.e("WalinnTrackerClient date_time_event default",hashMap.toString());
+
+                new APIClient(mContext, "events", hashMap);
+            }
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -582,6 +606,7 @@ public class WalinnsAPIClient extends Activity {
             @Override
             public void run() {
                 WADeviceInfo.CachedInfo cachedInfo=initializeDeviceInfo();
+
                 logger.e("Notification clicked or not",shared_pref.getValue(WAPref.noify_clicked));
                  device_hashMap =new JSONObject();
                  try {
@@ -613,8 +638,7 @@ public class WalinnsAPIClient extends Activity {
                     device_hashMap.put("app_language",cachedInfo.app_language);
                     device_hashMap.put("device_type",cachedInfo.device_type);
                     device_hashMap.put("profile_pic",profile_picture);
-                    device_hashMap.put("notify_status",notification_clicked);
-
+                  //  device_hashMap.put("Notification viewd or not",shared_pref.getValue(WAPref.noify_clicked));
 
                     if(cachedInfo.city==null){
                         device_hashMap.put("city","NA");
@@ -698,7 +722,6 @@ public class WalinnsAPIClient extends Activity {
             e.printStackTrace();
         }
     }
-
 
 
 

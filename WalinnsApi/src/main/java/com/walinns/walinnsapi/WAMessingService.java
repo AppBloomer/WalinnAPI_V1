@@ -1,6 +1,7 @@
 package com.walinns.walinnsapi;
 
 
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -58,9 +59,9 @@ public class WAMessingService extends FirebaseMessagingService {
         // Check if message contains a notification payload.
         if (remoteMessage.getNotification() != null) {
             Log.e(TAG, "Notification clicked Body: " + remoteMessage.getNotification().getBody());
-            waPref = new WAPref(getApplicationContext());
+            waPref = new WAPref(this.getApplicationContext());
             notification_clicked = "received";
-            waPref.save(WAPref.noify_clicked,notification_clicked);
+            waPref.save(WAPref.noify_clicked,remoteMessage.getNotification().getBody()+" clicked");
             Log.e(TAG, "Notification clicked Body after: " + waPref.getValue(WAPref.noify_clicked));
 
             WalinnsAPI.getInstance().track("default_event",remoteMessage.getNotification().getBody()+" received");
@@ -71,8 +72,9 @@ public class WAMessingService extends FirebaseMessagingService {
         // Check if message contains a data payload.
         if (remoteMessage.getData().size() > 0) {
             Log.e(TAG, "Data Payload: " + remoteMessage.getData().toString());
+            waPref = new WAPref(this.getApplicationContext());
             notification_clicked = "received";
-            waPref.save(WAPref.noify_clicked,notification_clicked);
+
             try {
                 Map<String, String> data = remoteMessage.getData();
 
@@ -103,6 +105,7 @@ public class WAMessingService extends FirebaseMessagingService {
 
             Intent pushNotification = new Intent(WAConfig.PUSH_NOTIFICATION);
             pushNotification.putExtra("message", message);
+            pushNotification.setAction("pushNotification");
             LocalBroadcastManager.getInstance(this).sendBroadcast(pushNotification);
 
             // play notification sound
@@ -112,9 +115,18 @@ public class WAMessingService extends FirebaseMessagingService {
         }else{
             // If the app is in background, firebase itself handles the notification
             System.out.println("App Status :" + "background" + message);
-            Intent pushNotification = new Intent(WAConfig.PUSH_NOTIFICATION);
+//            Intent pushNotification = new Intent(WAConfig.PUSH_NOTIFICATION);
+//            pushNotification.putExtra("message", message);
+//
+
+            Intent pushNotification = new Intent(this, WalinnsAPIClient.class);
+            pushNotification.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             pushNotification.putExtra("message", message);
-            LocalBroadcastManager.getInstance(this).sendBroadcast(pushNotification);
+
+
+
+
+             LocalBroadcastManager.getInstance(this).sendBroadcast(pushNotification);
 
             // play notification sound
             NotificationUtils notificationUtils = new NotificationUtils(getApplicationContext());
@@ -147,7 +159,7 @@ public class WAMessingService extends FirebaseMessagingService {
             Log.e(TAG, "imageUrl: " + imageUrl);
             Log.e(TAG, "timestamp: " + timestamp);
             Log.e(TAG, "ui_type: " + ui_type);
-
+            waPref.save(WAPref.noify_clicked,title+" clicked");
 
             if (!NotificationUtils.isAppIsInBackground(getApplicationContext())) {
 

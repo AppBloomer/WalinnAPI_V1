@@ -81,8 +81,13 @@ public class NotificationUtils {
             final NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(
                     mContext);
 
-            final Uri alarmSound = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE
-                    + "://" + mContext.getPackageName() + "/raw/notification");
+           // final Uri alarmSound = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE
+            //        + "://" + mContext.getPackageName() + "/raw/notification");
+            Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+//            if (alarmSound != null) {
+//                mBuilder.setSound(alarmSound);
+//            }
+//
 
             if (!TextUtils.isEmpty(imageUrl)) {
 
@@ -98,7 +103,7 @@ public class NotificationUtils {
                 }
             } else {
                 showSmallNotification(mBuilder, icon, title, message, timeStamp, resultPendingIntent, alarmSound,ui_type,deep_link,external_link,btn1_name,btn2_name);
-               // playNotificationSound();
+                playNotificationSound();
             }
         }
 
@@ -293,10 +298,12 @@ public class NotificationUtils {
         // Playing notification sound
         public void playNotificationSound() {
             try {
+                Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+
                 String strUri = "android.resource://"+
-                        "com.walinns.walinnsapi"+  "/" + "raw/blasters";
-                Uri alarmSound = Uri.parse(strUri);
-//                Uri alarmSound = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE
+                        mContext.getPackageName()+  "/" + "raw/blasters";
+              //  Uri alarmSound = Uri.parse(strUri);
+//                 Uri alarmSound = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE
 //                        + "://" + "com.walinns.walinnsapi" + "/raw/notification");
                 Ringtone r = RingtoneManager.getRingtone(mContext, alarmSound);
                 r.play();

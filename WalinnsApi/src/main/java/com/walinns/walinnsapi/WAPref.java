@@ -24,6 +24,7 @@ public class WAPref {
     static final String phone = "phone";
     static final String profile_pic = "profile_pic";
     static final String noify_clicked = "noify_clicked";
+    static final String notify_event_send = "notify_event_send";
 
 
     public WAPref(Context context) {
@@ -40,4 +41,7 @@ public class WAPref {
         String result = sharedPreferences.getString(key, "");
         return result;
     }
+    public void clear(String key){
+        sharedPreferences.edit().clear().commit();
+     }
 }

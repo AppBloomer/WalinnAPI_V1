@@ -85,7 +85,11 @@ public class Main2Activity extends AppCompatActivity {
          getMail();
        //  WalinnsAPI.getInstance().track("test","sample event");
 
-
+        if(getIntent()!=null){
+            if(getIntent().getStringExtra("message")!=null){
+                System.out.println("Notification intent data"+ getIntent().getStringExtra("message"));
+            }
+        }
 
 
       }

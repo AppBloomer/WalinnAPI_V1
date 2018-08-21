@@ -68,9 +68,17 @@ public class APIClient {
             if (responseCode == HttpsURLConnection.HTTP_OK) {
                 if(mUrl.equals("devices")&&!flag_once){
                     logger.e("WalinnsTrackerClient","life_cycle_method_detected"+mUrl);
+                 //   sharedPref.clear(WAPref.noify_clicked);
                     flag_once = true;
                     WalinnsAPIClient walinnsTrackerClient=new WalinnsAPIClient(mContext);
                     walinnsTrackerClient.lifeCycle(sharedPref.getValue(WAPref.project_token));
+                }
+                logger.e("WalinnsTrackerClient","life_cycle_method_detected mURL"+mUrl);
+
+                if(mUrl.equals("default_event_push")){
+                    logger.e("WAClient Lifecycle WalinnsTrackerHttpConnection mUrl", mUrl);
+
+                    sharedPref.clear(WAPref.noify_clicked);
                 }
                 logger.e("WalinnsTrackerHttpConnection", conn.getResponseMessage());
 

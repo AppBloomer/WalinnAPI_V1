@@ -56,7 +56,7 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
                 waPref.save(WAPref.app_launch_count, String.valueOf(app_launch_count + 1));
             }
 
-            logger.e("WAClient", "app_launch" + waPref.getValue(WAPref.app_launch_count));
+            logger.e("WAClient", "app_launch notification" + waPref.getValue(WAPref.noify_clicked));
             WALifeCycle.this.mInstance.track("default_event","App Launch");
             WALifeCycle.this.mInstance.track("default_event","App Screen Viewed");
             if(waPref.getValue(WAPref.app_install)!=null && !waPref.getValue(WAPref.app_install).isEmpty()){
@@ -67,6 +67,18 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
                 waPref.save(WAPref.app_install,"installed");
                 WALifeCycle.this.mInstance.install_refferer();
             }
+
+//            if(waPref.getValue(WAPref.notify_event_send)!=null && !waPref.getValue(WAPref.notify_event_send).isEmpty()){
+//
+//            }else {
+                logger.e("WAClient Lifecycle push event", waPref.getValue(WAPref.noify_clicked));
+                if(waPref.getValue(WAPref.noify_clicked)!=null){
+                    logger.e("WAClient Lifecycle push event", waPref.getValue(WAPref.noify_clicked));
+                    WALifeCycle.this.mInstance.track("default_event_push",waPref.getValue(WAPref.noify_clicked));
+
+                }
+//                waPref.save(WAPref.notify_event_send,"sent");
+//            }
 
         }
 
