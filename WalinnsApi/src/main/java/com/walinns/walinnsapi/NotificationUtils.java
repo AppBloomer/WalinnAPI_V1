@@ -8,6 +8,7 @@ import android.content.ComponentName;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
@@ -32,7 +33,9 @@ import java.net.URL;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by walinnsinnovation on 18/01/18.
@@ -66,9 +69,17 @@ public class NotificationUtils {
 
                 icon = ai.icon;
             }
+            final Map<String, String> newPrefs = new HashMap<String, String>();
+            newPrefs.put("content",title);
             // notification icon
+            final SharedPreferences referralInfo = mContext.getSharedPreferences("wa_notify", Context.MODE_PRIVATE);
+            final SharedPreferences.Editor editor = referralInfo.edit();
+            for (final Map.Entry<String, String> entry : newPrefs.entrySet()) {
+                editor.putString(entry.getKey(), entry.getValue());
 
-
+            }
+            editor.apply();
+            WalinnsAPI.getInstance().track("default_event",title +" received");
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             final PendingIntent resultPendingIntent =
                     PendingIntent.getActivity(
@@ -168,7 +179,6 @@ public class NotificationUtils {
 
             }else {
 
-                System.out.println("Notification clicked or not ****** "+ title);
 
 
                 NotificationCompat.InboxStyle inboxStyle = new NotificationCompat.InboxStyle();

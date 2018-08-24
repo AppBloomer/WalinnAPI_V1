@@ -32,7 +32,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static com.walinns.walinnsapi.WAMessingService.notification_clicked;
 
 /**
  * Created by walinnsinnovation on 30/12/17.
@@ -210,24 +209,17 @@ public class WalinnsAPIClient extends Activity {
             hashMap.put("event_name",event_name);
             hashMap.put("device_id",deviceId);
             hashMap.put("date_time",WAUtils.getCurrentUTC());
+            hashMap.put("event_type",eventType);
+            logger.e("WalinnTrackerClient date_time_event default",hashMap.toString());
+            new APIClient(mContext, "events", hashMap , "events");
 
-            if(eventType.equals("default_event_push")){
-                hashMap.put("event_type","push_default_event");
-                logger.e("WalinnTrackerClient date_time_event",hashMap.toString());
-
-                new APIClient(mContext, "default_event_push", hashMap);
-            }else {
-                hashMap.put("event_type",eventType);
-                logger.e("WalinnTrackerClient date_time_event default",hashMap.toString());
-
-                new APIClient(mContext, "events", hashMap);
-            }
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
     }
     public void install_refferer( ){
+
         JSONObject install  = new JSONObject();
         final SharedPreferences referralInfo = mContext.getSharedPreferences("WAInstall_refferer", Context.MODE_PRIVATE);
 
@@ -235,6 +227,7 @@ public class WalinnsAPIClient extends Activity {
         String device_id = Settings.Secure.getString(mContext.getContentResolver(), "android_id");
         try {
             if (referralInfo.getString("utm_source", null) != null) {
+                track("UTM_Visited",referralInfo.getString("utm_source", null));
                 install.put("medium", referralInfo.getString("utm_source", null));
             }
             if (referralInfo.getString("referrer", null) != null) {
@@ -264,7 +257,7 @@ public class WalinnsAPIClient extends Activity {
             install.put("device_id",device_id);
             install.put("date_time",WAUtils.getCurrentUTC());
 
-             new APIClient(mContext,"refferrer",install);
+             new APIClient(mContext,"refferrer",install,"refferrer");
         }
         catch (JSONException e) {
             e.printStackTrace();
@@ -310,7 +303,7 @@ public class WalinnsAPIClient extends Activity {
                     public void run() {
                         // Call<ResponseBody> call = apiService.session(hashMapp);
                         //  call.enqueue(callResponse);
-                        new APIClient(mContext,"session",hashMapp);
+                        new APIClient(mContext,"session",hashMapp,"session");
                     }
                 });
 
@@ -333,13 +326,17 @@ public class WalinnsAPIClient extends Activity {
                 hash.put("date_time",value);
                 hash.put("device_id",shared_pref.getValue(WAPref.device_id));
 
+
+                 //track("default_event","App Launch");
+                // track("default_event","App Screen Viewed");
+
             }else {
 
                 hash=new JSONObject();
                 hash.put("active_status","no");
                 hash.put("date_time",value);
                 hash.put("device_id",shared_pref.getValue(WAPref.device_id));
-
+                shared_pref.save(WAPref.app_launch_called,"");
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -348,7 +345,7 @@ public class WalinnsAPIClient extends Activity {
         this.runOnLogThread(new Runnable() {
             public void run() {
 
-                new APIClient(mContext,"fetchAppUserDetail", finalHash);
+                new APIClient(mContext,"fetchAppUserDetail", finalHash,"fetchAppUserDetail");
             }
         });
     }
@@ -384,7 +381,7 @@ public class WalinnsAPIClient extends Activity {
                         e.printStackTrace();
                     }
 
-                    new APIClient(mContext,"crashReport", hash);
+                    new APIClient(mContext,"crashReport", hash,"crashReport");
                 }
             }
         });
@@ -407,7 +404,7 @@ public class WalinnsAPIClient extends Activity {
                     logger.e("WalinnsTrackerClient","ScreenView value is empty"+"Please enter valid name");
                 }
 
-                new APIClient(mContext,"screenView", hash);
+                new APIClient(mContext,"screenView", hash,"screenView");
 
             }
         });
@@ -438,12 +435,39 @@ public class WalinnsAPIClient extends Activity {
                     }
 
 
-                    new APIClient(mContext,"uninstallcount", hash);
+                    new APIClient(mContext,"uninstallcount", hash,"uninstallcount");
                 }
             }
         });
     }
+    protected void sendNotificationEvent(){
 
+        runOnLogThread(new Runnable() {
+            public void run() {
+                if ( shared_pref.getValue(WAPref.noify_clicked)!=null) {
+                    deviceId=shared_pref.getValue(WAPref.device_id);
+                    logger.e("walinnstrackerclient device_id *************",shared_pref.getValue(WAPref.noify_clicked));
+                    JSONObject hashMap= new JSONObject();
+                    try {
+
+                        hashMap.put("event_name", shared_pref.getValue(WAPref.noify_clicked));
+                        hashMap.put("device_id",deviceId);
+                        hashMap.put("date_time",WAUtils.getCurrentUTC());
+
+
+                            hashMap.put("event_type","default_event" );
+                            logger.e("WalinnTrackerClient date_time_event default",hashMap.toString());
+                            new APIClient(mContext, "events", hashMap, "notify_events");
+
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+            }
+        });
+    }
     protected void lifeCycle(String token){
         logger.e("WalinnsTrackerClient","life_cycle_method_detected");
         registerWalinnsActivityLifecycleCallbacks(token);
@@ -667,7 +691,7 @@ public class WalinnsAPIClient extends Activity {
                     if(email_new !=null && !email_new.isEmpty()){
                         device_hashMap.put("email",email_new);
                     }
-                    new APIClient(mContext, "devices", device_hashMap);
+                    new APIClient(mContext, "devices", device_hashMap,"devices");
 
                 } catch (JSONException e) {
                     e.printStackTrace();

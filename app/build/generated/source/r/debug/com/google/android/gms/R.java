@@ -466,16 +466,16 @@ public final class R {
         public static final int google_play_services_version = 0x7f0a0008;
     }
     public static final class layout {
-        public static final int cast_expanded_controller_activity = 0x7f0c001d;
-        public static final int cast_help_text = 0x7f0c001e;
-        public static final int cast_intro_overlay = 0x7f0c001f;
-        public static final int cast_mini_controller = 0x7f0c0020;
-        public static final int cast_tracks_chooser_dialog_layout = 0x7f0c0021;
-        public static final int cast_tracks_chooser_dialog_row_layout = 0x7f0c0022;
-        public static final int place_autocomplete_fragment = 0x7f0c0047;
-        public static final int place_autocomplete_item_powered_by_google = 0x7f0c0048;
-        public static final int place_autocomplete_item_prediction = 0x7f0c0049;
-        public static final int place_autocomplete_progress = 0x7f0c004a;
+        public static final int cast_expanded_controller_activity = 0x7f0c001f;
+        public static final int cast_help_text = 0x7f0c0020;
+        public static final int cast_intro_overlay = 0x7f0c0021;
+        public static final int cast_mini_controller = 0x7f0c0022;
+        public static final int cast_tracks_chooser_dialog_layout = 0x7f0c0023;
+        public static final int cast_tracks_chooser_dialog_row_layout = 0x7f0c0024;
+        public static final int place_autocomplete_fragment = 0x7f0c004a;
+        public static final int place_autocomplete_item_powered_by_google = 0x7f0c004b;
+        public static final int place_autocomplete_item_prediction = 0x7f0c004c;
+        public static final int place_autocomplete_progress = 0x7f0c004d;
     }
     public static final class string {
         public static final int cast_ad_label = 0x7f0e0020;
@@ -546,7 +546,7 @@ public final class R {
         public static final int tagmanager_preview_dialog_button = 0x7f0e0087;
         public static final int tagmanager_preview_dialog_message = 0x7f0e0088;
         public static final int tagmanager_preview_dialog_title = 0x7f0e0089;
-        public static final int wallet_buy_button_place_holder = 0x7f0e008b;
+        public static final int wallet_buy_button_place_holder = 0x7f0e008c;
     }
     public static final class style {
         public static final int CastExpandedController = 0x7f0f00a8;

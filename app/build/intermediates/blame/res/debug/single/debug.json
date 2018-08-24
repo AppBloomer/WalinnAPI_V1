@@ -1728,6 +1728,10 @@
         "source": "/Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.1.aar/86fdcf585ce969c79f929e3b93240bbb/res/drawable-mdpi-v4/quantum_ic_stop_white_24.png"
     },
     {
+        "merged": "/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/res/merged/debug/layout_activity_third_screen.xml.flat",
+        "source": "/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/res/layout/activity_third_screen.xml"
+    },
+    {
         "merged": "/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/99cacb6d18bf16c53b501b3bdfede1e7/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
@@ -3376,6 +3380,10 @@
         "source": "/Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/99cacb6d18bf16c53b501b3bdfede1e7/res/color/abc_secondary_text_material_light.xml"
     },
     {
+        "merged": "/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/res/merged/debug/layout_activity_new_screen.xml.flat",
+        "source": "/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/res/layout/activity_new_screen.xml"
+    },
+    {
         "merged": "/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/res/merged/debug/anim_design_bottom_sheet_slide_in.xml.flat",
         "source": "/Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/2acf872656d27f36b4d325c9d2833fea/res/anim/design_bottom_sheet_slide_in.xml"
     },
@@ -3774,6 +3782,10 @@
     {
         "merged": "/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/res/merged/debug/layout_design_navigation_menu_item.xml.flat",
         "source": "/Users/walinnsinnovation/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/2acf872656d27f36b4d325c9d2833fea/res/layout/design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/res/merged/debug/layout_content_new_screen.xml.flat",
+        "source": "/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/src/main/res/layout/content_new_screen.xml"
     },
     {
         "merged": "/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_full_open_on_phone.png.flat",

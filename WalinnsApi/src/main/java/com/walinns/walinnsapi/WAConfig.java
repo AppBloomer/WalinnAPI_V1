@@ -26,7 +26,7 @@ public class WAConfig {
     private final int mMinSessionDuration;
     private final int mSessionTimeoutDuration;
 
-    public static final String PUSH_NOTIFICATION = "pushNotification";
+    public static final String PUSH_NOTIFICATION = "NewScreen";
 
     // id to handle the notification in the notification tray
     public static final int NOTIFICATION_ID = 100;

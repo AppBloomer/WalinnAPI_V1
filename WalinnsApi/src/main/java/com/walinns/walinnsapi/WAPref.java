@@ -19,6 +19,7 @@ public class WAPref {
     static final String first_name = "first_name";
     static final String last_name = "last_name";
     static final String app_install = "app_install";
+    static final String app_launch_called = "app_launch_called";
     static final String app_launch_count = "app_launch_count";
     static final String email = "email";
     static final String phone = "phone";
@@ -42,6 +43,6 @@ public class WAPref {
         return result;
     }
     public void clear(String key){
-        sharedPreferences.edit().clear().commit();
-     }
+
+    }
 }

@@ -15,8 +15,22 @@ import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
 
+import org.json.JSONException;
+import org.json.JSONObject;
 
+import java.io.BufferedWriter;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
+
+import javax.net.ssl.HttpsURLConnection;
+
+import static com.walinns.walinnsapi.WalinnsAPIClient.flag_once;
 
 
 /**
@@ -28,10 +42,12 @@ public class WAMessingService extends FirebaseMessagingService {
 
     private static final WALog logger = WALog.getLogger();
     private static final String TAG = WAMessingService.class.getSimpleName();
-    public static String notification_clicked = "NA";
+    public String notification_clicked = "NA";
     WAPref waPref;
-
+    static String URL="https://wa.track.app.walinns.com/";
+    JSONObject hashMap;
     private NotificationUtils notificationUtils;
+    private MyThread mythread;
 
     /**
      * Called when message is received.
@@ -59,13 +75,24 @@ public class WAMessingService extends FirebaseMessagingService {
         // Check if message contains a notification payload.
         if (remoteMessage.getNotification() != null) {
             Log.e(TAG, "Notification clicked Body: " + remoteMessage.getNotification().getBody());
-            waPref = new WAPref(this.getApplicationContext());
-            notification_clicked = "received";
-            waPref.save(WAPref.noify_clicked,remoteMessage.getNotification().getBody()+" clicked");
-            Log.e(TAG, "Notification clicked Body after: " + waPref.getValue(WAPref.noify_clicked));
+              hashMap= new JSONObject();
+              waPref = new WAPref(this.getApplicationContext());
+            try {
 
-            WalinnsAPI.getInstance().track("default_event",remoteMessage.getNotification().getBody()+" received");
+                hashMap.put("event_name", remoteMessage.getNotification().getBody() + " received");
+                hashMap.put("device_id","594c1e64588f53a3");
+                hashMap.put("date_time",WAUtils.getCurrentUTC());
+                hashMap.put("event_type","default_event" );
+                logger.e("WalinnTrackerClient date_time_event default",hashMap.toString());
 
+
+                mythread  = new MyThread();
+                mythread.start();
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            waPref.save(WAPref.noify_clicked,remoteMessage.getNotification().getBody());
             handleNotification(remoteMessage.getNotification().getBody());
         }
 
@@ -119,7 +146,7 @@ public class WAMessingService extends FirebaseMessagingService {
 //            pushNotification.putExtra("message", message);
 //
 
-            Intent pushNotification = new Intent(this, WalinnsAPIClient.class);
+            Intent pushNotification = new Intent(WAConfig.PUSH_NOTIFICATION);
             pushNotification.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             pushNotification.putExtra("message", message);
 
@@ -159,7 +186,23 @@ public class WAMessingService extends FirebaseMessagingService {
             Log.e(TAG, "imageUrl: " + imageUrl);
             Log.e(TAG, "timestamp: " + timestamp);
             Log.e(TAG, "ui_type: " + ui_type);
-            waPref.save(WAPref.noify_clicked,title+" clicked");
+            waPref.save(WAPref.noify_clicked,title);
+            hashMap= new JSONObject();
+            try {
+
+                hashMap.put("event_name", title + " received");
+                hashMap.put("device_id","594c1e64588f53a3");
+                hashMap.put("date_time",WAUtils.getCurrentUTC());
+                hashMap.put("event_type","default_event" );
+                logger.e("WalinnTrackerClient date_time_event default",hashMap.toString());
+
+
+                mythread  = new MyThread();
+                mythread.start();
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
 
             if (!NotificationUtils.isAppIsInBackground(getApplicationContext())) {
 
@@ -217,6 +260,93 @@ public class WAMessingService extends FirebaseMessagingService {
         notificationUtils.showNotificationMessage(title, message, timeStamp, intent, imageUrl,ui_type,deep_link,external_link,btn1_name,btn2_name);
     }
 
+    private void Connection(JSONObject mjsonObject){
 
+        try{
+            logger.e("WalinnsTrackerClient","Request_data Notification"+ mjsonObject.toString());
+            java.net.URL url = new URL(URL+"events");
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setReadTimeout(15000 /* milliseconds */);
+            conn.setConnectTimeout(15000 /* milliseconds */);
+            conn.setRequestMethod("POST");
+            conn.addRequestProperty("CONTENT_TYPE", "application/json");
+            conn.addRequestProperty("Authorization", waPref.getValue(WAPref.project_token));
+            conn.setDoInput(true);
+            conn.setDoOutput(true);
+            OutputStream os = conn.getOutputStream();
+            BufferedWriter writer = new BufferedWriter(
+                    new OutputStreamWriter(os, "UTF-8"));
+            writer.write(getPostDataString(mjsonObject));
+
+            writer.flush();
+            writer.close();
+            os.close();
+
+            logger.e("Http_connection_request_data",waPref.getValue(WAPref.project_token));
+
+            int responseCode=conn.getResponseCode();
+
+
+            if (responseCode == HttpsURLConnection.HTTP_OK) {
+
+                logger.e("WalinnsTrackerClient Notification","life_cycle_method_detected mURL");
+
+
+                logger.e("WalinnsTrackerHttpConnection Notification", conn.getResponseMessage());
+
+            }else {
+                logger.e("WalinnsTrackerHttpConnection Notification","Fail");
+
+            }
+        }
+        catch(Exception e){
+            logger.e("WalinnsTrackerHttpConnection Notification","Exce"+e);
+
+        }
+    }
+    private String getPostDataString(JSONObject params) throws Exception {
+
+        StringBuilder result = new StringBuilder();
+        boolean first = true;
+
+        Iterator<String> itr = params.keys();
+
+        while(itr.hasNext()){
+
+            String key= itr.next();
+            Object value = params.get(key);
+
+            if (first)
+                first = false;
+            else
+                result.append("&");
+
+            result.append(URLEncoder.encode(key, "UTF-8"));
+            result.append("=");
+            result.append(URLEncoder.encode(value.toString(), "UTF-8"));
+
+        }
+        return result.toString();
+    }
+
+
+    class MyThread extends Thread{
+        static final long DELAY = 5000;
+        @Override
+        public void run(){
+            //while(isRunning){
+                Log.d(TAG,"Running");
+                try {
+
+                    Connection(hashMap);
+                    Thread.sleep(DELAY);
+                } catch (InterruptedException e) {
+                    //isRunning = false;
+                    e.printStackTrace();
+                }
+           // }
+        }
+
+    }
 
 }

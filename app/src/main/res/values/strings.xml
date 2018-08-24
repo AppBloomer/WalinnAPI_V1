@@ -3,4 +3,5 @@
     <string name="facebook_app_id">173320063399487</string>
     <string name="fb_login_protocol_scheme">fb173320063399487</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_new_screen">NewScreen</string>
 </resources>

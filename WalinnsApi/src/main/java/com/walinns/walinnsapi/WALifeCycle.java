@@ -57,8 +57,7 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
             }
 
             logger.e("WAClient", "app_launch notification" + waPref.getValue(WAPref.noify_clicked));
-            WALifeCycle.this.mInstance.track("default_event","App Launch");
-            WALifeCycle.this.mInstance.track("default_event","App Screen Viewed");
+
             if(waPref.getValue(WAPref.app_install)!=null && !waPref.getValue(WAPref.app_install).isEmpty()){
                 logger.e("WAClient", "app_install " + waPref.getValue(WAPref.app_install));
 
@@ -68,17 +67,11 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
                 WALifeCycle.this.mInstance.install_refferer();
             }
 
-//            if(waPref.getValue(WAPref.notify_event_send)!=null && !waPref.getValue(WAPref.notify_event_send).isEmpty()){
-//
-//            }else {
-                logger.e("WAClient Lifecycle push event", waPref.getValue(WAPref.noify_clicked));
-                if(waPref.getValue(WAPref.noify_clicked)!=null){
-                    logger.e("WAClient Lifecycle push event", waPref.getValue(WAPref.noify_clicked));
-                    WALifeCycle.this.mInstance.track("default_event_push",waPref.getValue(WAPref.noify_clicked));
+                WALifeCycle.this.mInstance.sendNotificationEvent();
+                WALifeCycle.this.mInstance.track("default_event","App Launch");
+                WALifeCycle.this.mInstance.track("default_event","App Screen Viewed");
+                waPref.save(WAPref.app_launch_called,"called");
 
-                }
-//                waPref.save(WAPref.notify_event_send,"sent");
-//            }
 
         }
 
@@ -88,6 +81,7 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
     @Override
     public void onActivityCreated(Activity activity, Bundle bundle) {
         logger.e("WAClient Lifecycle", "onActivityCreated");
+
 
     }
 
@@ -121,11 +115,13 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
             waPref.save(WAPref.app_launch_count, String.valueOf(app_launch_count + 1));
         }
 
-        logger.e("WAClient", "app_launch" + waPref.getValue(WAPref.app_launch_count));
+         if(waPref.getValue(WAPref.app_launch_called)!=null && waPref.getValue(WAPref.app_launch_called).equals("called")) {
 
+        }else {
+             WALifeCycle.this.mInstance.track("default_event", "App Launch");
+             WALifeCycle.this.mInstance.track("default_event", "App Screen Viewed");
+         }
 
-        WALifeCycle.this.mInstance.track("default_event","App Launch");
-        WALifeCycle.this.mInstance.track("default_event","App Screen Viewed");
     }
 
     @Override
@@ -137,7 +133,7 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
             this.mHandler.removeCallbacks(this.check);
         }
         mContext.stopService(new Intent(mContext, WAService.class)); //start service which is MyService.java
-
+        waPref.save(WAPref.app_launch_called,"called");
         this.mHandler.postDelayed(this.check = new Runnable() {
             public void run() {
                 logger.e("WAClient session length_if", String.valueOf(WALifeCycle.this.mIsForeground) + WALifeCycle.this.mPaused);
@@ -180,6 +176,7 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
         logger.e("WAClient Lifecycle", "onActivityStopped");
          mContext.stopService(new Intent(mContext, WAService.class)); //start service which is MyService.java
        // waClient.disconnect();
+        waPref.save(WAPref.app_launch_called,"called");
 
     }
 
@@ -194,6 +191,7 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
         logger.e("WAClient Lifecycle", "onActivityDestroyed");
         mContext.stopService(new Intent(mContext, WAService.class)); //start service which is MyService.java
         //waClient.disconnect();
+        waPref.save(WAPref.app_launch_called,"called");
 
 
     }

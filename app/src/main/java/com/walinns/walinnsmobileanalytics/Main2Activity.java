@@ -51,13 +51,16 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
          Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);//b2bac52c84ea0f0a4139fbaecf99936e
+         setSupportActionBar(toolbar);//b2bac52c84ea0f0a4139fbaecf99936e
           FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+          fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                WalinnsAPI.getInstance().track("button","Email button clicked");
+                Intent intent = new Intent(Main2Activity.this,NewScreen.class);
+                startActivity(intent);
             }
         });
          int show_all = Settings.Secure.getInt(getContentResolver(),"lock_screen_allow_private_notifications", -1);
@@ -69,7 +72,7 @@ public class Main2Activity extends AppCompatActivity {
          }else {
              System.out.println("Notification is enabld or not"+ "no");
          }
-         WalinnsAPI.getInstance().initialize(Main2Activity.this,"6b1430805f237acf4f3d");
+         WalinnsAPI.getInstance().initialize(Main2Activity.this,"cd800f3d8f02e342515c");
 //         Intent i = new Intent("com.android.vending.INSTALL_REFERRER");
 ////Set Package name
 //         i.setPackage("com.walinns.walinnsmobileanalytics");

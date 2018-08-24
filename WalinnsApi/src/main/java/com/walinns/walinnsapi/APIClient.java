@@ -1,6 +1,7 @@
 package com.walinns.walinnsapi;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 
 import org.json.JSONObject;
 
@@ -24,16 +25,17 @@ public class APIClient {
     static WAPref sharedPref;
     private static final WALog logger = WALog.getLogger();
     public Context mContext;
-    public String mUrl;
+    public String mUrl,mType;
     public JSONObject mjsonObject;
     static String URL="https://wa.track.app.walinns.com/";
     public APIClient(Context context){
         sharedPref=new WAPref(context);
     }
-    public APIClient(Context context,String url,JSONObject jsonObject){
+    public APIClient(Context context,String url,JSONObject jsonObject , String type){
         this.mContext=context;
         this.mUrl=url;
         this.mjsonObject=jsonObject;
+        this.mType = type ;
         sharedPref = new WAPref(mContext);
         Connection();
 
@@ -73,12 +75,15 @@ public class APIClient {
                     WalinnsAPIClient walinnsTrackerClient=new WalinnsAPIClient(mContext);
                     walinnsTrackerClient.lifeCycle(sharedPref.getValue(WAPref.project_token));
                 }
-                logger.e("WalinnsTrackerClient","life_cycle_method_detected mURL"+mUrl);
+                logger.e("WalinnsTrackerClient","life_cycle_method_detected mURL"+mType);
 
-                if(mUrl.equals("default_event_push")){
-                    logger.e("WAClient Lifecycle WalinnsTrackerHttpConnection mUrl", mUrl);
+                if(mType.equals("notify_events")){
+                    logger.e("WAClient Lifecycle WalinnsTrackerHttpConnection notify_events", mUrl);
 
-                    sharedPref.clear(WAPref.noify_clicked);
+//                    final SharedPreferences referralInfo = mContext.getSharedPreferences("wa_notify", Context.MODE_PRIVATE);
+//                    final SharedPreferences.Editor editor = referralInfo.edit();
+//                    editor.putString("content", "").commit();
+
                 }
                 logger.e("WalinnsTrackerHttpConnection", conn.getResponseMessage());
 
