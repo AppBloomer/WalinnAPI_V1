@@ -1,0 +1,4 @@
+#Mon Oct 29 15:21:37 IST 2018
+base.0=/Users/walinnsinnovation/Documents/Projects/Android/Walinns_V1/app/build/intermediates/transforms/dexMerger/debug/14
+path.0=classes.dex
+renamed.0=classes.dex

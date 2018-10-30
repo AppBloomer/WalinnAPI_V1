@@ -10,6 +10,8 @@ import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.os.Bundle;
 
 import android.provider.ContactsContract;
@@ -28,10 +30,14 @@ import android.support.v7.widget.Toolbar;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.util.Patterns;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 
+import com.appsee.Appsee;
 import com.walinns.walinnsapi.WalinnsAPI;
 
 import org.json.JSONException;
@@ -45,24 +51,15 @@ public class Main2Activity extends AppCompatActivity {
 
     private static final int MY_PERMISSIONS_REQUEST = 1,MY_PERMISSIONS_REQUEST_phone = 111,MY_PERMISSIONS_REQUEST_NAME=2;
     String email = "NA";
+    ImageView img_screen;
+    Button btn_click;
+    private int click = 1, x = 0 , y = 0;
 
-     @Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-         setSupportActionBar(toolbar);//b2bac52c84ea0f0a4139fbaecf99936e
-          FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-          fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                WalinnsAPI.getInstance().track("button","Email button clicked");
-                Intent intent = new Intent(Main2Activity.this,NewScreen.class);
-                startActivity(intent);
-            }
-        });
+
          int show_all = Settings.Secure.getInt(getContentResolver(),"lock_screen_allow_private_notifications", -1);
          int noti_enabled = Settings.Secure.getInt(getContentResolver(),"lock_screen_show_notifications", -1);
 
@@ -72,8 +69,8 @@ public class Main2Activity extends AppCompatActivity {
          }else {
              System.out.println("Notification is enabld or not"+ "no");
          }
-         WalinnsAPI.getInstance().initialize(Main2Activity.this,"cd800f3d8f02e342515c");
-//         Intent i = new Intent("com.android.vending.INSTALL_REFERRER");
+         WalinnsAPI.getInstance().initialize(Main2Activity.this,"b9d2e92935000ffd585cc3092f9b03cd");
+ //         Intent i = new Intent("com.android.vending.INSTALL_REFERRER");
 ////Set Package name
 //         i.setPackage("com.walinns.walinnsmobileanalytics");
 ////referrer is a composition of the parameter of the campaing
@@ -84,6 +81,8 @@ public class Main2Activity extends AppCompatActivity {
 //                 "%26utm_campaign%3Dspring_sale");
 //         sendBroadcast(i);
 
+         img_screen = (ImageView)findViewById(R.id.img_screen);
+         btn_click = (Button)findViewById(R.id.btn_click);
 
          getMail();
        //  WalinnsAPI.getInstance().track("test","sample event");
@@ -94,10 +93,27 @@ public class Main2Activity extends AppCompatActivity {
             }
         }
 
+         btn_click.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+               screenShot(getWindow().getDecorView().getRootView());
+                 Intent intent = new Intent(Main2Activity.this,NewScreen.class);
+                 startActivity(intent);
+             }
+         });
+
 
       }
 
-
+    public Bitmap screenShot(View view) {
+        Bitmap bitmap = Bitmap.createBitmap(view.getWidth(),
+                view.getHeight(), Bitmap.Config.ARGB_8888);
+        System.out.println("Image bitmap:" + bitmap);
+        img_screen.setImageBitmap(bitmap);
+        Canvas canvas = new Canvas(bitmap);
+        view.draw(canvas);
+        return bitmap;
+    }
     private void getMail() {
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
@@ -222,5 +238,19 @@ public class Main2Activity extends AppCompatActivity {
             // permissions this app might request
         }
     }
-
+//    @Override
+//    public boolean onTouchEvent(MotionEvent event) {
+//        final int action = event.getAction();
+//        if(action == MotionEvent.ACTION_DOWN) {
+//            if(x != (int) event.getX() && y != (int) event.getY()) {
+//                x = (int) event.getX();
+//                y = (int) event.getY();
+//                Log.d("event", "[" + x + ",    " + y + ",     " + click + "]");
+//                 click = 1;
+//            }else{
+//                click++;
+//            }
+//        }
+//        return super.onTouchEvent(event);
+//    }
 }

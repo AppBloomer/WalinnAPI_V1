@@ -47,6 +47,7 @@ dependencies {
     implementation 'com.google.guava:guava:19.0'
     implementation 'com.google.code.gson:gson:2.5'
     implementation project(':WalinnsApi')
+    implementation 'com.appsee:appsee-android:+'
 
 }
 apply plugin: 'com.google.gms.google-services'

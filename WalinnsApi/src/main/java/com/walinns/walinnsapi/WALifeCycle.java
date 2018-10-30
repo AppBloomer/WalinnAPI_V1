@@ -7,6 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -81,6 +84,8 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
     @Override
     public void onActivityCreated(Activity activity, Bundle bundle) {
         logger.e("WAClient Lifecycle", "onActivityCreated");
+        System.out.println("Acivity class name :"+ activity.getLocalClassName());
+       // activity.onTouchEvent()
 
 
     }
@@ -88,6 +93,8 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
     @Override
     public void onActivityStarted(Activity activity) {
         logger.e("WAClient Lifecycle", "onActivityStarted");
+        System.out.println("WalinnsTrackerClient Acivity class name :"+ activity.getClass().getSimpleName());
+        new WAGesture(this.mInstance, activity);
 
 
     }
@@ -195,6 +202,7 @@ public class WALifeCycle  implements Application.ActivityLifecycleCallbacks {
 
 
     }
+
 
 
 }

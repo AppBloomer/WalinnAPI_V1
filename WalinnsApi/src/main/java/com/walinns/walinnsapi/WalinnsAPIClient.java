@@ -19,6 +19,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.content.LocalBroadcastManager;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.MotionEvent;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -710,9 +711,6 @@ public class WalinnsAPIClient extends Activity {
     }
 
 
-
-
-
     public void pushUserProfile(JSONObject jsonObject){
 
         UserProfile userProfile = new UserProfile();
@@ -748,5 +746,17 @@ public class WalinnsAPIClient extends Activity {
     }
 
 
+    public MotionEvent sendEvent(MotionEvent event){
+        MotionEvent event_new;
+        event_new = event;
 
+        return event_new;
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        System.out.println("OnTouch event Called" + event.getAction());
+        sendEvent(event);
+        return super.onTouchEvent(event);
+    }
 }
